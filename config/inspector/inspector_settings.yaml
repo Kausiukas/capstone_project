@@ -1,0 +1,22 @@
+alert_threshold_percent: 95.0
+inspector_cli_mode: true
+inspector_command: npx @modelcontextprotocol/inspector
+inspector_debug_mode: false
+log_file: logs/inspector.log
+log_format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+log_level: INFO
+max_concurrent_tests: 10
+max_response_time_ms: 5000
+mcp_server_command: python mcp_langflow_connector_simple.py
+mcp_server_retries: 3
+mcp_server_timeout: 30
+monitoring_interval_seconds: 60
+performance_degradation_threshold: 20.0
+report_format: json
+report_output_dir: reports/inspector
+report_retention_days: 30
+retry_attempts: 3
+test_batch_size: 5
+test_parallel_workers: 3
+test_retry_delay_seconds: 5
+test_timeout_seconds: 30

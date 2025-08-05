@@ -1,0 +1,38 @@
+{
+  "server": {
+    "name": "langflow-connect-enhanced",
+    "version": "1.1.0",
+    "protocol_version": "2024-11-05",
+    "capabilities": {
+      "tools": {},
+      "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+      }
+    }
+  },
+  "performance": {
+    "max_memory_mb": 50,
+    "batch_size_limit": 20,
+    "cache_size_limit": 100,
+    "file_scan_depth": 2,
+    "connection_timeout": 30,
+    "read_timeout": 60,
+    "write_timeout": 60,
+    "max_retries": 3,
+    "keepalive_interval": 30
+  },
+  "file_operations": {
+    "use_async_io": true,
+    "buffer_size": 8192,
+    "max_file_size_mb": 10,
+    "enable_compression": false,
+    "cache_ttl_seconds": 300
+  },
+  "monitoring": {
+    "enable_health_checks": true,
+    "health_check_interval": 60,
+    "enable_performance_monitoring": true,
+    "performance_log_interval": 300
+  }
+}
