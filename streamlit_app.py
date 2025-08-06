@@ -11,7 +11,7 @@ import time
 from datetime import datetime
 
 # Configuration - Default API URL
-DEFAULT_API_URL = "https://capstone-project-i1xm.onrender.com"
+DEFAULT_API_URL = "https://capstone-project-api-jg3n.onrender.com/"
 API_KEY = "demo_key_123"
 
 def get_api_url():
