@@ -1,0 +1,8 @@
+[
+  {
+    "channel_id": "console",
+    "notification_type": "console",
+    "enabled": true,
+    "config": {}
+  }
+]

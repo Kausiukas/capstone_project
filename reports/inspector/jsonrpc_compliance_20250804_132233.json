@@ -1,0 +1,2235 @@
+{
+  "test_suite": "JSON-RPC 2.0 Compliance",
+  "total_tests": 5,
+  "passed_tests": 3,
+  "failed_tests": 1,
+  "warning_tests": 1,
+  "error_tests": 0,
+  "compliance_score": 60.0,
+  "test_results": [
+    {
+      "test_name": "JSON-RPC Format Compliance",
+      "test_description": "Validate that requests and responses follow JSON-RPC 2.0 format",
+      "status": "pass",
+      "details": "JSON-RPC 2.0 format compliance verified - 22 tools found",
+      "request_data": null,
+      "response_data": {
+        "tools": [
+          {
+            "name": "read_file",
+            "description": "Read file contents from the workspace",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the file to read"
+                }
+              },
+              "required": [
+                "file_path"
+              ]
+            }
+          },
+          {
+            "name": "write_file",
+            "description": "Write content to a file in the workspace",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the file to write"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Content to write to the file"
+                }
+              },
+              "required": [
+                "file_path",
+                "content"
+              ]
+            }
+          },
+          {
+            "name": "list_files",
+            "description": "List files in a directory showing only metadata (file names, types, sizes) without content",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Starting position for pagination",
+                  "default": 0,
+                  "minimum": 0
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                },
+                "use_cache": {
+                  "type": "boolean",
+                  "description": "Use cached results if available",
+                  "default": true
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "list_files_metadata_only",
+            "description": "STRICT metadata-only file listing - returns only file names, types, and sizes. NO file paths to prevent automatic reading",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Starting position for pagination",
+                  "default": 0,
+                  "minimum": 0
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "list_files_readable",
+            "description": "List files in a human-readable format showing file names, types, and sizes in a simple list",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Starting position for pagination",
+                  "default": 0,
+                  "minimum": 0
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "list_files_table",
+            "description": "List files in LangFlow table format with type, text, annotations, and meta columns",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "string",
+                  "description": "Starting position for pagination (can be connected from other nodes, accepts numbers as strings)",
+                  "default": "0"
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                }
+              },
+              "required": [
+                "directory",
+                "offset"
+              ]
+            }
+          },
+          {
+            "name": "append_file",
+            "description": "Append content to an existing file or create a new file if it doesn't exist",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the file to append to"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Content to append to the file"
+                },
+                "separator": {
+                  "type": "string",
+                  "description": "Separator to add between existing content and new content",
+                  "default": "\n"
+                }
+              },
+              "required": [
+                "file_path",
+                "content"
+              ]
+            }
+          },
+          {
+            "name": "get_pagination_info",
+            "description": "Get pagination information for directory listing to help with iteration",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to analyze",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Batch size to use for pagination",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "stream_files",
+            "description": "Stream file metadata incrementally to prevent memory overload",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "stream_id": {
+                  "type": "string",
+                  "description": "Unique identifier for this streaming session",
+                  "default": ""
+                },
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "start",
+                    "next",
+                    "stop"
+                  ],
+                  "description": "Streaming action to perform",
+                  "default": "start"
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 2
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "analyze_code",
+            "description": "Analyze code structure and metrics",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the code file to analyze"
+                }
+              },
+              "required": [
+                "file_path"
+              ]
+            }
+          },
+          {
+            "name": "track_token_usage",
+            "description": "Track token usage and costs",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "operation": {
+                  "type": "string",
+                  "description": "Name of the operation"
+                },
+                "model": {
+                  "type": "string",
+                  "description": "Model used for the operation"
+                },
+                "input_tokens": {
+                  "type": "integer",
+                  "description": "Number of input tokens"
+                },
+                "output_tokens": {
+                  "type": "integer",
+                  "description": "Number of output tokens"
+                }
+              },
+              "required": [
+                "operation",
+                "model",
+                "input_tokens",
+                "output_tokens"
+              ]
+            }
+          },
+          {
+            "name": "get_cost_summary",
+            "description": "Get cost summary and statistics",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "get_system_health",
+            "description": "Get system health status",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "get_system_status",
+            "description": "Get overall system status",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "ping",
+            "description": "Ping the MCP server for monitoring and debugging",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "description": "Optional message to include in ping response"
+                }
+              }
+            }
+          },
+          {
+            "name": "store_embedding",
+            "description": "Store text content with vector embedding in PostgreSQL",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name/identifier for the content"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Text content to embed and store"
+                },
+                "metadata": {
+                  "type": "object",
+                  "description": "Optional metadata as JSON object"
+                }
+              },
+              "required": [
+                "name",
+                "content"
+              ]
+            }
+          },
+          {
+            "name": "similarity_search",
+            "description": "Search for similar content using vector similarity",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "query": {
+                  "type": "string",
+                  "description": "Search query text"
+                },
+                "limit": {
+                  "type": "integer",
+                  "description": "Maximum number of results to return",
+                  "default": 5,
+                  "minimum": 1,
+                  "maximum": 20
+                }
+              },
+              "required": [
+                "query"
+              ]
+            }
+          },
+          {
+            "name": "process_text_with_llm",
+            "description": "Process text using local LLM-like operations",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text to process"
+                },
+                "task": {
+                  "type": "string",
+                  "enum": [
+                    "summarize",
+                    "extract_keywords",
+                    "classify",
+                    "translate",
+                    "sentiment_analysis"
+                  ],
+                  "description": "Type of processing task"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Task-specific parameters"
+                }
+              },
+              "required": [
+                "text",
+                "task"
+              ]
+            }
+          },
+          {
+            "name": "dataframe_operations",
+            "description": "Perform DataFrame operations on CSV data",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "operation": {
+                  "type": "string",
+                  "enum": [
+                    "head",
+                    "tail",
+                    "describe",
+                    "info",
+                    "filter",
+                    "sort",
+                    "groupby"
+                  ],
+                  "description": "DataFrame operation to perform"
+                },
+                "data": {
+                  "type": "string",
+                  "description": "CSV data to process"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Operation-specific parameters"
+                }
+              },
+              "required": [
+                "operation",
+                "data"
+              ]
+            }
+          },
+          {
+            "name": "split_text",
+            "description": "Split text using various methods",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text to split"
+                },
+                "method": {
+                  "type": "string",
+                  "enum": [
+                    "sentences",
+                    "words",
+                    "paragraphs",
+                    "chunks"
+                  ],
+                  "description": "Splitting method",
+                  "default": "sentences"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Method-specific parameters (e.g., chunk_size for chunks)"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          },
+          {
+            "name": "structured_output",
+            "description": "Extract structured data from text using schema",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text to extract structured data from"
+                },
+                "schema": {
+                  "type": "object",
+                  "description": "Schema defining fields and patterns to extract"
+                }
+              },
+              "required": [
+                "text",
+                "schema"
+              ]
+            }
+          },
+          {
+            "name": "type_convert",
+            "description": "Convert data between different formats",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "description": "Data to convert"
+                },
+                "target_type": {
+                  "type": "string",
+                  "enum": [
+                    "json",
+                    "csv",
+                    "yaml",
+                    "xml"
+                  ],
+                  "description": "Target format"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Conversion parameters"
+                }
+              },
+              "required": [
+                "data",
+                "target_type"
+              ]
+            }
+          }
+        ]
+      },
+      "error_message": null,
+      "execution_time_ms": 3054.452896118164,
+      "timestamp": "2025-08-04T10:22:18.479147+00:00"
+    },
+    {
+      "test_name": "Request Structure Compliance",
+      "test_description": "Validate request structure follows JSON-RPC 2.0 specification",
+      "status": "warning",
+      "details": "Moderate request structure compliance - 50.0% success rate",
+      "request_data": null,
+      "response_data": null,
+      "error_message": null,
+      "execution_time_ms": 2969.423770904541,
+      "timestamp": "2025-08-04T10:22:24.364654+00:00"
+    },
+    {
+      "test_name": "Response Structure Compliance",
+      "test_description": "Validate response structure follows JSON-RPC 2.0 specification",
+      "status": "pass",
+      "details": "Response structure compliance verified - 22 tools found",
+      "request_data": null,
+      "response_data": {
+        "tools": [
+          {
+            "name": "read_file",
+            "description": "Read file contents from the workspace",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the file to read"
+                }
+              },
+              "required": [
+                "file_path"
+              ]
+            }
+          },
+          {
+            "name": "write_file",
+            "description": "Write content to a file in the workspace",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the file to write"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Content to write to the file"
+                }
+              },
+              "required": [
+                "file_path",
+                "content"
+              ]
+            }
+          },
+          {
+            "name": "list_files",
+            "description": "List files in a directory showing only metadata (file names, types, sizes) without content",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Starting position for pagination",
+                  "default": 0,
+                  "minimum": 0
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                },
+                "use_cache": {
+                  "type": "boolean",
+                  "description": "Use cached results if available",
+                  "default": true
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "list_files_metadata_only",
+            "description": "STRICT metadata-only file listing - returns only file names, types, and sizes. NO file paths to prevent automatic reading",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Starting position for pagination",
+                  "default": 0,
+                  "minimum": 0
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "list_files_readable",
+            "description": "List files in a human-readable format showing file names, types, and sizes in a simple list",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Starting position for pagination",
+                  "default": 0,
+                  "minimum": 0
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "list_files_table",
+            "description": "List files in LangFlow table format with type, text, annotations, and meta columns",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "string",
+                  "description": "Starting position for pagination (can be connected from other nodes, accepts numbers as strings)",
+                  "default": "0"
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                }
+              },
+              "required": [
+                "directory",
+                "offset"
+              ]
+            }
+          },
+          {
+            "name": "append_file",
+            "description": "Append content to an existing file or create a new file if it doesn't exist",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the file to append to"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Content to append to the file"
+                },
+                "separator": {
+                  "type": "string",
+                  "description": "Separator to add between existing content and new content",
+                  "default": "\n"
+                }
+              },
+              "required": [
+                "file_path",
+                "content"
+              ]
+            }
+          },
+          {
+            "name": "get_pagination_info",
+            "description": "Get pagination information for directory listing to help with iteration",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to analyze",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Batch size to use for pagination",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "stream_files",
+            "description": "Stream file metadata incrementally to prevent memory overload",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "stream_id": {
+                  "type": "string",
+                  "description": "Unique identifier for this streaming session",
+                  "default": ""
+                },
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "start",
+                    "next",
+                    "stop"
+                  ],
+                  "description": "Streaming action to perform",
+                  "default": "start"
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 2
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "analyze_code",
+            "description": "Analyze code structure and metrics",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the code file to analyze"
+                }
+              },
+              "required": [
+                "file_path"
+              ]
+            }
+          },
+          {
+            "name": "track_token_usage",
+            "description": "Track token usage and costs",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "operation": {
+                  "type": "string",
+                  "description": "Name of the operation"
+                },
+                "model": {
+                  "type": "string",
+                  "description": "Model used for the operation"
+                },
+                "input_tokens": {
+                  "type": "integer",
+                  "description": "Number of input tokens"
+                },
+                "output_tokens": {
+                  "type": "integer",
+                  "description": "Number of output tokens"
+                }
+              },
+              "required": [
+                "operation",
+                "model",
+                "input_tokens",
+                "output_tokens"
+              ]
+            }
+          },
+          {
+            "name": "get_cost_summary",
+            "description": "Get cost summary and statistics",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "get_system_health",
+            "description": "Get system health status",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "get_system_status",
+            "description": "Get overall system status",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "ping",
+            "description": "Ping the MCP server for monitoring and debugging",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "description": "Optional message to include in ping response"
+                }
+              }
+            }
+          },
+          {
+            "name": "store_embedding",
+            "description": "Store text content with vector embedding in PostgreSQL",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name/identifier for the content"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Text content to embed and store"
+                },
+                "metadata": {
+                  "type": "object",
+                  "description": "Optional metadata as JSON object"
+                }
+              },
+              "required": [
+                "name",
+                "content"
+              ]
+            }
+          },
+          {
+            "name": "similarity_search",
+            "description": "Search for similar content using vector similarity",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "query": {
+                  "type": "string",
+                  "description": "Search query text"
+                },
+                "limit": {
+                  "type": "integer",
+                  "description": "Maximum number of results to return",
+                  "default": 5,
+                  "minimum": 1,
+                  "maximum": 20
+                }
+              },
+              "required": [
+                "query"
+              ]
+            }
+          },
+          {
+            "name": "process_text_with_llm",
+            "description": "Process text using local LLM-like operations",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text to process"
+                },
+                "task": {
+                  "type": "string",
+                  "enum": [
+                    "summarize",
+                    "extract_keywords",
+                    "classify",
+                    "translate",
+                    "sentiment_analysis"
+                  ],
+                  "description": "Type of processing task"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Task-specific parameters"
+                }
+              },
+              "required": [
+                "text",
+                "task"
+              ]
+            }
+          },
+          {
+            "name": "dataframe_operations",
+            "description": "Perform DataFrame operations on CSV data",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "operation": {
+                  "type": "string",
+                  "enum": [
+                    "head",
+                    "tail",
+                    "describe",
+                    "info",
+                    "filter",
+                    "sort",
+                    "groupby"
+                  ],
+                  "description": "DataFrame operation to perform"
+                },
+                "data": {
+                  "type": "string",
+                  "description": "CSV data to process"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Operation-specific parameters"
+                }
+              },
+              "required": [
+                "operation",
+                "data"
+              ]
+            }
+          },
+          {
+            "name": "split_text",
+            "description": "Split text using various methods",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text to split"
+                },
+                "method": {
+                  "type": "string",
+                  "enum": [
+                    "sentences",
+                    "words",
+                    "paragraphs",
+                    "chunks"
+                  ],
+                  "description": "Splitting method",
+                  "default": "sentences"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Method-specific parameters (e.g., chunk_size for chunks)"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          },
+          {
+            "name": "structured_output",
+            "description": "Extract structured data from text using schema",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text to extract structured data from"
+                },
+                "schema": {
+                  "type": "object",
+                  "description": "Schema defining fields and patterns to extract"
+                }
+              },
+              "required": [
+                "text",
+                "schema"
+              ]
+            }
+          },
+          {
+            "name": "type_convert",
+            "description": "Convert data between different formats",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "description": "Data to convert"
+                },
+                "target_type": {
+                  "type": "string",
+                  "enum": [
+                    "json",
+                    "csv",
+                    "yaml",
+                    "xml"
+                  ],
+                  "description": "Target format"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Conversion parameters"
+                }
+              },
+              "required": [
+                "data",
+                "target_type"
+              ]
+            }
+          }
+        ]
+      },
+      "error_message": null,
+      "execution_time_ms": 2969.132661819458,
+      "timestamp": "2025-08-04T10:22:27.333787+00:00"
+    },
+    {
+      "test_name": "Error Code Compliance",
+      "test_description": "Validate error handling follows MCP protocol standards",
+      "status": "fail",
+      "details": "Error response missing 'message' field",
+      "request_data": null,
+      "response_data": {
+        "error": "Inspector command failed with return code 1"
+      },
+      "error_message": null,
+      "execution_time_ms": 2962.265729904175,
+      "timestamp": "2025-08-04T10:22:30.296053+00:00"
+    },
+    {
+      "test_name": "Protocol Version Compliance",
+      "test_description": "Validate MCP protocol compliance",
+      "status": "pass",
+      "details": "MCP protocol compliance verified - 22 tools available",
+      "request_data": null,
+      "response_data": {
+        "tools": [
+          {
+            "name": "read_file",
+            "description": "Read file contents from the workspace",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the file to read"
+                }
+              },
+              "required": [
+                "file_path"
+              ]
+            }
+          },
+          {
+            "name": "write_file",
+            "description": "Write content to a file in the workspace",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the file to write"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Content to write to the file"
+                }
+              },
+              "required": [
+                "file_path",
+                "content"
+              ]
+            }
+          },
+          {
+            "name": "list_files",
+            "description": "List files in a directory showing only metadata (file names, types, sizes) without content",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Starting position for pagination",
+                  "default": 0,
+                  "minimum": 0
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                },
+                "use_cache": {
+                  "type": "boolean",
+                  "description": "Use cached results if available",
+                  "default": true
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "list_files_metadata_only",
+            "description": "STRICT metadata-only file listing - returns only file names, types, and sizes. NO file paths to prevent automatic reading",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Starting position for pagination",
+                  "default": 0,
+                  "minimum": 0
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "list_files_readable",
+            "description": "List files in a human-readable format showing file names, types, and sizes in a simple list",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Starting position for pagination",
+                  "default": 0,
+                  "minimum": 0
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "list_files_table",
+            "description": "List files in LangFlow table format with type, text, annotations, and meta columns",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Number of files to return per batch (5-50)",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "offset": {
+                  "type": "string",
+                  "description": "Starting position for pagination (can be connected from other nodes, accepts numbers as strings)",
+                  "default": "0"
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                },
+                "sort_by": {
+                  "type": "string",
+                  "enum": [
+                    "name",
+                    "size",
+                    "modified",
+                    "type"
+                  ],
+                  "description": "Sort files by criteria",
+                  "default": "name"
+                },
+                "sort_order": {
+                  "type": "string",
+                  "enum": [
+                    "asc",
+                    "desc"
+                  ],
+                  "description": "Sort order",
+                  "default": "asc"
+                }
+              },
+              "required": [
+                "directory",
+                "offset"
+              ]
+            }
+          },
+          {
+            "name": "append_file",
+            "description": "Append content to an existing file or create a new file if it doesn't exist",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the file to append to"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Content to append to the file"
+                },
+                "separator": {
+                  "type": "string",
+                  "description": "Separator to add between existing content and new content",
+                  "default": "\n"
+                }
+              },
+              "required": [
+                "file_path",
+                "content"
+              ]
+            }
+          },
+          {
+            "name": "get_pagination_info",
+            "description": "Get pagination information for directory listing to help with iteration",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to analyze",
+                  "default": "."
+                },
+                "batch_size": {
+                  "type": "integer",
+                  "description": "Batch size to use for pagination",
+                  "default": 20,
+                  "minimum": 5,
+                  "maximum": 50
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "stream_files",
+            "description": "Stream file metadata incrementally to prevent memory overload",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "directory": {
+                  "type": "string",
+                  "description": "Directory path to list files from",
+                  "default": "."
+                },
+                "stream_id": {
+                  "type": "string",
+                  "description": "Unique identifier for this streaming session",
+                  "default": ""
+                },
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "start",
+                    "next",
+                    "stop"
+                  ],
+                  "description": "Streaming action to perform",
+                  "default": "start"
+                },
+                "file_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Filter by file extensions (e.g., ['.py', '.txt'])",
+                  "default": []
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse",
+                  "default": 1,
+                  "minimum": 1,
+                  "maximum": 2
+                },
+                "include_hidden": {
+                  "type": "boolean",
+                  "description": "Include hidden files and directories",
+                  "default": false
+                }
+              },
+              "required": [
+                "directory"
+              ]
+            }
+          },
+          {
+            "name": "analyze_code",
+            "description": "Analyze code structure and metrics",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Path to the code file to analyze"
+                }
+              },
+              "required": [
+                "file_path"
+              ]
+            }
+          },
+          {
+            "name": "track_token_usage",
+            "description": "Track token usage and costs",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "operation": {
+                  "type": "string",
+                  "description": "Name of the operation"
+                },
+                "model": {
+                  "type": "string",
+                  "description": "Model used for the operation"
+                },
+                "input_tokens": {
+                  "type": "integer",
+                  "description": "Number of input tokens"
+                },
+                "output_tokens": {
+                  "type": "integer",
+                  "description": "Number of output tokens"
+                }
+              },
+              "required": [
+                "operation",
+                "model",
+                "input_tokens",
+                "output_tokens"
+              ]
+            }
+          },
+          {
+            "name": "get_cost_summary",
+            "description": "Get cost summary and statistics",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "get_system_health",
+            "description": "Get system health status",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "get_system_status",
+            "description": "Get overall system status",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "ping",
+            "description": "Ping the MCP server for monitoring and debugging",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "description": "Optional message to include in ping response"
+                }
+              }
+            }
+          },
+          {
+            "name": "store_embedding",
+            "description": "Store text content with vector embedding in PostgreSQL",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name/identifier for the content"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "Text content to embed and store"
+                },
+                "metadata": {
+                  "type": "object",
+                  "description": "Optional metadata as JSON object"
+                }
+              },
+              "required": [
+                "name",
+                "content"
+              ]
+            }
+          },
+          {
+            "name": "similarity_search",
+            "description": "Search for similar content using vector similarity",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "query": {
+                  "type": "string",
+                  "description": "Search query text"
+                },
+                "limit": {
+                  "type": "integer",
+                  "description": "Maximum number of results to return",
+                  "default": 5,
+                  "minimum": 1,
+                  "maximum": 20
+                }
+              },
+              "required": [
+                "query"
+              ]
+            }
+          },
+          {
+            "name": "process_text_with_llm",
+            "description": "Process text using local LLM-like operations",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text to process"
+                },
+                "task": {
+                  "type": "string",
+                  "enum": [
+                    "summarize",
+                    "extract_keywords",
+                    "classify",
+                    "translate",
+                    "sentiment_analysis"
+                  ],
+                  "description": "Type of processing task"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Task-specific parameters"
+                }
+              },
+              "required": [
+                "text",
+                "task"
+              ]
+            }
+          },
+          {
+            "name": "dataframe_operations",
+            "description": "Perform DataFrame operations on CSV data",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "operation": {
+                  "type": "string",
+                  "enum": [
+                    "head",
+                    "tail",
+                    "describe",
+                    "info",
+                    "filter",
+                    "sort",
+                    "groupby"
+                  ],
+                  "description": "DataFrame operation to perform"
+                },
+                "data": {
+                  "type": "string",
+                  "description": "CSV data to process"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Operation-specific parameters"
+                }
+              },
+              "required": [
+                "operation",
+                "data"
+              ]
+            }
+          },
+          {
+            "name": "split_text",
+            "description": "Split text using various methods",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text to split"
+                },
+                "method": {
+                  "type": "string",
+                  "enum": [
+                    "sentences",
+                    "words",
+                    "paragraphs",
+                    "chunks"
+                  ],
+                  "description": "Splitting method",
+                  "default": "sentences"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Method-specific parameters (e.g., chunk_size for chunks)"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          },
+          {
+            "name": "structured_output",
+            "description": "Extract structured data from text using schema",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text to extract structured data from"
+                },
+                "schema": {
+                  "type": "object",
+                  "description": "Schema defining fields and patterns to extract"
+                }
+              },
+              "required": [
+                "text",
+                "schema"
+              ]
+            }
+          },
+          {
+            "name": "type_convert",
+            "description": "Convert data between different formats",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string",
+                  "description": "Data to convert"
+                },
+                "target_type": {
+                  "type": "string",
+                  "enum": [
+                    "json",
+                    "csv",
+                    "yaml",
+                    "xml"
+                  ],
+                  "description": "Target format"
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "Conversion parameters"
+                }
+              },
+              "required": [
+                "data",
+                "target_type"
+              ]
+            }
+          }
+        ]
+      },
+      "error_message": null,
+      "execution_time_ms": 2940.8352375030518,
+      "timestamp": "2025-08-04T10:22:33.236888+00:00"
+    }
+  ],
+  "summary": "JSON-RPC 2.0 Compliance Test Results:\n- Total Tests: 5\n- Passed: 3\n- Failed: 1\n- Warnings: 1\n- Errors: 0\n- Compliance Score: 60.0%\n\n\u26a0\ufe0f Moderate compliance with significant issues",
+  "recommendations": [
+    "Fix Error Code Compliance: Error response missing 'message' field",
+    "Review Request Structure Compliance: Moderate request structure compliance - 50.0% success rate",
+    "Review JSON-RPC 2.0 specification compliance"
+  ],
+  "timestamp": "2025-08-04T10:22:15.424694+00:00"
+}

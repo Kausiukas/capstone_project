@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "total_test_suites": 3,
+    "total_tests": 18,
+    "passed_tests": 2,
+    "failed_tests": 12,
+    "warning_tests": 1,
+    "error_tests": 3,
+    "overall_compliance_score": 11.11111111111111,
+    "test_suite_scores": {
+      "JSON-RPC 2.0": 0.0,
+      "MCP Protocol": 0.0,
+      "Error Handling": 28.57142857142857
+    },
+    "timestamp": 

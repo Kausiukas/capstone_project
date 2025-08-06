@@ -1,0 +1,155 @@
+{
+  "timestamp": 1754123471.9533765,
+  "directory": "D:\\GUI\\System-Reference-Clean\\LangFlow_Connect",
+  "result": {
+    "success": true,
+    "batch": {
+      "files": [
+        {
+          "name": "__pycache__",
+          "path": "src\\modules\\__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753891636.828501,
+          "extension": ""
+        },
+        {
+          "name": "__pycache__",
+          "path": "src\\modules\\module_1_main\\__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753898272.5328195,
+          "extension": ""
+        },
+        {
+          "name": "__pycache__",
+          "path": "src\\modules\\module_2_support\\__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753897639.6736817,
+          "extension": ""
+        },
+        {
+          "name": "__pycache__",
+          "path": "src\\modules\\module_3_economy\\__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753899570.4368792,
+          "extension": ""
+        },
+        {
+          "name": "__pycache__",
+          "path": "src\\modules\\module_4_langflow\\__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753994349.7619324,
+          "extension": ""
+        },
+        {
+          "name": "__pycache__",
+          "path": "tests\\__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753900081.9671438,
+          "extension": ""
+        },
+        {
+          "name": "__pycache__",
+          "path": "tests\\phase1\\__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753810861.473367,
+          "extension": ""
+        },
+        {
+          "name": "__pycache__",
+          "path": "venv\\Lib\\site-packages\\__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753992219.3683562,
+          "extension": ""
+        },
+        {
+          "name": "__pycache__",
+          "path": "venv\\Scripts\\__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753978311.2017486,
+          "extension": ""
+        },
+        {
+          "name": "_cffi_backend.cp312-win_amd64.pyd",
+          "path": "venv\\Lib\\site-packages\\_cffi_backend.cp312-win_amd64.pyd",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 179712,
+          "size_mb": 0.17,
+          "modified": 1753890970.4588406,
+          "extension": ".pyd"
+        }
+      ],
+      "offset": 10,
+      "limit": 10,
+      "total_files": 1295,
+      "has_more": true,
+      "next_offset": 20
+    },
+    "summary": {
+      "total_files": 1295,
+      "total_directories": 942,
+      "total_size_mb": 99.31,
+      "file_types": {
+        ".pyc": 11,
+        ".py": 100,
+        "": 951,
+        ".pyd": 6,
+        ".exe": 111,
+        ".bat": 2,
+        ".ps1": 1,
+        ".md": 53,
+        ".json": 27,
+        ".1": 7,
+        ".pth": 5,
+        ".log": 6,
+        ".sh": 1,
+        ".yaml": 1,
+        ".yml": 1,
+        ".mcp": 1,
+        ".service": 1,
+        ".whl": 2,
+        ".cfg": 1,
+        ".txt": 3,
+        ".csv": 1,
+        ".jsonl": 3
+      },
+      "processing_time_seconds": 1.66,
+      "memory_usage_mb": 0.12
+    },
+    "directory": "D:\\GUI\\System-Reference-Clean\\LangFlow_Connect",
+    "filters": {
+      "max_depth": 3,
+      "include_hidden": false,
+      "file_types": [],
+      "sort_by": "name",
+      "sort_order": "asc"
+    }
+  }
+}

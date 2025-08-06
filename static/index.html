@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspector Monitoring Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <h1>Inspector Monitoring Dashboard</h1>
+            <div class="header-controls">
+                <button id="refresh-btn" onclick="refreshDashboard()">Refresh</button>
+                <label>
+                    <input type="checkbox" id="auto-refresh" checked> Auto Refresh
+                </label>
+                <span id="last-update"></span>
+            </div>
+        </header>
+        
+        <div class="dashboard-content">
+            <!-- System Status -->
+            <div class="dashboard-section">
+                <h2>System Status</h2>
+                <div class="status-grid">
+                    <div class="status-card">
+                        <h3>Monitoring</h3>
+                        <div id="monitoring-status" class="status-indicator"></div>
+                    </div>
+                    <div class="status-card">
+                        <h3>Uptime</h3>
+                        <div id="uptime" class="status-value"></div>
+                    </div>
+                    <div class="status-card">
+                        <h3>CPU Usage</h3>
+                        <div id="cpu-usage" class="status-value"></div>
+                    </div>
+                    <div class="status-card">
+                        <h3>Memory Usage</h3>
+                        <div id="memory-usage" class="status-value"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Charts -->
+            <div class="dashboard-section">
+                <h2>System Metrics</h2>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <canvas id="cpu-chart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="memory-chart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="disk-chart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="requests-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Alerts -->
+            <div class="dashboard-section">
+                <h2>Active Alerts</h2>
+                <div id="alerts-container" class="alerts-container">
+                    <div class="no-alerts">No active alerts</div>
+                </div>
+            </div>
+            
+            <!-- Inspector Metrics -->
+            <div class="dashboard-section">
+                <h2>Inspector Metrics</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h3>Requests/min</h3>
+                        <div id="requests-per-minute" class="metric-value"></div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Avg Response Time</h3>
+                        <div id="avg-response-time" class="metric-value"></div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Error Rate</h3>
+                        <div id="error-rate" class="metric-value"></div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Active Connections</h3>
+                        <div id="active-connections" class="metric-value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>

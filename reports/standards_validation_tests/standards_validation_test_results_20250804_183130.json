@@ -1,0 +1,124 @@
+{
+  "suite_name": "Task 3.1: Inspector Standards Validator",
+  "total_tests": 11,
+  "passed_tests": 3,
+  "failed_tests": 8,
+  "error_tests": 0,
+  "skipped_tests": 0,
+  "overall_score": 27.27272727272727,
+  "test_results": [
+    {
+      "test_name": "standards_validator_execution",
+      "test_description": "Test standards validation execution",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 59080.775,
+      "details": "Test standards_validator_execution completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 15:25:40.661001+00:00"
+    },
+    {
+      "test_name": "standards_requirements_loading",
+      "test_description": "Test standards requirements loading",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 0.0,
+      "details": "Test standards_requirements_loading completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 15:25:40.661001+00:00"
+    },
+    {
+      "test_name": "standards_report_generation",
+      "test_description": "Test standards report generation",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 59708.596999999994,
+      "details": "Test standards_report_generation failed",
+      "error_message": "",
+      "timestamp": "2025-08-04 15:26:40.369598+00:00"
+    },
+    {
+      "test_name": "compliance_checker_execution",
+      "test_description": "Test compliance checking execution",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 394.158,
+      "details": "Test compliance_checker_execution failed",
+      "error_message": "keys must be str, int, float, bool or None, not ComplianceCategory",
+      "timestamp": "2025-08-04 15:26:40.775760+00:00"
+    },
+    {
+      "test_name": "compliance_checks_loading",
+      "test_description": "Test compliance checks loading",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 0.0,
+      "details": "Test compliance_checks_loading completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 15:26:40.775760+00:00"
+    },
+    {
+      "test_name": "compliance_report_generation",
+      "test_description": "Test compliance report generation",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 411.145,
+      "details": "Test compliance_report_generation failed",
+      "error_message": "keys must be str, int, float, bool or None, not ComplianceCategory",
+      "timestamp": "2025-08-04 15:26:41.186905+00:00"
+    },
+    {
+      "test_name": "standards_reporter_execution",
+      "test_description": "Test standards reporter execution",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 60158.912000000004,
+      "details": "Test standards_reporter_execution failed",
+      "error_message": "keys must be str, int, float, bool or None, not ComplianceCategory",
+      "timestamp": "2025-08-04 15:27:41.345817+00:00"
+    },
+    {
+      "test_name": "dashboard_creation",
+      "test_description": "Test dashboard creation",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 56447.831,
+      "details": "Test dashboard_creation failed",
+      "error_message": "keys must be str, int, float, bool or None, not ComplianceCategory",
+      "timestamp": "2025-08-04 15:28:37.793648+00:00"
+    },
+    {
+      "test_name": "report_formatting",
+      "test_description": "Test report formatting",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 57561.019,
+      "details": "Test report_formatting failed",
+      "error_message": "keys must be str, int, float, bool or None, not ComplianceCategory",
+      "timestamp": "2025-08-04 15:29:35.354667+00:00"
+    },
+    {
+      "test_name": "end_to_end_workflow",
+      "test_description": "Test end-to-end standards validation workflow",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 56829.546,
+      "details": "Test end_to_end_workflow failed",
+      "error_message": "keys must be str, int, float, bool or None, not ComplianceCategory",
+      "timestamp": "2025-08-04 15:30:32.184213+00:00"
+    },
+    {
+      "test_name": "data_consistency",
+      "test_description": "Test data consistency between modules",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 58092.775,
+      "details": "Test data_consistency failed",
+      "error_message": "keys must be str, int, float, bool or None, not ComplianceCategory",
+      "timestamp": "2025-08-04 15:31:30.277986+00:00"
+    }
+  ],
+  "summary": "\nStandards Validation Test Suite Summary\n\nOverall Test Score: 27.3%\n\nTotal Tests: 11\n- Passed: 3\n- Failed: 8\n- Errors: 0\n- Skipped: 0\n\nTest Results:\n\u2705 standards_validator_execution: passed (59080.8ms)\n\u2705 standards_requirements_loading: passed (0.0ms)\n\u274c standards_report_generation: failed (59708.6ms)\n\u274c compliance_checker_execution: failed (394.2ms)\n\u2705 compliance_checks_loading: passed (0.0ms)\n\u274c compliance_report_generation: failed (411.1ms)\n\u274c standards_reporter_execution: failed (60158.9ms)\n\u274c dashboard_creation: failed (56447.8ms)\n\u274c report_formatting: failed (57561.0ms)\n\u274c end_to_end_workflow: failed (56829.5ms)\n\u274c data_consistency: failed (58092.8ms)\nTest suite completed at: 2025-08-04 15:24:41 UTC",
+  "recommendations": [
+    "Address 8 failed tests",
+    "Fix standards_report_generation: ",
+    "Fix compliance_checker_execution: keys must be str, int, float, bool or None, not ComplianceCategory",
+    "Fix compliance_report_generation: keys must be str, int, float, bool or None, not ComplianceCategory",
+    "Fix standards_reporter_execution: keys must be str, int, float, bool or None, not ComplianceCategory",
+    "Fix dashboard_creation: keys must be str, int, float, bool or None, not ComplianceCategory",
+    "Fix report_formatting: keys must be str, int, float, bool or None, not ComplianceCategory",
+    "Fix end_to_end_workflow: keys must be str, int, float, bool or None, not ComplianceCategory",
+    "Fix data_consistency: keys must be str, int, float, bool or None, not ComplianceCategory",
+    "Improve overall test coverage and reliability"
+  ],
+  "timestamp": "2025-08-04 15:24:41.566978+00:00"
+}

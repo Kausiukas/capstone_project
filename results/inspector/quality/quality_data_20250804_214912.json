@@ -1,0 +1,175 @@
+{
+  "quality_data": [
+    {
+      "metric": "functionality",
+      "value": 0.85,
+      "weight": 0.25,
+      "timestamp": "2025-08-04T21:49:12.530908",
+      "description": "Tool execution success rate",
+      "source": "test_tool_execution.py",
+      "confidence": 1.0
+    },
+    {
+      "metric": "performance",
+      "value": 0.45,
+      "weight": 0.2,
+      "timestamp": "2025-08-04T21:49:12.530908",
+      "description": "Response time performance",
+      "source": "test_response_times.py",
+      "confidence": 1.0
+    },
+    {
+      "metric": "reliability",
+      "value": 0.78,
+      "weight": 0.2,
+      "timestamp": "2025-08-04T21:49:12.530908",
+      "description": "System stability under load",
+      "source": "test_concurrent_execution.py",
+      "confidence": 1.0
+    },
+    {
+      "metric": "security",
+      "value": 0.92,
+      "weight": 0.1,
+      "timestamp": "2025-08-04T21:49:12.530908",
+      "description": "Security compliance check",
+      "source": "security_audit.py",
+      "confidence": 1.0
+    },
+    {
+      "metric": "functionality",
+      "value": 0.9,
+      "weight": 0.25,
+      "timestamp": "2025-08-04T21:49:12.539194",
+      "description": "End-to-end workflow test",
+      "source": "test_runner",
+      "confidence": 1.0
+    },
+    {
+      "metric": "performance",
+      "value": 0.3,
+      "weight": 0.2,
+      "timestamp": "2025-08-04T21:49:12.539194",
+      "description": "Performance issue correlation",
+      "source": "test_runner",
+      "confidence": 1.0
+    }
+  ],
+  "reports": [
+    {
+      "overall_score": 0.6755000000000001,
+      "overall_level": "poor",
+      "metric_scores": {
+        "functionality": {
+          "score": 0.85,
+          "level": "good",
+          "weight": 0.25,
+          "details": {
+            "data_points": 1,
+            "min_value": 0.85,
+            "max_value": 0.85,
+            "avg_value": 0.85,
+            "std_dev": 0,
+            "confidence": 1.0,
+            "time_span": 0.0
+          },
+          "timestamp": "2025-08-04T21:49:12.530908"
+        },
+        "reliability": {
+          "score": 0.7800000000000001,
+          "level": "acceptable",
+          "weight": 0.2,
+          "details": {
+            "data_points": 1,
+            "min_value": 0.78,
+            "max_value": 0.78,
+            "avg_value": 0.78,
+            "std_dev": 0,
+            "confidence": 1.0,
+            "time_span": 0.0
+          },
+          "timestamp": "2025-08-04T21:49:12.530908"
+        },
+        "performance": {
+          "score": 0.45,
+          "level": "critical",
+          "weight": 0.2,
+          "details": {
+            "data_points": 1,
+            "min_value": 0.45,
+            "max_value": 0.45,
+            "avg_value": 0.45,
+            "std_dev": 0,
+            "confidence": 1.0,
+            "time_span": 0.0
+          },
+          "timestamp": "2025-08-04T21:49:12.530908"
+        },
+        "usability": {
+          "score": 0.5,
+          "level": "acceptable",
+          "weight": 0.1,
+          "details": {
+            "reason": "No data available"
+          },
+          "timestamp": "2025-08-04T21:49:12.530908"
+        },
+        "maintainability": {
+          "score": 0.5,
+          "level": "acceptable",
+          "weight": 0.1,
+          "details": {
+            "reason": "No data available"
+          },
+          "timestamp": "2025-08-04T21:49:12.530908"
+        },
+        "security": {
+          "score": 0.92,
+          "level": "excellent",
+          "weight": 0.1,
+          "details": {
+            "data_points": 1,
+            "min_value": 0.92,
+            "max_value": 0.92,
+            "avg_value": 0.92,
+            "std_dev": 0,
+            "confidence": 1.0,
+            "time_span": 0.0
+          },
+          "timestamp": "2025-08-04T21:49:12.530908"
+        },
+        "compliance": {
+          "score": 0.5,
+          "level": "acceptable",
+          "weight": 0.03,
+          "details": {
+            "reason": "No data available"
+          },
+          "timestamp": "2025-08-04T21:49:12.530908"
+        },
+        "stability": {
+          "score": 0.5,
+          "level": "acceptable",
+          "weight": 0.02,
+          "details": {
+            "reason": "No data available"
+          },
+          "timestamp": "2025-08-04T21:49:12.530908"
+        }
+      },
+      "recommendations": [
+        "Overall quality needs significant improvement",
+        "Consider improving reliability: Current score 0.780",
+        "Improve performance: Current score 0.450",
+        "Consider improving usability: Current score 0.500",
+        "Consider improving maintainability: Current score 0.500",
+        "Consider improving compliance: Current score 0.500",
+        "Consider improving stability: Current score 0.500",
+        "Critical: Performance issues detected - immediate attention required"
+      ],
+      "timestamp": "2025-08-04T21:49:12.530908",
+      "period": "current",
+      "summary": "Overall Quality: Poor (67.6%)\nMetrics: 1 excellent, 1 good, 1 poor/critical"
+    }
+  ]
+}

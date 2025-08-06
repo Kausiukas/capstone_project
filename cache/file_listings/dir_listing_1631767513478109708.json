@@ -1,0 +1,31 @@
+{
+  "timestamp": 1754122483.203744,
+  "directory": "\"D:\\GUI\\System-Reference-Clean\\LangFlow_Connect\"",
+  "result": {
+    "success": true,
+    "batch": {
+      "files": [],
+      "offset": 0,
+      "limit": 5,
+      "total_files": 0,
+      "has_more": false,
+      "next_offset": null
+    },
+    "summary": {
+      "total_files": 0,
+      "total_directories": 0,
+      "total_size_mb": 0,
+      "file_types": {},
+      "processing_time_seconds": 0.0,
+      "memory_usage_mb": 0.0
+    },
+    "directory": "\"D:\\GUI\\System-Reference-Clean\\LangFlow_Connect\"",
+    "filters": {
+      "max_depth": 1,
+      "include_hidden": false,
+      "file_types": [],
+      "sort_by": "name",
+      "sort_order": "asc"
+    }
+  }
+}

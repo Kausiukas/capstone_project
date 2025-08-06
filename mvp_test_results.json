@@ -1,0 +1,43 @@
+{
+  "total_tests": 7,
+  "passed_tests": 6,
+  "success_rate": 85.71428571428571,
+  "test_results": [
+    {
+      "test": "Health Endpoint",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Root Endpoint",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Tools List",
+      "success": true,
+      "details": "Found 5 tools"
+    },
+    {
+      "test": "Ping Tool",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "List Files Tool",
+      "success": true,
+      "details": "Found file listing"
+    },
+    {
+      "test": "System Status Tool",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Error Handling",
+      "success": false,
+      "details": "Unexpected status code: 200"
+    }
+  ],
+  "deployment_url": "https://capstone-project-i1xm.onrender.com"
+}

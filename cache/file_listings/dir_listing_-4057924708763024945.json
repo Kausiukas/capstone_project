@@ -1,0 +1,91 @@
+{
+  "timestamp": 1754162829.7592254,
+  "directory": ".",
+  "result": {
+    "success": true,
+    "batch": {
+      "files": [
+        {
+          "name": "__pycache__",
+          "path": "__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1754162592.9847574,
+          "extension": ""
+        },
+        {
+          "name": "ACTUAL_STATUS.md",
+          "path": "ACTUAL_STATUS.md",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 5973,
+          "size_mb": 0.01,
+          "modified": 1753817459.2088127,
+          "extension": ".md"
+        },
+        {
+          "name": "cache",
+          "path": "cache",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1754122148.7470982,
+          "extension": ""
+        },
+        {
+          "name": "check_tools.py",
+          "path": "check_tools.py",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 1208,
+          "size_mb": 0.0,
+          "modified": 1754118938.8045883,
+          "extension": ".py"
+        },
+        {
+          "name": "clean_demo.py",
+          "path": "clean_demo.py",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 8977,
+          "size_mb": 0.01,
+          "modified": 1753817459.2088127,
+          "extension": ".py"
+        }
+      ],
+      "offset": 0,
+      "limit": 5,
+      "total_files": 130,
+      "has_more": true,
+      "next_offset": 5
+    },
+    "summary": {
+      "total_files": 130,
+      "total_directories": 16,
+      "total_size_mb": 1.04,
+      "file_types": {
+        "": 17,
+        ".md": 59,
+        ".py": 39,
+        ".json": 9,
+        ".log": 2,
+        ".mcp": 1,
+        ".txt": 2,
+        ".csv": 1
+      },
+      "processing_time_seconds": 0.01,
+      "memory_usage_mb": 0.02
+    },
+    "directory": ".",
+    "filters": {
+      "max_depth": 1,
+      "include_hidden": false,
+      "file_types": [],
+      "sort_by": "name",
+      "sort_order": "asc"
+    }
+  }
+}

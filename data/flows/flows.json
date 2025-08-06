@@ -1,0 +1,153 @@
+[
+  {
+    "id": "flow_20250729_191311_cost_analysis_workflow",
+    "name": "Cost Analysis Workflow",
+    "description": "Automated cost analysis and reporting workflow",
+    "flow_type": "analysis",
+    "status": "draft",
+    "nodes": [
+      {
+        "id": "input_1",
+        "name": "Cost Data Input",
+        "node_type": "input",
+        "position": {
+          "x": 100,
+          "y": 100
+        },
+        "config": {
+          "data_type": "cost_data"
+        },
+        "connections": [],
+        "metadata": {}
+      },
+      {
+        "id": "processor_1",
+        "name": "Cost Analyzer",
+        "node_type": "processor",
+        "position": {
+          "x": 300,
+          "y": 100
+        },
+        "config": {
+          "analysis_type": "trend_analysis"
+        },
+        "connections": [],
+        "metadata": {}
+      },
+      {
+        "id": "output_1",
+        "name": "Analysis Report",
+        "node_type": "output",
+        "position": {
+          "x": 500,
+          "y": 100
+        },
+        "config": {
+          "format": "json"
+        },
+        "connections": [],
+        "metadata": {}
+      }
+    ],
+    "edges": [
+      {
+        "from": "input_1",
+        "to": "processor_1"
+      },
+      {
+        "from": "processor_1",
+        "to": "output_1"
+      }
+    ],
+    "variables": {},
+    "settings": {},
+    "created_at": "2025-07-29T19:13:11.490728",
+    "updated_at": "2025-07-29T19:13:11.490728",
+    "version": "1.0.0"
+  },
+  {
+    "id": "flow_20250729_191311_optimization_workflow",
+    "name": "Optimization Workflow",
+    "description": "Automated optimization recommendation workflow",
+    "flow_type": "workflow",
+    "status": "draft",
+    "nodes": [
+      {
+        "id": "input_1",
+        "name": "Performance Data",
+        "node_type": "input",
+        "position": {
+          "x": 100,
+          "y": 100
+        },
+        "config": {
+          "data_type": "performance_metrics"
+        },
+        "connections": [],
+        "metadata": {}
+      },
+      {
+        "id": "condition_1",
+        "name": "Threshold Check",
+        "node_type": "condition",
+        "position": {
+          "x": 300,
+          "y": 100
+        },
+        "config": {
+          "threshold": 0.8
+        },
+        "connections": [],
+        "metadata": {}
+      },
+      {
+        "id": "processor_1",
+        "name": "Optimization Engine",
+        "node_type": "processor",
+        "position": {
+          "x": 500,
+          "y": 50
+        },
+        "config": {
+          "optimization_type": "cost_reduction"
+        },
+        "connections": [],
+        "metadata": {}
+      },
+      {
+        "id": "output_1",
+        "name": "Recommendations",
+        "node_type": "output",
+        "position": {
+          "x": 700,
+          "y": 100
+        },
+        "config": {
+          "format": "json"
+        },
+        "connections": [],
+        "metadata": {}
+      }
+    ],
+    "edges": [
+      {
+        "from": "input_1",
+        "to": "condition_1"
+      },
+      {
+        "from": "condition_1",
+        "to": "processor_1",
+        "condition": "true"
+      },
+      {
+        "from": "processor_1",
+        "to": "output_1"
+      }
+    ],
+    "variables": {},
+    "settings": {},
+    "created_at": "2025-07-29T19:13:11.492121",
+    "updated_at": "2025-07-29T19:13:11.492121",
+    "version": "1.0.0"
+  }
+]

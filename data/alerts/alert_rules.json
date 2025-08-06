@@ -1,0 +1,41 @@
+[
+  {
+    "rule_id": "test_alert",
+    "name": "Test Alert",
+    "description": "Test alert",
+    "condition": "cpu_percent > 80",
+    "severity": "high",
+    "enabled": true,
+    "cooldown_minutes": 5,
+    "max_alerts_per_hour": 10,
+    "notification_channels": [
+      "console"
+    ]
+  },
+  {
+    "rule_id": "lifecycle_test",
+    "name": "Lifecycle Test",
+    "description": "Test alert lifecycle",
+    "condition": "cpu_percent > 80",
+    "severity": "medium",
+    "enabled": true,
+    "cooldown_minutes": 5,
+    "max_alerts_per_hour": 10,
+    "notification_channels": [
+      "console"
+    ]
+  },
+  {
+    "rule_id": "persistence_test",
+    "name": "Persistence Test",
+    "description": "Test persistence",
+    "condition": "cpu_percent > 80",
+    "severity": "low",
+    "enabled": true,
+    "cooldown_minutes": 5,
+    "max_alerts_per_hour": 10,
+    "notification_channels": [
+      "console"
+    ]
+  }
+]

@@ -1,0 +1,168 @@
+{
+  "timestamp": "2025-08-02 09:46:34",
+  "python_version": {
+    "current_version": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+    "version_tuple": [
+      3,
+      12,
+      3,
+      "final",
+      0
+    ],
+    "platform": "Windows-11-10.0.26100-SP0",
+    "architecture": [
+      "64bit",
+      "WindowsPE"
+    ],
+    "python_path": "C:\\Users\\OCPC\\anaconda3\\python.exe",
+    "major": 3,
+    "minor": 12,
+    "micro": 3,
+    "compatibility": "Excellent",
+    "langflow_compatible": true
+  },
+  "system_resources": {
+    "cpu": {
+      "count": 12,
+      "count_logical": 12,
+      "usage_percent": 14.6,
+      "frequency": {
+        "current": 2904.0,
+        "min": 0.0,
+        "max": 2904.0
+      }
+    },
+    "memory": {
+      "total_gb": 15.87,
+      "available_gb": 4.73,
+      "used_gb": 11.14,
+      "percent_used": 70.2,
+      "free_gb": 4.73
+    },
+    "disk": {
+      "total_gb": 931.5,
+      "used_gb": 574.47,
+      "free_gb": 357.02,
+      "percent_used": 61.67
+    },
+    "performance_score": 100,
+    "performance_level": "Excellent"
+  },
+  "dependencies": {
+    "required": {
+      "asyncio": {
+        "installed": true,
+        "version": "Unknown"
+      },
+      "json": {
+        "installed": true,
+        "version": "2.0.9"
+      },
+      "logging": {
+        "installed": true,
+        "version": "0.5.1.2"
+      },
+      "pathlib": {
+        "installed": true,
+        "version": "Unknown"
+      },
+      "psutil": {
+        "installed": true,
+        "version": "7.0.0"
+      },
+      "typing": {
+        "installed": true,
+        "version": "Unknown"
+      }
+    },
+    "optional": {
+      "aiofiles": {
+        "installed": true,
+        "version": "Unknown"
+      },
+      "uvloop": {
+        "installed": false,
+        "version": null
+      },
+      "orjson": {
+        "installed": true,
+        "version": "3.11.1"
+      }
+    },
+    "missing_required": [],
+    "missing_optional": [
+      "uvloop"
+    ]
+  },
+  "mcp_server_health": {
+    "server_file_exists": true,
+    "cache_directory_exists": true,
+    "logs_directory_exists": true,
+    "config_exists": true,
+    "server_file_readable": false,
+    "server_file_error": "'charmap' codec can't decode byte 0x9f in position 29160: character maps to <undefined>",
+    "cache_files_count": 10,
+    "cache_readable": true,
+    "health_score": 70,
+    "health_level": "Good"
+  },
+  "langflow_compatibility": {
+    "mcp_protocol_version": "2024-11-05",
+    "supported_tools": [
+      "read_file",
+      "write_file",
+      "list_files",
+      "stream_files",
+      "analyze_code",
+      "track_token_usage",
+      "get_cost_summary",
+      "get_system_health",
+      "get_system_status",
+      "ping"
+    ],
+    "compatibility_checks": {
+      "mcp_protocol": true,
+      "tools_available": true,
+      "missing_tools": []
+    },
+    "available_tools": [
+      "read_file",
+      "write_file",
+      "list_files",
+      "stream_files",
+      "analyze_code",
+      "track_token_usage",
+      "get_cost_summary",
+      "get_system_health",
+      "get_system_status",
+      "ping"
+    ],
+    "compatibility_score": 100,
+    "compatibility_level": "Excellent"
+  },
+  "recommendations": [
+    "Cannot read MCP server file - check permissions"
+  ],
+  "overall_stability_score": 92.5,
+  "overall_stability_level": "Excellent",
+  "mcp_functionality": {
+    "server_imported": true,
+    "connector_initialized": true,
+    "tools_count": 10,
+    "list_files_tool_exists": true,
+    "basic_functionality_tests": {
+      "list_files": {
+        "success": true,
+        "result_length": 795,
+        "has_metadata": true
+      },
+      "ping": {
+        "success": true,
+        "result_length": 204
+      }
+    },
+    "functionality_score": 100,
+    "failed_tests": 0,
+    "functionality_level": "Excellent"
+  }
+}

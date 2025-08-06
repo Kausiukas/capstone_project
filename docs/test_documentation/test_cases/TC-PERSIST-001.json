@@ -1,0 +1,27 @@
+{
+  "id": "TC-PERSIST-001",
+  "name": "Persistence Test",
+  "description": "Test data persistence",
+  "category": "UNIT",
+  "priority": "MEDIUM",
+  "prerequisites": [
+    "Test environment"
+  ],
+  "steps": [
+    "Step 1"
+  ],
+  "expected_results": [
+    "Expected result"
+  ],
+  "actual_results": null,
+  "status": "SKIPPED",
+  "execution_time": null,
+  "error_message": null,
+  "created_date": "2025-08-04 22:57:32",
+  "last_modified": "2025-08-04 22:57:32",
+  "tags": [
+    "persistence"
+  ],
+  "author": "Inspector Team",
+  "version": "1.0.0"
+}

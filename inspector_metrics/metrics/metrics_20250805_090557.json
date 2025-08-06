@@ -1,0 +1,231 @@
+{
+  "timestamp": "20250805_090557",
+  "metrics": {
+    "system_health": [
+      {
+        "value": 9.3,
+        "timestamp": "2025-08-05T09:05:52.469508",
+        "metadata": {
+          "memory_percent": 71.7,
+          "disk_usage_percent": 61.7,
+          "process_count": 308
+        },
+        "status": "collected",
+        "source": "system_monitor",
+        "tool_name": null,
+        "operation_id": null
+      },
+      {
+        "value": 11.8,
+        "timestamp": "2025-08-05T09:05:57.572742",
+        "metadata": {
+          "memory_percent": 71.7,
+          "disk_usage_percent": 61.7,
+          "process_count": 308
+        },
+        "status": "collected",
+        "source": "system_monitor",
+        "tool_name": null,
+        "operation_id": null
+      }
+    ],
+    "response_time": [
+      {
+        "value": 0.20884037017822266,
+        "timestamp": "2025-08-05T09:05:52.563103",
+        "metadata": {
+          "operation_id": "test_op_0",
+          "success": false
+        },
+        "status": "failed",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_0"
+      },
+      {
+        "value": 0.20056414604187012,
+        "timestamp": "2025-08-05T09:05:52.763667",
+        "metadata": {
+          "operation_id": "test_op_1",
+          "success": true
+        },
+        "status": "collected",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_1"
+      },
+      {
+        "value": 0.2007441520690918,
+        "timestamp": "2025-08-05T09:05:52.964411",
+        "metadata": {
+          "operation_id": "test_op_2",
+          "success": true
+        },
+        "status": "collected",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_2"
+      },
+      {
+        "value": 0.2004375457763672,
+        "timestamp": "2025-08-05T09:05:53.164849",
+        "metadata": {
+          "operation_id": "test_op_3",
+          "success": true
+        },
+        "status": "collected",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_3"
+      },
+      {
+        "value": 0.20048236846923828,
+        "timestamp": "2025-08-05T09:05:53.365332",
+        "metadata": {
+          "operation_id": "test_op_4",
+          "success": false
+        },
+        "status": "failed",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_4"
+      },
+      {
+        "value": 0.20108485221862793,
+        "timestamp": "2025-08-05T09:05:53.566416",
+        "metadata": {
+          "operation_id": "test_op_5",
+          "success": true
+        },
+        "status": "collected",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_5"
+      },
+      {
+        "value": 0.2006540298461914,
+        "timestamp": "2025-08-05T09:05:53.767070",
+        "metadata": {
+          "operation_id": "test_op_6",
+          "success": true
+        },
+        "status": "collected",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_6"
+      },
+      {
+        "value": 0.20026421546936035,
+        "timestamp": "2025-08-05T09:05:53.967334",
+        "metadata": {
+          "operation_id": "test_op_7",
+          "success": true
+        },
+        "status": "collected",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_7"
+      },
+      {
+        "value": 0.20023083686828613,
+        "timestamp": "2025-08-05T09:05:54.167565",
+        "metadata": {
+          "operation_id": "test_op_8",
+          "success": false
+        },
+        "status": "failed",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_8"
+      },
+      {
+        "value": 0.20077109336853027,
+        "timestamp": "2025-08-05T09:05:54.368337",
+        "metadata": {
+          "operation_id": "test_op_9",
+          "success": true
+        },
+        "status": "collected",
+        "source": "operation_timer",
+        "tool_name": null,
+        "operation_id": "test_op_9"
+      },
+      {
+        "value": 0.2014073610305786,
+        "timestamp": "2025-08-05T09:05:57.572742",
+        "metadata": {
+          "sample_count": 10
+        },
+        "status": "collected",
+        "source": "performance_monitor",
+        "tool_name": null,
+        "operation_id": null
+      }
+    ],
+    "throughput": [
+      {
+        "value": 0.16666666666666666,
+        "timestamp": "2025-08-05T09:05:57.572742",
+        "metadata": {
+          "operation_count": 10
+        },
+        "status": "collected",
+        "source": "performance_monitor",
+        "tool_name": null,
+        "operation_id": null
+      }
+    ],
+    "concurrent_requests": [
+      {
+        "value": 1,
+        "timestamp": "2025-08-05T09:05:52.469508",
+        "metadata": {
+          "max_concurrent": 1
+        },
+        "status": "collected",
+        "source": "performance_monitor",
+        "tool_name": null,
+        "operation_id": null
+      },
+      {
+        "value": 0,
+        "timestamp": "2025-08-05T09:05:57.572742",
+        "metadata": {
+          "max_concurrent": 1
+        },
+        "status": "collected",
+        "source": "performance_monitor",
+        "tool_name": null,
+        "operation_id": null
+      }
+    ],
+    "error_rate": [
+      {
+        "value": 0.3,
+        "timestamp": "2025-08-05T09:05:57.572742",
+        "metadata": {
+          "source": "mcp_operations",
+          "total_operations": 10
+        },
+        "status": "collected",
+        "source": "error_monitor",
+        "tool_name": null,
+        "operation_id": null
+      }
+    ],
+    "success_rate": [
+      {
+        "value": 0.7,
+        "timestamp": "2025-08-05T09:05:57.572742",
+        "metadata": {
+          "source": "mcp_operations",
+          "total_operations": 10
+        },
+        "status": "collected",
+        "source": "error_monitor",
+        "tool_name": null,
+        "operation_id": null
+      }
+    ]
+  }
+}

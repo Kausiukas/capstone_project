@@ -1,0 +1,44 @@
+[
+  {
+    "id": "check_20250730_171913_langflow_api_health",
+    "name": "Langflow API Health",
+    "monitor_type": "http",
+    "target": "http://localhost:3000/api/v1/health",
+    "interval": 30,
+    "timeout": 10,
+    "retries": 3,
+    "threshold": 0.8,
+    "is_active": true,
+    "config": {},
+    "created_at": "2025-07-30T17:19:13.961681",
+    "updated_at": "2025-07-30T17:19:13.961681"
+  },
+  {
+    "id": "check_20250730_171913_websocket_connection",
+    "name": "WebSocket Connection",
+    "monitor_type": "websocket",
+    "target": "ws://localhost:3000/ws",
+    "interval": 60,
+    "timeout": 15,
+    "retries": 2,
+    "threshold": 0.9,
+    "is_active": true,
+    "config": {},
+    "created_at": "2025-07-30T17:19:13.962678",
+    "updated_at": "2025-07-30T17:19:13.962678"
+  },
+  {
+    "id": "check_20250730_171913_database_connection",
+    "name": "Database Connection",
+    "monitor_type": "custom",
+    "target": "database_connection",
+    "interval": 120,
+    "timeout": 20,
+    "retries": 2,
+    "threshold": 0.95,
+    "is_active": true,
+    "config": {},
+    "created_at": "2025-07-30T17:19:13.965190",
+    "updated_at": "2025-07-30T17:19:13.965190"
+  }
+]

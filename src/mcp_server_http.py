@@ -15,7 +15,7 @@ import os
 from typing import Any, Dict, List
 from pathlib import Path
 from fastapi import FastAPI, HTTPException, Header
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, HTMLResponse
 from pydantic import BaseModel
 
 # Configure logging

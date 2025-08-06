@@ -1,0 +1,63 @@
+{
+  "test_suite": "Tool Execution Test Suite",
+  "timestamp": "2025-08-04T13:38:32.484446",
+  "overall_success_score": 89.88810001543447,
+  "total_tests": 72,
+  "passed_tests": 46,
+  "failed_tests": 26,
+  "test_results": {
+    "execution": {
+      "test_suite": "Tool Execution Testing",
+      "execution_success_rate": 95.45454545454545,
+      "total_tools": 22,
+      "successful_executions": 21,
+      "failed_executions": 1,
+      "timeout_executions": 0,
+      "error_executions": 0,
+      "invalid_output_executions": 0,
+      "average_execution_time_ms": 3041.731278101603,
+      "max_execution_time_ms": 3404.8750400543213,
+      "min_execution_time_ms": 2920.876979827881,
+      "total_output_size_bytes": 19725,
+      "summary": "Tool execution testing completed with 95.5% success rate",
+      "status": "pass"
+    },
+    "functionality": {
+      "test_suite": "Tool Functionality Testing",
+      "functionality_success_rate": 94.73684210526315,
+      "total_test_cases": 19,
+      "passed_tests": 2,
+      "failed_tests": 1,
+      "partial_tests": 16,
+      "error_tests": 0,
+      "timeout_tests": 0,
+      "average_test_duration_ms": 3029.179999702855,
+      "max_test_duration_ms": 3210.937261581421,
+      "min_test_duration_ms": 2887.9616260528564,
+      "summary": "Tool functionality testing completed with 94.7% success rate",
+      "status": "pass"
+    },
+    "error_handling": {
+      "test_suite": "Tool Error Handling Testing",
+      "error_handling_success_rate": 74.19354838709677,
+      "total_test_cases": 31,
+      "proper_error_handling": 23,
+      "unexpected_success": 7,
+      "crashes": 0,
+      "timeouts": 0,
+      "invalid_responses": 1,
+      "average_test_duration_ms": 2880.4319212513587,
+      "max_test_duration_ms": 3193.3135986328125,
+      "min_test_duration_ms": 14.36614990234375,
+      "summary": "Tool error handling testing completed with 74.2% success rate",
+      "status": "fail"
+    }
+  },
+  "summary": "Tool Execution Test Suite Results:\n- Overall Success Score: 89.9%\n- Total Tests: 72\n- Passed Tests: 46\n- Failed Tests: 26\n\nIndividual Test Suite Scores:\n- Tool Execution: 95.5%\n- Tool Functionality: 94.7%\n- Tool Error Handling: 74.2%\n\n\u26a0\ufe0f Good tool execution with minor issues",
+  "recommendations": [
+    "Improve tool error handling robustness (current: 74.2%)",
+    "Fix 1 failed tool executions",
+    "Fix 1 failed functionality tests"
+  ],
+  "status": "pass"
+}

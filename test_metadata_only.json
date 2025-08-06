@@ -1,0 +1,137 @@
+{
+  "success": true,
+  "batch": {
+    "files": [
+      {
+        "name": "__pycache__",
+        "path": "__pycache__",
+        "is_file": false,
+        "is_dir": true,
+        "size_bytes": 0,
+        "size_mb": 0,
+        "modified": 1754121382.7606704,
+        "extension": ""
+      },
+      {
+        "name": "ACTUAL_STATUS.md",
+        "path": "ACTUAL_STATUS.md",
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 5973,
+        "size_mb": 0.01,
+        "modified": 1753817459.2088127,
+        "extension": ".md"
+      },
+      {
+        "name": "cache",
+        "path": "cache",
+        "is_file": false,
+        "is_dir": true,
+        "size_bytes": 0,
+        "size_mb": 0,
+        "modified": 1754117205.0591173,
+        "extension": ""
+      },
+      {
+        "name": "check_tools.py",
+        "path": "check_tools.py",
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1208,
+        "size_mb": 0.0,
+        "modified": 1754118938.8045883,
+        "extension": ".py"
+      },
+      {
+        "name": "clean_demo.py",
+        "path": "clean_demo.py",
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8977,
+        "size_mb": 0.01,
+        "modified": 1753817459.2088127,
+        "extension": ".py"
+      },
+      {
+        "name": "comprehensive_test_results.json",
+        "path": "comprehensive_test_results.json",
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2841,
+        "size_mb": 0.0,
+        "modified": 1753902714.4994462,
+        "extension": ".json"
+      },
+      {
+        "name": "comprehensive_test_suite.log",
+        "path": "comprehensive_test_suite.log",
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 90942,
+        "size_mb": 0.09,
+        "modified": 1753902714.4994462,
+        "extension": ".log"
+      },
+      {
+        "name": "config",
+        "path": "config",
+        "is_file": false,
+        "is_dir": true,
+        "size_bytes": 0,
+        "size_mb": 0,
+        "modified": 1754117205.0601182,
+        "extension": ""
+      },
+      {
+        "name": "cost_data",
+        "path": "cost_data",
+        "is_file": false,
+        "is_dir": true,
+        "size_bytes": 0,
+        "size_mb": 0,
+        "modified": 1753891698.9736304,
+        "extension": ""
+      },
+      {
+        "name": "CRITICAL_TIMEOUT_FIX.md",
+        "path": "CRITICAL_TIMEOUT_FIX.md",
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4311,
+        "size_mb": 0.0,
+        "modified": 1753995086.2623856,
+        "extension": ".md"
+      }
+    ],
+    "offset": 0,
+    "limit": 10,
+    "total_files": 106,
+    "has_more": true,
+    "next_offset": 10
+  },
+  "summary": {
+    "total_files": 106,
+    "total_directories": 16,
+    "total_size_mb": 0.78,
+    "file_types": {
+      "": 17,
+      ".md": 47,
+      ".py": 29,
+      ".json": 7,
+      ".log": 2,
+      ".mcp": 1,
+      ".txt": 2,
+      ".csv": 1
+    },
+    "processing_time_seconds": 0.01,
+    "memory_usage_mb": 0.0
+  },
+  "directory": ".",
+  "filters": {
+    "max_depth": 1,
+    "include_hidden": false,
+    "file_types": [],
+    "sort_by": "name",
+    "sort_order": "asc"
+  }
+}

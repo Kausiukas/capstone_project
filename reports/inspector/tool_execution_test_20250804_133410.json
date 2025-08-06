@@ -1,0 +1,316 @@
+{
+  "total_tools": 22,
+  "successful_executions": 21,
+  "failed_executions": 1,
+  "timeout_executions": 0,
+  "error_executions": 0,
+  "invalid_output_executions": 0,
+  "average_execution_time_ms": 3023.008709862119,
+  "max_execution_time_ms": 3152.183771133423,
+  "min_execution_time_ms": 2939.506769180298,
+  "total_output_size_bytes": 19725,
+  "test_results": [
+    {
+      "tool_name": "read_file",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3113.656520843506,
+      "output_size_bytes": 118,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error reading file: expected str, bytes or os.PathLike object, not NoneType\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "file_path": "README.md"
+      }
+    },
+    {
+      "tool_name": "write_file",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3019.428253173828,
+      "output_size_bytes": 118,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error writing file: expected str, bytes or os.PathLike object, not NoneType\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "file_path": "test_output.txt",
+        "content": "Test content for execution testing"
+      }
+    },
+    {
+      "tool_name": "list_files",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3039.701461791992,
+      "output_size_bytes": 6598,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"{\\n  \\\"success\\\": true,\\n  \\\"batch\\\": {\\n    \\\"files\\\": [\\n      {\\n        \\\"name\\\": \\\"__pycache__\\\",\\n        \\\"path\\\": \\\"__pycache__\\\",\\n...",
+      "arguments_used": {
+        "directory": ".",
+        "batch_size": 5
+      }
+    },
+    {
+      "tool_name": "list_files_metadata_only",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3150.4480838775635,
+      "output_size_bytes": 6598,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"{\\n  \\\"success\\\": true,\\n  \\\"batch\\\": {\\n    \\\"files\\\": [\\n      {\\n        \\\"name\\\": \\\"__pycache__\\\",\\n        \\\"path\\\": \\\"__pycache__\\\",\\n...",
+      "arguments_used": {
+        "directory": ".",
+        "batch_size": 5
+      }
+    },
+    {
+      "tool_name": "list_files_readable",
+      "execution_success": false,
+      "execution_status": "failed",
+      "execution_time_ms": 3314.6188259124756,
+      "output_size_bytes": 0,
+      "output_format_valid": false,
+      "error_message": "Tool execution failed with exception: 'NoneType' object has no attribute 'strip'",
+      "output_preview": null,
+      "arguments_used": {
+        "directory": ".",
+        "batch_size": 5
+      }
+    },
+    {
+      "tool_name": "list_files_table",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3044.8765754699707,
+      "output_size_bytes": 2466,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"| summary | Directory: . | Directory listing | Total: 155 files, 18 directories | Size: 1.44 MB | Processed: 2025-08-04T13:33:22.618393 |\\n|...",
+      "arguments_used": {
+        "directory": ".",
+        "offset": "0",
+        "batch_size": 5
+      }
+    },
+    {
+      "tool_name": "append_file",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3120.056390762329,
+      "output_size_bytes": 142,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error appending to file: exists: path should be string, bytes, os.PathLike or integer, not NoneType\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "file_path": "test_append.txt",
+        "content": "Appended content"
+      }
+    },
+    {
+      "tool_name": "get_pagination_info",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3152.183771133423,
+      "output_size_bytes": 936,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"**Pagination Information**\\nDirectory: .\\nTotal files: 155\\nTotal directories: 18\\nTotal items: 173\\nBatch size: 20\\nTotal batches: 9\\n\\n**B...",
+      "arguments_used": {
+        "directory": "."
+      }
+    },
+    {
+      "tool_name": "stream_files",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2961.2932205200195,
+      "output_size_bytes": 1071,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"{\\n  \\\"action\\\": \\\"start\\\",\\n  \\\"directory\\\": \\\".\\\",\\n  \\\"stream_id\\\": \\\"796a91b4\\\",\\n  \\\"batch\\\": {\\n    \\\"stream_id\\\": \\\"796a91b4\\\",\\n    ...",
+      "arguments_used": {
+        "directory": ".",
+        "action": "start"
+      }
+    },
+    {
+      "tool_name": "analyze_code",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3103.548049926758,
+      "output_size_bytes": 120,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error analyzing code: expected str, bytes or os.PathLike object, not NoneType\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "file_path": "README.md"
+      }
+    },
+    {
+      "tool_name": "track_token_usage",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2957.268238067627,
+      "output_size_bytes": 107,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Token usage tracked: None using None - Input: None, Output: None\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "operation": "test",
+        "model": "gpt-3.5-turbo",
+        "input_tokens": 10,
+        "output_tokens": 5
+      }
+    },
+    {
+      "tool_name": "get_cost_summary",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3076.617956161499,
+      "output_size_bytes": 147,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Cost summary:\\n{\\n  \\\"total_operations\\\": 0,\\n  \\\"total_tokens\\\": 0,\\n  \\\"estimated_cost\\\": \\\"$0.00\\\"\\n}\"\n    }\n  ]\n}",
+      "arguments_used": {}
+    },
+    {
+      "tool_name": "get_system_health",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3000.2965927124023,
+      "output_size_bytes": 151,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"System health:\\n{\\n  \\\"status\\\": \\\"healthy\\\",\\n  \\\"uptime\\\": \\\"0 seconds\\\",\\n  \\\"memory_usage\\\": \\\"0 MB\\\"\\n}\"\n    }\n  ]\n}",
+      "arguments_used": {}
+    },
+    {
+      "tool_name": "get_system_status",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2949.5677947998047,
+      "output_size_bytes": 328,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"System status:\\n{\\n  \\\"is_running\\\": true,\\n  \\\"start_time\\\": \\\"2025-07-31T23:00:00\\\",\\n  \\\"modules_initialized\\\": [\\n    \\\"simple_mcp\\\"\\n  ...",
+      "arguments_used": {}
+    },
+    {
+      "tool_name": "ping",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2951.284170150757,
+      "output_size_bytes": 295,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Ping response:\\n{\\n  \\\"message\\\": \\\"Hello from MCP Server!\\\",\\n  \\\"timestamp\\\": \\\"2025-08-04T13:33:49.891103\\\",\\n  \\\"server_status\\\": \\\"runn...",
+      "arguments_used": {}
+    },
+    {
+      "tool_name": "store_embedding",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2967.0374393463135,
+      "output_size_bytes": 79,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error: name and content are required\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "name": "test_embedding",
+        "content": "Test content for embedding"
+      }
+    },
+    {
+      "tool_name": "similarity_search",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2970.136880874634,
+      "output_size_bytes": 67,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error: query is required\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "query": "test query",
+        "limit": 3
+      }
+    },
+    {
+      "tool_name": "process_text_with_llm",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2954.282760620117,
+      "output_size_bytes": 76,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error: text and task are required\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "text": "Test text",
+        "task": "summarize"
+      }
+    },
+    {
+      "tool_name": "dataframe_operations",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2980.754613876343,
+      "output_size_bytes": 81,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error: operation and data are required\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "operation": "head",
+        "data": "col1,col2\n1,2\n3,4"
+      }
+    },
+    {
+      "tool_name": "split_text",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2939.506769180298,
+      "output_size_bytes": 66,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error: text is required\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "text": "This is a test sentence. This is another sentence.",
+        "method": "sentences"
+      }
+    },
+    {
+      "tool_name": "structured_output",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 2965.4624462127686,
+      "output_size_bytes": 78,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error: text and schema are required\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "text": "Name: John, Age: 30",
+        "schema": {
+          "name": "string",
+          "age": "integer"
+        }
+      }
+    },
+    {
+      "tool_name": "type_convert",
+      "execution_success": true,
+      "execution_status": "success",
+      "execution_time_ms": 3065.774917602539,
+      "output_size_bytes": 83,
+      "output_format_valid": true,
+      "error_message": null,
+      "output_preview": "{\n  \"content\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Error: data and target_type are required\"\n    }\n  ]\n}",
+      "arguments_used": {
+        "data": "{\"name\": \"test\"}",
+        "target_type": "yaml"
+      }
+    }
+  ],
+  "test_timestamp": "2025-08-04T13:34:10.765494",
+  "test_duration_seconds": 70.236418,
+  "execution_success_rate": 95.45454545454545
+}

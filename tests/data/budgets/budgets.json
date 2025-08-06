@@ -1,0 +1,14 @@
+[
+  {
+    "id": "budget_20250730_182100_test_integration_budget",
+    "name": "Test Integration Budget",
+    "amount": "100.0",
+    "period": "daily",
+    "start_date": "2025-07-30T18:21:00.931254",
+    "end_date": null,
+    "description": "",
+    "is_active": true,
+    "created_at": "2025-07-30T18:21:00.931254",
+    "updated_at": "2025-07-30T18:21:00.931254"
+  }
+]

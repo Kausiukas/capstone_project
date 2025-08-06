@@ -1,0 +1,1645 @@
+{
+  "total_tools": 22,
+  "total_tests": 105,
+  "successful_tests": 105,
+  "failed_tests": 0,
+  "average_response_time_ms": 3122.687024161929,
+  "median_response_time_ms": 3102.0667552948,
+  "min_response_time_ms": 2946.4504718780518,
+  "max_response_time_ms": 3574.2061138153076,
+  "tools_with_excellent_performance": 0,
+  "tools_with_good_performance": 4,
+  "tools_with_acceptable_performance": 17,
+  "tools_with_slow_performance": 0,
+  "tools_with_unacceptable_performance": 1,
+  "overall_performance_score": 46.5368489121094,
+  "tool_summaries": [
+    {
+      "tool_name": "read_file",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3390.420913696289,
+      "median_response_time_ms": 3416.775703430176,
+      "min_response_time_ms": 3198.521375656128,
+      "max_response_time_ms": 3574.2061138153076,
+      "standard_deviation_ms": 179.1796233757628,
+      "percentile_95_ms": 3574.2061138153076,
+      "percentile_99_ms": 3574.2061138153076,
+      "response_time_status": "acceptable",
+      "consistency_score": 94.71512157526134,
+      "performance_score": 47.35756078763067,
+      "test_results": [
+        {
+          "tool_name": "read_file",
+          "test_iteration": 1,
+          "response_time_ms": 3212.543487548828,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "read_file",
+          "test_iteration": 2,
+          "response_time_ms": 3198.521375656128,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "read_file",
+          "test_iteration": 3,
+          "response_time_ms": 3416.775703430176,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "read_file",
+          "test_iteration": 4,
+          "response_time_ms": 3550.057888031006,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "read_file",
+          "test_iteration": 5,
+          "response_time_ms": 3574.2061138153076,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "write_file",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3119.279098510742,
+      "median_response_time_ms": 3085.2200984954834,
+      "min_response_time_ms": 3048.8553047180176,
+      "max_response_time_ms": 3257.3065757751465,
+      "standard_deviation_ms": 85.63920433836668,
+      "percentile_95_ms": 3257.3065757751465,
+      "percentile_99_ms": 3257.3065757751465,
+      "response_time_status": "acceptable",
+      "consistency_score": 97.25451934136788,
+      "performance_score": 48.62725967068394,
+      "test_results": [
+        {
+          "tool_name": "write_file",
+          "test_iteration": 1,
+          "response_time_ms": 3085.2200984954834,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "write_file",
+          "test_iteration": 2,
+          "response_time_ms": 3060.065269470215,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "write_file",
+          "test_iteration": 3,
+          "response_time_ms": 3144.9482440948486,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "write_file",
+          "test_iteration": 4,
+          "response_time_ms": 3257.3065757751465,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "write_file",
+          "test_iteration": 5,
+          "response_time_ms": 3048.8553047180176,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "list_files",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3087.5515937805176,
+      "median_response_time_ms": 3028.165340423584,
+      "min_response_time_ms": 3001.256227493286,
+      "max_response_time_ms": 3239.6328449249268,
+      "standard_deviation_ms": 102.24019518132893,
+      "percentile_95_ms": 3239.6328449249268,
+      "percentile_99_ms": 3239.6328449249268,
+      "response_time_status": "acceptable",
+      "consistency_score": 96.68863200902362,
+      "performance_score": 48.34431600451181,
+      "test_results": [
+        {
+          "tool_name": "list_files",
+          "test_iteration": 1,
+          "response_time_ms": 3022.346019744873,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6598,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        },
+        {
+          "tool_name": "list_files",
+          "test_iteration": 2,
+          "response_time_ms": 3239.6328449249268,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        },
+        {
+          "tool_name": "list_files",
+          "test_iteration": 3,
+          "response_time_ms": 3028.165340423584,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6598,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        },
+        {
+          "tool_name": "list_files",
+          "test_iteration": 4,
+          "response_time_ms": 3146.357536315918,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6598,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        },
+        {
+          "tool_name": "list_files",
+          "test_iteration": 5,
+          "response_time_ms": 3001.256227493286,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "list_files_metadata_only",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3030.0564765930176,
+      "median_response_time_ms": 2992.7608966827393,
+      "min_response_time_ms": 2975.2886295318604,
+      "max_response_time_ms": 3202.803373336792,
+      "standard_deviation_ms": 96.93876805583807,
+      "percentile_95_ms": 3202.803373336792,
+      "percentile_99_ms": 3202.803373336792,
+      "response_time_status": "good",
+      "consistency_score": 96.80076035530415,
+      "performance_score": 48.400380177652075,
+      "test_results": [
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 1,
+          "response_time_ms": 2982.586622238159,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6598,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 2,
+          "response_time_ms": 3202.803373336792,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 3,
+          "response_time_ms": 2996.842861175537,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6598,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 4,
+          "response_time_ms": 2975.2886295318604,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6598,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 5,
+          "response_time_ms": 2992.7608966827393,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6598,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "list_files_readable",
+      "total_tests": 0,
+      "successful_tests": 0,
+      "failed_tests": 0,
+      "average_response_time_ms": 0.0,
+      "median_response_time_ms": 0.0,
+      "min_response_time_ms": 0.0,
+      "max_response_time_ms": 0.0,
+      "standard_deviation_ms": 0.0,
+      "percentile_95_ms": 0.0,
+      "percentile_99_ms": 0.0,
+      "response_time_status": "unacceptable",
+      "consistency_score": 0.0,
+      "performance_score": 0.0,
+      "test_results": []
+    },
+    {
+      "tool_name": "list_files_table",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3044.9989318847656,
+      "median_response_time_ms": 3021.848201751709,
+      "min_response_time_ms": 2960.2928161621094,
+      "max_response_time_ms": 3174.952507019043,
+      "standard_deviation_ms": 79.42028242009607,
+      "percentile_95_ms": 3174.952507019043,
+      "percentile_99_ms": 3174.952507019043,
+      "response_time_status": "acceptable",
+      "consistency_score": 97.39177962959293,
+      "performance_score": 48.695889814796466,
+      "test_results": [
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 1,
+          "response_time_ms": 3021.848201751709,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 2,
+          "response_time_ms": 3047.8641986846924,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 3,
+          "response_time_ms": 3174.952507019043,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 4,
+          "response_time_ms": 3020.0369358062744,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 5,
+          "response_time_ms": 2960.2928161621094,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "append_file",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3045.789337158203,
+      "median_response_time_ms": 3037.800073623657,
+      "min_response_time_ms": 2965.298891067505,
+      "max_response_time_ms": 3162.4600887298584,
+      "standard_deviation_ms": 77.72290715284682,
+      "percentile_95_ms": 3162.4600887298584,
+      "percentile_99_ms": 3162.4600887298584,
+      "response_time_status": "acceptable",
+      "consistency_score": 97.44818506635904,
+      "performance_score": 48.72409253317952,
+      "test_results": [
+        {
+          "tool_name": "append_file",
+          "test_iteration": 1,
+          "response_time_ms": 2989.2001152038574,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "append_file",
+          "test_iteration": 2,
+          "response_time_ms": 3162.4600887298584,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "append_file",
+          "test_iteration": 3,
+          "response_time_ms": 2965.298891067505,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "append_file",
+          "test_iteration": 4,
+          "response_time_ms": 3037.800073623657,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "append_file",
+          "test_iteration": 5,
+          "response_time_ms": 3074.1875171661377,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "get_pagination_info",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3005.167579650879,
+      "median_response_time_ms": 3003.9825439453125,
+      "min_response_time_ms": 2986.666440963745,
+      "max_response_time_ms": 3023.8797664642334,
+      "standard_deviation_ms": 18.39754191495215,
+      "percentile_95_ms": 3023.8797664642334,
+      "percentile_99_ms": 3023.8797664642334,
+      "response_time_status": "acceptable",
+      "consistency_score": 99.3878031282006,
+      "performance_score": 49.6939015641003,
+      "test_results": [
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 1,
+          "response_time_ms": 2987.494707107544,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 2,
+          "response_time_ms": 2986.666440963745,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 3,
+          "response_time_ms": 3023.8144397735596,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 4,
+          "response_time_ms": 3003.9825439453125,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 5,
+          "response_time_ms": 3023.8797664642334,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "stream_files",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 2995.902156829834,
+      "median_response_time_ms": 2998.654842376709,
+      "min_response_time_ms": 2961.3125324249268,
+      "max_response_time_ms": 3035.179376602173,
+      "standard_deviation_ms": 30.914097145015816,
+      "percentile_95_ms": 3035.179376602173,
+      "percentile_99_ms": 3035.179376602173,
+      "response_time_status": "good",
+      "consistency_score": 98.96812060185142,
+      "performance_score": 49.552357687095146,
+      "test_results": [
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 1,
+          "response_time_ms": 2969.287395477295,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1088,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 2,
+          "response_time_ms": 2998.654842376709,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1071,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 3,
+          "response_time_ms": 3015.0766372680664,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1071,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 4,
+          "response_time_ms": 3035.179376602173,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1071,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 5,
+          "response_time_ms": 2961.3125324249268,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1071,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "analyze_code",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 2982.4985027313232,
+      "median_response_time_ms": 2983.391046524048,
+      "min_response_time_ms": 2946.4504718780518,
+      "max_response_time_ms": 3007.9212188720703,
+      "standard_deviation_ms": 24.711141077495107,
+      "percentile_95_ms": 3007.9212188720703,
+      "percentile_99_ms": 3007.9212188720703,
+      "response_time_status": "good",
+      "consistency_score": 99.17146174407581,
+      "performance_score": 49.87742249318252,
+      "test_results": [
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 1,
+          "response_time_ms": 3007.9212188720703,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 2,
+          "response_time_ms": 2983.391046524048,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 3,
+          "response_time_ms": 2972.3877906799316,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 4,
+          "response_time_ms": 2946.4504718780518,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 5,
+          "response_time_ms": 3002.3419857025146,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "track_token_usage",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3047.2867012023926,
+      "median_response_time_ms": 3051.1398315429688,
+      "min_response_time_ms": 2958.3253860473633,
+      "max_response_time_ms": 3105.5402755737305,
+      "standard_deviation_ms": 61.796381386847166,
+      "percentile_95_ms": 3105.5402755737305,
+      "percentile_99_ms": 3105.5402755737305,
+      "response_time_status": "acceptable",
+      "consistency_score": 97.97208508925453,
+      "performance_score": 48.98604254462727,
+      "test_results": [
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 1,
+          "response_time_ms": 3018.333911895752,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 107,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        },
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 2,
+          "response_time_ms": 3105.5402755737305,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 107,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        },
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 3,
+          "response_time_ms": 3051.1398315429688,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 107,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        },
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 4,
+          "response_time_ms": 3103.0941009521484,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 107,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        },
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 5,
+          "response_time_ms": 2958.3253860473633,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 107,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "get_cost_summary",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3010.9519004821777,
+      "median_response_time_ms": 2997.361898422241,
+      "min_response_time_ms": 2976.799488067627,
+      "max_response_time_ms": 3086.493730545044,
+      "standard_deviation_ms": 45.31031590180161,
+      "percentile_95_ms": 3086.493730545044,
+      "percentile_99_ms": 3086.493730545044,
+      "response_time_status": "good",
+      "consistency_score": 98.49514979317519,
+      "performance_score": 49.247574896587594,
+      "test_results": [
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 1,
+          "response_time_ms": 2977.4556159973145,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 2,
+          "response_time_ms": 3016.648769378662,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 3,
+          "response_time_ms": 2976.799488067627,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 4,
+          "response_time_ms": 3086.493730545044,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 5,
+          "response_time_ms": 2997.361898422241,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "get_system_health",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3006.1717987060547,
+      "median_response_time_ms": 3004.714250564575,
+      "min_response_time_ms": 2981.6219806671143,
+      "max_response_time_ms": 3043.534517288208,
+      "standard_deviation_ms": 24.06878622944143,
+      "percentile_95_ms": 3043.534517288208,
+      "percentile_99_ms": 3043.534517288208,
+      "response_time_status": "acceptable",
+      "consistency_score": 99.19935426711803,
+      "performance_score": 49.59967713355901,
+      "test_results": [
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 1,
+          "response_time_ms": 2989.269971847534,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 151,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 2,
+          "response_time_ms": 3043.534517288208,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 151,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 3,
+          "response_time_ms": 3004.714250564575,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 151,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 4,
+          "response_time_ms": 3011.718273162842,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 151,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 5,
+          "response_time_ms": 2981.6219806671143,
+          "response_time_status": "good",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 151,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "get_system_status",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3097.868299484253,
+      "median_response_time_ms": 3025.1550674438477,
+      "min_response_time_ms": 3002.8202533721924,
+      "max_response_time_ms": 3394.5486545562744,
+      "standard_deviation_ms": 167.2240565269328,
+      "percentile_95_ms": 3394.5486545562744,
+      "percentile_99_ms": 3394.5486545562744,
+      "response_time_status": "acceptable",
+      "consistency_score": 94.60196366143865,
+      "performance_score": 47.30098183071932,
+      "test_results": [
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 1,
+          "response_time_ms": 3002.8202533721924,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 2,
+          "response_time_ms": 3025.1550674438477,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 3,
+          "response_time_ms": 3057.9535961151123,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 4,
+          "response_time_ms": 3394.5486545562744,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 5,
+          "response_time_ms": 3008.863925933838,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "ping",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3182.55615234375,
+      "median_response_time_ms": 3169.27433013916,
+      "min_response_time_ms": 3107.621192932129,
+      "max_response_time_ms": 3302.213430404663,
+      "standard_deviation_ms": 76.58976535430023,
+      "percentile_95_ms": 3302.213430404663,
+      "percentile_99_ms": 3302.213430404663,
+      "response_time_status": "acceptable",
+      "consistency_score": 97.59345124836535,
+      "performance_score": 48.79672562418268,
+      "test_results": [
+        {
+          "tool_name": "ping",
+          "test_iteration": 1,
+          "response_time_ms": 3302.213430404663,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "ping",
+          "test_iteration": 2,
+          "response_time_ms": 3129.019260406494,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "ping",
+          "test_iteration": 3,
+          "response_time_ms": 3204.6525478363037,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "ping",
+          "test_iteration": 4,
+          "response_time_ms": 3107.621192932129,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "ping",
+          "test_iteration": 5,
+          "response_time_ms": 3169.27433013916,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "store_embedding",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3279.557180404663,
+      "median_response_time_ms": 3296.703577041626,
+      "min_response_time_ms": 3102.0667552948,
+      "max_response_time_ms": 3415.6813621520996,
+      "standard_deviation_ms": 112.742830608594,
+      "percentile_95_ms": 3415.6813621520996,
+      "percentile_99_ms": 3415.6813621520996,
+      "response_time_status": "acceptable",
+      "consistency_score": 96.56225446282102,
+      "performance_score": 48.28112723141051,
+      "test_results": [
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 1,
+          "response_time_ms": 3415.6813621520996,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 79,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        },
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 2,
+          "response_time_ms": 3302.246332168579,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 79,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        },
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 3,
+          "response_time_ms": 3281.087875366211,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 79,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        },
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 4,
+          "response_time_ms": 3102.0667552948,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 79,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        },
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 5,
+          "response_time_ms": 3296.703577041626,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 79,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "similarity_search",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3174.071264266968,
+      "median_response_time_ms": 3161.536931991577,
+      "min_response_time_ms": 3104.6106815338135,
+      "max_response_time_ms": 3244.0481185913086,
+      "standard_deviation_ms": 52.759199239189165,
+      "percentile_95_ms": 3244.0481185913086,
+      "percentile_99_ms": 3244.0481185913086,
+      "response_time_status": "acceptable",
+      "consistency_score": 98.33780672056292,
+      "performance_score": 49.16890336028146,
+      "test_results": [
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 1,
+          "response_time_ms": 3155.756711959839,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        },
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 2,
+          "response_time_ms": 3104.6106815338135,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        },
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 3,
+          "response_time_ms": 3204.403877258301,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        },
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 4,
+          "response_time_ms": 3161.536931991577,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        },
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 5,
+          "response_time_ms": 3244.0481185913086,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "process_text_with_llm",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3261.727285385132,
+      "median_response_time_ms": 3211.676597595215,
+      "min_response_time_ms": 3153.7468433380127,
+      "max_response_time_ms": 3519.5136070251465,
+      "standard_deviation_ms": 147.23317643276425,
+      "percentile_95_ms": 3519.5136070251465,
+      "percentile_99_ms": 3519.5136070251465,
+      "response_time_status": "acceptable",
+      "consistency_score": 95.48603658274945,
+      "performance_score": 47.743018291374725,
+      "test_results": [
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 1,
+          "response_time_ms": 3153.7468433380127,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        },
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 2,
+          "response_time_ms": 3211.676597595215,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        },
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 3,
+          "response_time_ms": 3188.225030899048,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        },
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 4,
+          "response_time_ms": 3235.4743480682373,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        },
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 5,
+          "response_time_ms": 3519.5136070251465,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "dataframe_operations",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3204.765796661377,
+      "median_response_time_ms": 3195.098876953125,
+      "min_response_time_ms": 3136.2006664276123,
+      "max_response_time_ms": 3276.344060897827,
+      "standard_deviation_ms": 58.92280065830081,
+      "percentile_95_ms": 3276.344060897827,
+      "percentile_99_ms": 3276.344060897827,
+      "response_time_status": "acceptable",
+      "consistency_score": 98.16140072639053,
+      "performance_score": 49.08070036319526,
+      "test_results": [
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 1,
+          "response_time_ms": 3195.098876953125,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        },
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 2,
+          "response_time_ms": 3252.518892288208,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        },
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 3,
+          "response_time_ms": 3136.2006664276123,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        },
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 4,
+          "response_time_ms": 3163.6664867401123,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        },
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 5,
+          "response_time_ms": 3276.344060897827,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "split_text",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3179.499912261963,
+      "median_response_time_ms": 3196.7859268188477,
+      "min_response_time_ms": 3108.97159576416,
+      "max_response_time_ms": 3244.192361831665,
+      "standard_deviation_ms": 53.08677321902908,
+      "percentile_95_ms": 3244.192361831665,
+      "percentile_99_ms": 3244.192361831665,
+      "response_time_status": "acceptable",
+      "consistency_score": 98.33034204485126,
+      "performance_score": 49.16517102242563,
+      "test_results": [
+        {
+          "tool_name": "split_text",
+          "test_iteration": 1,
+          "response_time_ms": 3203.347682952881,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        },
+        {
+          "tool_name": "split_text",
+          "test_iteration": 2,
+          "response_time_ms": 3244.192361831665,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        },
+        {
+          "tool_name": "split_text",
+          "test_iteration": 3,
+          "response_time_ms": 3144.2019939422607,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        },
+        {
+          "tool_name": "split_text",
+          "test_iteration": 4,
+          "response_time_ms": 3108.97159576416,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        },
+        {
+          "tool_name": "split_text",
+          "test_iteration": 5,
+          "response_time_ms": 3196.7859268188477,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "structured_output",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3149.1666316986084,
+      "median_response_time_ms": 3137.1989250183105,
+      "min_response_time_ms": 3084.5608711242676,
+      "max_response_time_ms": 3273.5917568206787,
+      "standard_deviation_ms": 74.8447764310414,
+      "percentile_95_ms": 3273.5917568206787,
+      "percentile_99_ms": 3273.5917568206787,
+      "response_time_status": "acceptable",
+      "consistency_score": 97.62334658072153,
+      "performance_score": 48.811673290360766,
+      "test_results": [
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 1,
+          "response_time_ms": 3273.5917568206787,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        },
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 2,
+          "response_time_ms": 3084.5608711242676,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        },
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 3,
+          "response_time_ms": 3137.1989250183105,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        },
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 4,
+          "response_time_ms": 3098.191499710083,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        },
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 5,
+          "response_time_ms": 3152.290105819702,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "type_convert",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 3281.1399936676025,
+      "median_response_time_ms": 3226.1016368865967,
+      "min_response_time_ms": 3201.5788555145264,
+      "max_response_time_ms": 3461.625814437866,
+      "standard_deviation_ms": 107.89046201543208,
+      "percentile_95_ms": 3461.625814437866,
+      "percentile_99_ms": 3461.625814437866,
+      "response_time_status": "acceptable",
+      "consistency_score": 96.7117994897001,
+      "performance_score": 48.35589974485005,
+      "test_results": [
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 1,
+          "response_time_ms": 3300.471544265747,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        },
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 2,
+          "response_time_ms": 3226.1016368865967,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        },
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 3,
+          "response_time_ms": 3201.5788555145264,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        },
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 4,
+          "response_time_ms": 3461.625814437866,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        },
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 5,
+          "response_time_ms": 3215.9221172332764,
+          "response_time_status": "acceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        }
+      ]
+    }
+  ],
+  "test_timestamp": "2025-08-04T14:20:53.046268",
+  "test_duration_seconds": 346.281116
+}

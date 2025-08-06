@@ -1,0 +1,179 @@
+[
+  {
+    "alert_id": "alert_1754335684_test_alert",
+    "rule_id": "test_alert",
+    "timestamp": "2025-08-04T22:28:04.393848",
+    "severity": "high",
+    "status": "active",
+    "message": "Test alert message",
+    "source": "test",
+    "metrics": {
+      "cpu_percent": 90.0
+    },
+    "tags": [],
+    "acknowledged_by": null,
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "expires_at": "2025-08-05T22:28:04.393848"
+  },
+  {
+    "alert_id": "alert_1754335946_test_alert",
+    "rule_id": "test_alert",
+    "timestamp": "2025-08-04T22:32:26.867477",
+    "severity": "high",
+    "status": "active",
+    "message": "Test alert message",
+    "source": "test",
+    "metrics": {
+      "cpu_percent": 90.0
+    },
+    "tags": [],
+    "acknowledged_by": null,
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "expires_at": "2025-08-05T22:32:26.867477"
+  },
+  {
+    "alert_id": "alert_1754335946_lifecycle_test",
+    "rule_id": "lifecycle_test",
+    "timestamp": "2025-08-04T22:32:26.884777",
+    "severity": "medium",
+    "status": "resolved",
+    "message": "Lifecycle test",
+    "source": "test",
+    "metrics": null,
+    "tags": [],
+    "acknowledged_by": "test_user",
+    "acknowledged_at": "2025-08-04T22:32:26.884777",
+    "resolved_at": "2025-08-04T22:32:26.884777",
+    "expires_at": "2025-08-05T22:32:26.884777"
+  },
+  {
+    "alert_id": "alert_1754335975_test_alert",
+    "rule_id": "test_alert",
+    "timestamp": "2025-08-04T22:32:55.079539",
+    "severity": "high",
+    "status": "active",
+    "message": "Test alert message",
+    "source": "test",
+    "metrics": {
+      "cpu_percent": 90.0
+    },
+    "tags": [],
+    "acknowledged_by": null,
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "expires_at": "2025-08-05T22:32:55.079539"
+  },
+  {
+    "alert_id": "alert_1754335975_lifecycle_test",
+    "rule_id": "lifecycle_test",
+    "timestamp": "2025-08-04T22:32:55.091560",
+    "severity": "medium",
+    "status": "resolved",
+    "message": "Lifecycle test",
+    "source": "test",
+    "metrics": null,
+    "tags": [],
+    "acknowledged_by": "test_user",
+    "acknowledged_at": "2025-08-04T22:32:55.092560",
+    "resolved_at": "2025-08-04T22:32:55.092560",
+    "expires_at": "2025-08-05T22:32:55.091560"
+  },
+  {
+    "alert_id": "alert_1754335998_test_alert",
+    "rule_id": "test_alert",
+    "timestamp": "2025-08-04T22:33:18.986001",
+    "severity": "high",
+    "status": "active",
+    "message": "Test alert message",
+    "source": "test",
+    "metrics": {
+      "cpu_percent": 90.0
+    },
+    "tags": [],
+    "acknowledged_by": null,
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "expires_at": "2025-08-05T22:33:18.986001"
+  },
+  {
+    "alert_id": "alert_1754335998_lifecycle_test",
+    "rule_id": "lifecycle_test",
+    "timestamp": "2025-08-04T22:33:18.998339",
+    "severity": "medium",
+    "status": "resolved",
+    "message": "Lifecycle test",
+    "source": "test",
+    "metrics": null,
+    "tags": [],
+    "acknowledged_by": "test_user",
+    "acknowledged_at": "2025-08-04T22:33:18.998339",
+    "resolved_at": "2025-08-04T22:33:18.998339",
+    "expires_at": "2025-08-05T22:33:18.998339"
+  },
+  {
+    "alert_id": "alert_1754336024_test_alert",
+    "rule_id": "test_alert",
+    "timestamp": "2025-08-04T22:33:44.114710",
+    "severity": "high",
+    "status": "active",
+    "message": "Test alert message",
+    "source": "test",
+    "metrics": {
+      "cpu_percent": 90.0
+    },
+    "tags": [],
+    "acknowledged_by": null,
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "expires_at": "2025-08-05T22:33:44.114710"
+  },
+  {
+    "alert_id": "alert_1754336024_lifecycle_test",
+    "rule_id": "lifecycle_test",
+    "timestamp": "2025-08-04T22:33:44.126754",
+    "severity": "medium",
+    "status": "resolved",
+    "message": "Lifecycle test",
+    "source": "test",
+    "metrics": null,
+    "tags": [],
+    "acknowledged_by": "test_user",
+    "acknowledged_at": "2025-08-04T22:33:44.127781",
+    "resolved_at": "2025-08-04T22:33:44.129786",
+    "expires_at": "2025-08-05T22:33:44.126754"
+  },
+  {
+    "alert_id": "alert_1754336055_test_alert",
+    "rule_id": "test_alert",
+    "timestamp": "2025-08-04T22:34:15.065567",
+    "severity": "high",
+    "status": "active",
+    "message": "Test alert message",
+    "source": "test",
+    "metrics": {
+      "cpu_percent": 90.0
+    },
+    "tags": [],
+    "acknowledged_by": null,
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "expires_at": "2025-08-05T22:34:15.065567"
+  },
+  {
+    "alert_id": "alert_1754336055_lifecycle_test",
+    "rule_id": "lifecycle_test",
+    "timestamp": "2025-08-04T22:34:15.078051",
+    "severity": "medium",
+    "status": "resolved",
+    "message": "Lifecycle test",
+    "source": "test",
+    "metrics": null,
+    "tags": [],
+    "acknowledged_by": "test_user",
+    "acknowledged_at": "2025-08-04T22:34:15.079634",
+    "resolved_at": "2025-08-04T22:34:15.080653",
+    "expires_at": "2025-08-05T22:34:15.078051"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "test_suite": "MCP Protocol Compliance",
+  "total_tests": 6,
+  "passed_tests": 0,
+  "failed_tests": 5,
+  "warning_tests": 1,
+  "error_tests": 0,
+  "compliance_score": 0.0,
+  "test_results": [
+    {
+      "test_name": "Tool Registration Format",
+      "test_description": "Validate tool registration follows MCP protocol format",
+      "status": 

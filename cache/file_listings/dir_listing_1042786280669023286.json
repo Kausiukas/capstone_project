@@ -1,0 +1,241 @@
+{
+  "timestamp": 1754317368.3539157,
+  "directory": ".",
+  "result": {
+    "success": true,
+    "batch": {
+      "files": [
+        {
+          "name": "__pycache__",
+          "path": "__pycache__",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1754311030.6967623,
+          "extension": ""
+        },
+        {
+          "name": "ACTUAL_STATUS.md",
+          "path": "ACTUAL_STATUS.md",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 5973,
+          "size_mb": 0.01,
+          "modified": 1753817459.2088127,
+          "extension": ".md"
+        },
+        {
+          "name": "cache",
+          "path": "cache",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1754122148.7470982,
+          "extension": ""
+        },
+        {
+          "name": "check_tools.py",
+          "path": "check_tools.py",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 1208,
+          "size_mb": 0.0,
+          "modified": 1754118938.8045883,
+          "extension": ".py"
+        },
+        {
+          "name": "clean_demo.py",
+          "path": "clean_demo.py",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 8977,
+          "size_mb": 0.01,
+          "modified": 1753817459.2088127,
+          "extension": ".py"
+        },
+        {
+          "name": "comprehensive_test_results.json",
+          "path": "comprehensive_test_results.json",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 2841,
+          "size_mb": 0.0,
+          "modified": 1753902714.4994462,
+          "extension": ".json"
+        },
+        {
+          "name": "comprehensive_test_suite.log",
+          "path": "comprehensive_test_suite.log",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 90942,
+          "size_mb": 0.09,
+          "modified": 1753902714.4994462,
+          "extension": ".log"
+        },
+        {
+          "name": "config",
+          "path": "config",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1754168307.6960866,
+          "extension": ""
+        },
+        {
+          "name": "cost_data",
+          "path": "cost_data",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753891698.9736304,
+          "extension": ""
+        },
+        {
+          "name": "create_data_directories.py",
+          "path": "create_data_directories.py",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 3627,
+          "size_mb": 0.0,
+          "modified": 1754163992.9942136,
+          "extension": ".py"
+        },
+        {
+          "name": "CRITICAL_ISSUE_RESOLUTION_PLAN.md",
+          "path": "CRITICAL_ISSUE_RESOLUTION_PLAN.md",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 16005,
+          "size_mb": 0.02,
+          "modified": 1754158817.2275312,
+          "extension": ".md"
+        },
+        {
+          "name": "CRITICAL_TIMEOUT_FIX.md",
+          "path": "CRITICAL_TIMEOUT_FIX.md",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 4311,
+          "size_mb": 0.0,
+          "modified": 1753995086.2623856,
+          "extension": ".md"
+        },
+        {
+          "name": "CURRENT_STATUS_FINAL.md",
+          "path": "CURRENT_STATUS_FINAL.md",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 5731,
+          "size_mb": 0.01,
+          "modified": 1754163298.899176,
+          "extension": ".md"
+        },
+        {
+          "name": "data",
+          "path": "data",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753891696.3464782,
+          "extension": ""
+        },
+        {
+          "name": "debug_file_generator.py",
+          "path": "debug_file_generator.py",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 3398,
+          "size_mb": 0.0,
+          "modified": 1754120069.7379904,
+          "extension": ".py"
+        },
+        {
+          "name": "debug_inspector_test.py",
+          "path": "debug_inspector_test.py",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 1838,
+          "size_mb": 0.0,
+          "modified": 1754301075.5397365,
+          "extension": ".py"
+        },
+        {
+          "name": "debug_path_issue.py",
+          "path": "debug_path_issue.py",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 2107,
+          "size_mb": 0.0,
+          "modified": 1754122384.6284516,
+          "extension": ".py"
+        },
+        {
+          "name": "demo.py",
+          "path": "demo.py",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 19133,
+          "size_mb": 0.02,
+          "modified": 1753815140.2422872,
+          "extension": ".py"
+        },
+        {
+          "name": "deployment",
+          "path": "deployment",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753818322.12951,
+          "extension": ""
+        },
+        {
+          "name": "DEPLOYMENT_GUIDE.md",
+          "path": "DEPLOYMENT_GUIDE.md",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 10573,
+          "size_mb": 0.01,
+          "modified": 1753818535.4736803,
+          "extension": ".md"
+        }
+      ],
+      "offset": 0,
+      "limit": 20,
+      "total_files": 160,
+      "has_more": true,
+      "next_offset": 20
+    },
+    "summary": {
+      "total_files": 160,
+      "total_directories": 18,
+      "total_size_mb": 1.56,
+      "file_types": {
+        "": 19,
+        ".md": 65,
+        ".py": 61,
+        ".json": 9,
+        ".log": 2,
+        ".mcp": 1,
+        ".txt": 2,
+        ".csv": 1
+      },
+      "processing_time_seconds": 0.04,
+      "memory_usage_mb": 0.09
+    },
+    "directory": ".",
+    "filters": {
+      "max_depth": 1,
+      "include_hidden": false,
+      "file_types": [],
+      "sort_by": "name",
+      "sort_order": "asc"
+    }
+  }
+}

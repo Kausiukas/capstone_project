@@ -1,0 +1,107 @@
+{
+  "timestamp": "2025-07-30T22:11:54.498931",
+  "test_stats": {
+    "total_tests": 12,
+    "passed_tests": 12,
+    "failed_tests": 0,
+    "total_duration": 9.447591304779053
+  },
+  "test_results": [
+    {
+      "test_name": "WorkspaceManager Unit Test",
+      "success": true,
+      "duration": 1.4699878692626953,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:46.512934"
+    },
+    {
+      "test_name": "CodeAnalyzer Unit Test",
+      "success": true,
+      "duration": 0.0014243125915527344,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:46.514359"
+    },
+    {
+      "test_name": "CostTracker Unit Test",
+      "success": true,
+      "duration": 0.0020067691802978516,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:46.516366"
+    },
+    {
+      "test_name": "HealthMonitor Unit Test",
+      "success": true,
+      "duration": 1.0079221725463867,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:47.525473"
+    },
+    {
+      "test_name": "Module 1 Integration Test",
+      "success": true,
+      "duration": 1.2932171821594238,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:48.818690"
+    },
+    {
+      "test_name": "Module 2 Integration Test",
+      "success": true,
+      "duration": 1.0076162815093994,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:49.826306"
+    },
+    {
+      "test_name": "Module 3 Integration Test",
+      "success": true,
+      "duration": 0.007902860641479492,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:49.834209"
+    },
+    {
+      "test_name": "MCP Server Tools Test",
+      "success": true,
+      "duration": 0.8161280155181885,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:50.650337"
+    },
+    {
+      "test_name": "MCP Tool Execution Test",
+      "success": true,
+      "duration": 0.029401302337646484,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:50.679739"
+    },
+    {
+      "test_name": "Complete Workflow Test",
+      "success": true,
+      "duration": 1.284001350402832,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:51.963740"
+    },
+    {
+      "test_name": "Performance Under Load Test",
+      "success": true,
+      "duration": 1.282569408416748,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:53.250505"
+    },
+    {
+      "test_name": "Error Handling Test",
+      "success": true,
+      "duration": 1.2454137802124023,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T22:11:54.495919"
+    }
+  ]
+}

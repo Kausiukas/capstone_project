@@ -1,0 +1,216 @@
+{
+  "job_1754334484_execution_test_job": [],
+  "job_1754334739_execution_test_job": [],
+  "job_1754334888_execution_test_job": [
+    {
+      "job_id": "job_1754334888_execution_test_job",
+      "execution_id": "exec_1754334888_job_1754334888_execution_test_job",
+      "start_time": "2025-08-04 22:14:48.347659",
+      "end_time": "2025-08-04 22:14:48.368762",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Execution test successful'\r\n",
+      "error_output": "",
+      "duration": 0.021103,
+      "metadata": {
+        "command": "echo 'Execution test successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    },
+    {
+      "job_id": "job_1754334888_execution_test_job",
+      "execution_id": "exec_1754334888_job_1754334888_execution_test_job",
+      "start_time": "2025-08-04 22:14:48.427664",
+      "end_time": "2025-08-04 22:14:48.440013",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Execution test successful'\r\n",
+      "error_output": "",
+      "duration": 0.012349,
+      "metadata": {
+        "command": "echo 'Execution test successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ],
+  "job_1754334888_batch_test_job_1": [
+    {
+      "job_id": "job_1754334888_batch_test_job_1",
+      "execution_id": "exec_1754334888_job_1754334888_batch_test_job_1",
+      "start_time": "2025-08-04 22:14:48.372802",
+      "end_time": "2025-08-04 22:14:48.398353",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Batch test 1 successful'\r\n",
+      "error_output": "",
+      "duration": 0.025551,
+      "metadata": {
+        "command": "echo 'Batch test 1 successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ],
+  "job_1754334888_batch_test_job_2": [
+    {
+      "job_id": "job_1754334888_batch_test_job_2",
+      "execution_id": "exec_1754334888_job_1754334888_batch_test_job_2",
+      "start_time": "2025-08-04 22:14:48.381537",
+      "end_time": "2025-08-04 22:14:48.402557",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Batch test 2 successful'\r\n",
+      "error_output": "",
+      "duration": 0.02102,
+      "metadata": {
+        "command": "echo 'Batch test 2 successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ],
+  "job_1754334888_batch_test_job_3": [
+    {
+      "job_id": "job_1754334888_batch_test_job_3",
+      "execution_id": "exec_1754334888_job_1754334888_batch_test_job_3",
+      "start_time": "2025-08-04 22:14:48.390178",
+      "end_time": "2025-08-04 22:14:48.406570",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Batch test 3 successful'\r\n",
+      "error_output": "",
+      "duration": 0.016392,
+      "metadata": {
+        "command": "echo 'Batch test 3 successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ],
+  "job_1754334888_scheduled_workflow_job": [
+    {
+      "job_id": "job_1754334888_scheduled_workflow_job",
+      "execution_id": "exec_1754334888_job_1754334888_scheduled_workflow_job",
+      "start_time": "2025-08-04 22:14:48.460771",
+      "end_time": "2025-08-04 22:14:48.481782",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Scheduled workflow test successful'\r\n",
+      "error_output": "",
+      "duration": 0.021011,
+      "metadata": {
+        "command": "echo 'Scheduled workflow test successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ],
+  "job_1754335031_execution_test_job": [
+    {
+      "job_id": "job_1754335031_execution_test_job",
+      "execution_id": "exec_1754335031_job_1754335031_execution_test_job",
+      "start_time": "2025-08-04 22:17:11.140781",
+      "end_time": "2025-08-04 22:17:11.170940",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Execution test successful'\r\n",
+      "error_output": "",
+      "duration": 0.030159,
+      "metadata": {
+        "command": "echo 'Execution test successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    },
+    {
+      "job_id": "job_1754335031_execution_test_job",
+      "execution_id": "exec_1754335031_job_1754335031_execution_test_job",
+      "start_time": "2025-08-04 22:17:11.238151",
+      "end_time": "2025-08-04 22:17:11.248758",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Execution test successful'\r\n",
+      "error_output": "",
+      "duration": 0.010607,
+      "metadata": {
+        "command": "echo 'Execution test successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ],
+  "job_1754335031_batch_test_job_1": [
+    {
+      "job_id": "job_1754335031_batch_test_job_1",
+      "execution_id": "exec_1754335031_job_1754335031_batch_test_job_1",
+      "start_time": "2025-08-04 22:17:11.177991",
+      "end_time": "2025-08-04 22:17:11.198441",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Batch test 1 successful'\r\n",
+      "error_output": "",
+      "duration": 0.02045,
+      "metadata": {
+        "command": "echo 'Batch test 1 successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ],
+  "job_1754335031_batch_test_job_2": [
+    {
+      "job_id": "job_1754335031_batch_test_job_2",
+      "execution_id": "exec_1754335031_job_1754335031_batch_test_job_2",
+      "start_time": "2025-08-04 22:17:11.181728",
+      "end_time": "2025-08-04 22:17:11.198441",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Batch test 2 successful'\r\n",
+      "error_output": "",
+      "duration": 0.016713,
+      "metadata": {
+        "command": "echo 'Batch test 2 successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ],
+  "job_1754335031_batch_test_job_3": [
+    {
+      "job_id": "job_1754335031_batch_test_job_3",
+      "execution_id": "exec_1754335031_job_1754335031_batch_test_job_3",
+      "start_time": "2025-08-04 22:17:11.194547",
+      "end_time": "2025-08-04 22:17:11.215222",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Batch test 3 successful'\r\n",
+      "error_output": "",
+      "duration": 0.020675,
+      "metadata": {
+        "command": "echo 'Batch test 3 successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ],
+  "job_1754335031_scheduled_workflow_job": [
+    {
+      "job_id": "job_1754335031_scheduled_workflow_job",
+      "execution_id": "exec_1754335031_job_1754335031_scheduled_workflow_job",
+      "start_time": "2025-08-04 22:17:11.278362",
+      "end_time": "2025-08-04 22:17:11.298019",
+      "status": "completed",
+      "exit_code": 0,
+      "output": "'Scheduled workflow test successful'\r\n",
+      "error_output": "",
+      "duration": 0.019657,
+      "metadata": {
+        "command": "echo 'Scheduled workflow test successful'",
+        "timeout": 60,
+        "retry_count": 3
+      }
+    }
+  ]
+}

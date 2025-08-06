@@ -1,0 +1,108 @@
+{
+  "test_suite": "Inspector Quality Assurance Tests (Task 3.2)",
+  "timestamp": "2025-08-04T21:51:09.164285",
+  "summary": {
+    "total_tests": 17,
+    "passed_tests": 4,
+    "failed_tests": 13,
+    "error_tests": 0,
+    "success_rate": 23.52941176470588,
+    "execution_time": 0.0
+  },
+  "recommendations": [
+    "Address 13 failed tests",
+    "Improve overall test success rate"
+  ],
+  "test_results": {
+    "Quality Metric Addition": {
+      "status": "passed",
+      "details": "Test Quality Metric Addition completed successfully",
+      "error_message": null
+    },
+    "Quality Score Calculation": {
+      "status": "passed",
+      "details": "Test Quality Score Calculation completed successfully",
+      "error_message": null
+    },
+    "Quality Report Generation": {
+      "status": "passed",
+      "details": "Test Quality Report Generation completed successfully",
+      "error_message": null
+    },
+    "Quality Trends Analysis": {
+      "status": "passed",
+      "details": "Test Quality Trends Analysis completed successfully",
+      "error_message": null
+    },
+    "Quality Data Export": {
+      "status": "failed",
+      "details": "Test Quality Data Export failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Defect Creation": {
+      "status": "failed",
+      "details": "Test Defect Creation failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Defect Updates": {
+      "status": "failed",
+      "details": "Test Defect Updates failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Defect Search": {
+      "status": "failed",
+      "details": "Test Defect Search failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Defect Statistics": {
+      "status": "failed",
+      "details": "Test Defect Statistics failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Defect Export": {
+      "status": "failed",
+      "details": "Test Defect Export failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Dashboard Initialization": {
+      "status": "failed",
+      "details": "Test Dashboard Initialization failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Dashboard Status": {
+      "status": "failed",
+      "details": "Test Dashboard Status failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Dashboard HTML Generation": {
+      "status": "failed",
+      "details": "Test Dashboard HTML Generation failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "End-to-End Quality Workflow": {
+      "status": "failed",
+      "details": "Test End-to-End Quality Workflow failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Defect-Quality Correlation": {
+      "status": "failed",
+      "details": "Test Defect-Quality Correlation failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Quality Data Persistence": {
+      "status": "failed",
+      "details": "Test Quality Data Persistence failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    },
+    "Defect Data Persistence": {
+      "status": "failed",
+      "details": "Test Defect Data Persistence failed",
+      "error_message": "TestResult.__init__() got an unexpected keyword argument 'message'"
+    }
+  },
+  "module_status": {
+    "quality_assurance": "✅ Implemented",
+    "defect_tracker": "⚠️ Needs improvement",
+    "quality_dashboard": "⚠️ Needs improvement"
+  }
+}

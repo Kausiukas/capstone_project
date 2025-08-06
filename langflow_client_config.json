@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "langflow-connect": {
+      "command": "python",
+      "args": [
+        "mcp_langflow_connector.py"
+      ],
+      "env": {
+        "PYTHONPATH": "D:\\GUI\\System-Reference-Clean\\LangFlow_Connect;D:\\GUI\\System-Reference-Clean\\LangFlow_Connect\\src",
+        "LANGFLOW_CONNECT_ENV": "production"
+      }
+    }
+  }
+} 

@@ -1,0 +1,91 @@
+{
+  "timestamp": 1754122508.534828,
+  "directory": "D:\\GUI\\System-Reference-Clean\\LangFlow_Connect",
+  "result": {
+    "success": true,
+    "batch": {
+      "files": [
+        {
+          "name": "comprehensive_test_results.json",
+          "path": "comprehensive_test_results.json",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 2841,
+          "size_mb": 0.0,
+          "modified": 1753902714.4994462,
+          "extension": ".json"
+        },
+        {
+          "name": "comprehensive_test_suite.log",
+          "path": "comprehensive_test_suite.log",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 90942,
+          "size_mb": 0.09,
+          "modified": 1753902714.4994462,
+          "extension": ".log"
+        },
+        {
+          "name": "config",
+          "path": "config",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1754117205.0601182,
+          "extension": ""
+        },
+        {
+          "name": "cost_data",
+          "path": "cost_data",
+          "is_file": false,
+          "is_dir": true,
+          "size_bytes": 0,
+          "size_mb": 0,
+          "modified": 1753891698.9736304,
+          "extension": ""
+        },
+        {
+          "name": "CRITICAL_TIMEOUT_FIX.md",
+          "path": "CRITICAL_TIMEOUT_FIX.md",
+          "is_file": true,
+          "is_dir": false,
+          "size_bytes": 4311,
+          "size_mb": 0.0,
+          "modified": 1753995086.2623856,
+          "extension": ".md"
+        }
+      ],
+      "offset": 5,
+      "limit": 5,
+      "total_files": 111,
+      "has_more": true,
+      "next_offset": 10
+    },
+    "summary": {
+      "total_files": 111,
+      "total_directories": 16,
+      "total_size_mb": 0.78,
+      "file_types": {
+        "": 17,
+        ".md": 48,
+        ".py": 32,
+        ".json": 8,
+        ".log": 2,
+        ".mcp": 1,
+        ".txt": 2,
+        ".csv": 1
+      },
+      "processing_time_seconds": 0.01,
+      "memory_usage_mb": 0.06
+    },
+    "directory": "D:\\GUI\\System-Reference-Clean\\LangFlow_Connect",
+    "filters": {
+      "max_depth": 1,
+      "include_hidden": false,
+      "file_types": [],
+      "sort_by": "name",
+      "sort_order": "asc"
+    }
+  }
+}

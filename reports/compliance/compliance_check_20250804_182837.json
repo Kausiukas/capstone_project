@@ -1,0 +1,11 @@
+{
+  "report_id": "compliance_check_20250804_182837",
+  "total_checks": 14,
+  "passed_checks": 5,
+  "failed_checks": 7,
+  "warning_checks": 0,
+  "error_checks": 2,
+  "overall_score": 4412.5,
+  "overall_grade": "ComplianceGrade.A_PLUS",
+  "category_scores": {
+    

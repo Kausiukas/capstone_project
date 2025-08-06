@@ -1,0 +1,1696 @@
+{
+  "total_tools": 22,
+  "total_tests": 110,
+  "successful_tests": 104,
+  "failed_tests": 6,
+  "average_response_time_ms": 24327.31517003133,
+  "median_response_time_ms": 24105.178833007812,
+  "min_response_time_ms": 19270.19762992859,
+  "max_response_time_ms": 29867.966890335083,
+  "tools_with_excellent_performance": 0,
+  "tools_with_good_performance": 0,
+  "tools_with_acceptable_performance": 0,
+  "tools_with_slow_performance": 0,
+  "tools_with_unacceptable_performance": 22,
+  "overall_performance_score": 45.309006517474316,
+  "tool_summaries": [
+    {
+      "tool_name": "read_file",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 25832.93161392212,
+      "median_response_time_ms": 25064.67890739441,
+      "min_response_time_ms": 22964.056491851807,
+      "max_response_time_ms": 29271.594524383545,
+      "standard_deviation_ms": 2814.9338624678735,
+      "percentile_95_ms": 29271.594524383545,
+      "percentile_99_ms": 29271.594524383545,
+      "response_time_status": "unacceptable",
+      "consistency_score": 89.1033123745397,
+      "performance_score": 44.55165618726985,
+      "test_results": [
+        {
+          "tool_name": "read_file",
+          "test_iteration": 1,
+          "response_time_ms": 25064.67890739441,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "read_file",
+          "test_iteration": 2,
+          "response_time_ms": 22964.056491851807,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "read_file",
+          "test_iteration": 3,
+          "response_time_ms": 28280.637741088867,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "read_file",
+          "test_iteration": 4,
+          "response_time_ms": 29271.594524383545,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "read_file",
+          "test_iteration": 5,
+          "response_time_ms": 23583.690404891968,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "write_file",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 24718.47882270813,
+      "median_response_time_ms": 23575.02293586731,
+      "min_response_time_ms": 21668.45679283142,
+      "max_response_time_ms": 28656.88705444336,
+      "standard_deviation_ms": 2881.7895475628848,
+      "percentile_95_ms": 28656.88705444336,
+      "percentile_99_ms": 28656.88705444336,
+      "response_time_status": "unacceptable",
+      "consistency_score": 88.34155787565912,
+      "performance_score": 44.17077893782956,
+      "test_results": [
+        {
+          "tool_name": "write_file",
+          "test_iteration": 1,
+          "response_time_ms": 22966.50195121765,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "write_file",
+          "test_iteration": 2,
+          "response_time_ms": 23575.02293586731,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "write_file",
+          "test_iteration": 3,
+          "response_time_ms": 21668.45679283142,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "write_file",
+          "test_iteration": 4,
+          "response_time_ms": 26725.52537918091,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "write_file",
+          "test_iteration": 5,
+          "response_time_ms": 28656.88705444336,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 118,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "list_files",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 22748.834562301636,
+      "median_response_time_ms": 23060.232877731323,
+      "min_response_time_ms": 20531.26335144043,
+      "max_response_time_ms": 25120.12505531311,
+      "standard_deviation_ms": 1721.0267357414,
+      "percentile_95_ms": 25120.12505531311,
+      "percentile_99_ms": 25120.12505531311,
+      "response_time_status": "unacceptable",
+      "consistency_score": 92.43465975794027,
+      "performance_score": 46.21732987897013,
+      "test_results": [
+        {
+          "tool_name": "list_files",
+          "test_iteration": 1,
+          "response_time_ms": 25120.12505531311,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        },
+        {
+          "tool_name": "list_files",
+          "test_iteration": 2,
+          "response_time_ms": 23060.232877731323,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        },
+        {
+          "tool_name": "list_files",
+          "test_iteration": 3,
+          "response_time_ms": 21773.99706840515,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        },
+        {
+          "tool_name": "list_files",
+          "test_iteration": 4,
+          "response_time_ms": 20531.26335144043,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        },
+        {
+          "tool_name": "list_files",
+          "test_iteration": 5,
+          "response_time_ms": 23258.554458618164,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {
+            "directory": ".",
+            "batch_size": 5
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "list_files_metadata_only",
+      "total_tests": 5,
+      "successful_tests": 4,
+      "failed_tests": 1,
+      "average_response_time_ms": 25029.789090156555,
+      "median_response_time_ms": 25468.10734272003,
+      "min_response_time_ms": 22111.70721054077,
+      "max_response_time_ms": 27071.234464645386,
+      "standard_deviation_ms": 2373.6423264474492,
+      "percentile_95_ms": 27071.234464645386,
+      "percentile_99_ms": 27071.234464645386,
+      "response_time_status": "unacceptable",
+      "consistency_score": 90.51673061288028,
+      "performance_score": 45.25836530644014,
+      "test_results": [
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 1,
+          "response_time_ms": 22111.70721054077,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 2,
+          "response_time_ms": 26852.951526641846,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 3,
+          "response_time_ms": 27071.234464645386,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 4,
+          "response_time_ms": 24083.263158798218,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 6599,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_metadata_only",
+          "test_iteration": 5,
+          "response_time_ms": 30751.156330108643,
+          "response_time_status": "unacceptable",
+          "success": false,
+          "error_message": "Tool execution timed out after 30 seconds",
+          "response_size_bytes": null,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "list_files_readable",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 23896.166944503784,
+      "median_response_time_ms": 24229.72273826599,
+      "min_response_time_ms": 21147.3171710968,
+      "max_response_time_ms": 26522.997617721558,
+      "standard_deviation_ms": 2085.0656726197226,
+      "percentile_95_ms": 26522.997617721558,
+      "percentile_99_ms": 26522.997617721558,
+      "response_time_status": "unacceptable",
+      "consistency_score": 91.2744764569897,
+      "performance_score": 45.63723822849485,
+      "test_results": [
+        {
+          "tool_name": "list_files_readable",
+          "test_iteration": 1,
+          "response_time_ms": 24229.72273826599,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1107,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_readable",
+          "test_iteration": 2,
+          "response_time_ms": 22607.1937084198,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1107,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_readable",
+          "test_iteration": 3,
+          "response_time_ms": 21147.3171710968,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1107,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_readable",
+          "test_iteration": 4,
+          "response_time_ms": 24973.60348701477,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1107,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_readable",
+          "test_iteration": 5,
+          "response_time_ms": 26522.997617721558,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1107,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "list_files_table",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 23187.254810333252,
+      "median_response_time_ms": 23388.671159744263,
+      "min_response_time_ms": 19939.78762626648,
+      "max_response_time_ms": 27900.38228034973,
+      "standard_deviation_ms": 3182.798913113157,
+      "percentile_95_ms": 27900.38228034973,
+      "percentile_99_ms": 27900.38228034973,
+      "response_time_status": "unacceptable",
+      "consistency_score": 86.27349835438578,
+      "performance_score": 43.13674917719289,
+      "test_results": [
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 1,
+          "response_time_ms": 27900.38228034973,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 2,
+          "response_time_ms": 24132.91311264038,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 3,
+          "response_time_ms": 19939.78762626648,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 4,
+          "response_time_ms": 23388.671159744263,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "list_files_table",
+          "test_iteration": 5,
+          "response_time_ms": 20574.519872665405,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 2466,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "append_file",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 23521.838760375977,
+      "median_response_time_ms": 22425.899028778076,
+      "min_response_time_ms": 19828.434944152832,
+      "max_response_time_ms": 26541.849613189697,
+      "standard_deviation_ms": 2891.310405941193,
+      "percentile_95_ms": 26541.849613189697,
+      "percentile_99_ms": 26541.849613189697,
+      "response_time_status": "unacceptable",
+      "consistency_score": 87.70797455336788,
+      "performance_score": 43.85398727668394,
+      "test_results": [
+        {
+          "tool_name": "append_file",
+          "test_iteration": 1,
+          "response_time_ms": 19828.434944152832,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "append_file",
+          "test_iteration": 2,
+          "response_time_ms": 26395.305395126343,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "append_file",
+          "test_iteration": 3,
+          "response_time_ms": 26541.849613189697,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "append_file",
+          "test_iteration": 4,
+          "response_time_ms": 22425.899028778076,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "append_file",
+          "test_iteration": 5,
+          "response_time_ms": 22417.704820632935,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 142,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "get_pagination_info",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 24891.35127067566,
+      "median_response_time_ms": 24556.582927703857,
+      "min_response_time_ms": 22230.693340301514,
+      "max_response_time_ms": 29291.707515716553,
+      "standard_deviation_ms": 2700.865461196549,
+      "percentile_95_ms": 29291.707515716553,
+      "percentile_99_ms": 29291.707515716553,
+      "response_time_status": "unacceptable",
+      "consistency_score": 89.14938192054514,
+      "performance_score": 44.57469096027257,
+      "test_results": [
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 1,
+          "response_time_ms": 29291.707515716553,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 2,
+          "response_time_ms": 23284.04450416565,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 3,
+          "response_time_ms": 22230.693340301514,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 4,
+          "response_time_ms": 24556.582927703857,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_pagination_info",
+          "test_iteration": 5,
+          "response_time_ms": 25093.728065490723,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 936,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "stream_files",
+      "total_tests": 5,
+      "successful_tests": 3,
+      "failed_tests": 2,
+      "average_response_time_ms": 26242.302894592285,
+      "median_response_time_ms": 25398.083686828613,
+      "min_response_time_ms": 25307.156085968018,
+      "max_response_time_ms": 28021.668910980225,
+      "standard_deviation_ms": 1541.6466918061283,
+      "percentile_95_ms": 28021.668910980225,
+      "percentile_99_ms": 28021.668910980225,
+      "response_time_status": "unacceptable",
+      "consistency_score": 94.12533763519735,
+      "performance_score": 47.06266881759868,
+      "test_results": [
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 1,
+          "response_time_ms": 25398.083686828613,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1089,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 2,
+          "response_time_ms": 32199.217081069946,
+          "response_time_status": "unacceptable",
+          "success": false,
+          "error_message": "Tool execution timed out after 30 seconds",
+          "response_size_bytes": null,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 3,
+          "response_time_ms": 28021.668910980225,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1088,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 4,
+          "response_time_ms": 31425.61149597168,
+          "response_time_status": "unacceptable",
+          "success": false,
+          "error_message": "Tool execution timed out after 30 seconds",
+          "response_size_bytes": null,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "stream_files",
+          "test_iteration": 5,
+          "response_time_ms": 25307.156085968018,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 1088,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "analyze_code",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 25122.444915771484,
+      "median_response_time_ms": 25317.662477493286,
+      "min_response_time_ms": 19713.865518569946,
+      "max_response_time_ms": 28752.26855278015,
+      "standard_deviation_ms": 3714.6452416325055,
+      "percentile_95_ms": 28752.26855278015,
+      "percentile_99_ms": 28752.26855278015,
+      "response_time_status": "unacceptable",
+      "consistency_score": 85.21383864473911,
+      "performance_score": 42.606919322369556,
+      "test_results": [
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 1,
+          "response_time_ms": 28309.427976608276,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 2,
+          "response_time_ms": 25317.662477493286,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 3,
+          "response_time_ms": 19713.865518569946,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 4,
+          "response_time_ms": 23519.00005340576,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        },
+        {
+          "tool_name": "analyze_code",
+          "test_iteration": 5,
+          "response_time_ms": 28752.26855278015,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 120,
+          "arguments_used": {
+            "file_path": "README.md"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "track_token_usage",
+      "total_tests": 5,
+      "successful_tests": 4,
+      "failed_tests": 1,
+      "average_response_time_ms": 27609.574377536774,
+      "median_response_time_ms": 27250.8727312088,
+      "min_response_time_ms": 26068.58515739441,
+      "max_response_time_ms": 29867.966890335083,
+      "standard_deviation_ms": 1616.8842978076711,
+      "percentile_95_ms": 29867.966890335083,
+      "percentile_99_ms": 29867.966890335083,
+      "response_time_status": "unacceptable",
+      "consistency_score": 94.1437550767781,
+      "performance_score": 47.07187753838905,
+      "test_results": [
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 1,
+          "response_time_ms": 26068.58515739441,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 107,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        },
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 2,
+          "response_time_ms": 27015.685319900513,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 107,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        },
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 3,
+          "response_time_ms": 29867.966890335083,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 107,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        },
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 4,
+          "response_time_ms": 33628.02171707153,
+          "response_time_status": "unacceptable",
+          "success": false,
+          "error_message": "Tool execution timed out after 30 seconds",
+          "response_size_bytes": null,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        },
+        {
+          "tool_name": "track_token_usage",
+          "test_iteration": 5,
+          "response_time_ms": 27486.06014251709,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 107,
+          "arguments_used": {
+            "operation": "test",
+            "model": "gpt-3.5-turbo",
+            "input_tokens": 10,
+            "output_tokens": 5
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "get_cost_summary",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 22596.467971801758,
+      "median_response_time_ms": 23826.144456863403,
+      "min_response_time_ms": 19270.19762992859,
+      "max_response_time_ms": 24939.73731994629,
+      "standard_deviation_ms": 2574.11221857417,
+      "percentile_95_ms": 24939.73731994629,
+      "percentile_99_ms": 24939.73731994629,
+      "response_time_status": "unacceptable",
+      "consistency_score": 88.60834258793712,
+      "performance_score": 44.30417129396856,
+      "test_results": [
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 1,
+          "response_time_ms": 24939.73731994629,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 2,
+          "response_time_ms": 19270.19762992859,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 3,
+          "response_time_ms": 24523.337602615356,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 4,
+          "response_time_ms": 20422.92284965515,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_cost_summary",
+          "test_iteration": 5,
+          "response_time_ms": 23826.144456863403,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 147,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "get_system_health",
+      "total_tests": 5,
+      "successful_tests": 4,
+      "failed_tests": 1,
+      "average_response_time_ms": 26321.475863456726,
+      "median_response_time_ms": 26362.69748210907,
+      "min_response_time_ms": 24533.116340637207,
+      "max_response_time_ms": 28027.392148971558,
+      "standard_deviation_ms": 1427.336837998189,
+      "percentile_95_ms": 28027.392148971558,
+      "percentile_99_ms": 28027.392148971558,
+      "response_time_status": "unacceptable",
+      "consistency_score": 94.57729176964645,
+      "performance_score": 47.288645884823225,
+      "test_results": [
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 1,
+          "response_time_ms": 24533.116340637207,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 151,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 2,
+          "response_time_ms": 26355.88765144348,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 151,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 3,
+          "response_time_ms": 26369.50731277466,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 151,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 4,
+          "response_time_ms": 30275.3267288208,
+          "response_time_status": "unacceptable",
+          "success": false,
+          "error_message": "Tool execution timed out after 30 seconds",
+          "response_size_bytes": null,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_health",
+          "test_iteration": 5,
+          "response_time_ms": 28027.392148971558,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 151,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "get_system_status",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 25892.14677810669,
+      "median_response_time_ms": 26748.16393852234,
+      "min_response_time_ms": 22922.518014907837,
+      "max_response_time_ms": 27237.04743385315,
+      "standard_deviation_ms": 1798.6460067921994,
+      "percentile_95_ms": 27237.04743385315,
+      "percentile_99_ms": 27237.04743385315,
+      "response_time_status": "unacceptable",
+      "consistency_score": 93.05331449645165,
+      "performance_score": 46.526657248225824,
+      "test_results": [
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 1,
+          "response_time_ms": 27078.01127433777,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 2,
+          "response_time_ms": 22922.518014907837,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 3,
+          "response_time_ms": 27237.04743385315,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 4,
+          "response_time_ms": 25474.993228912354,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "get_system_status",
+          "test_iteration": 5,
+          "response_time_ms": 26748.16393852234,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 328,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "ping",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 23883.390283584595,
+      "median_response_time_ms": 23796.493530273438,
+      "min_response_time_ms": 21134.456157684326,
+      "max_response_time_ms": 28356.871128082275,
+      "standard_deviation_ms": 2918.0540076815137,
+      "percentile_95_ms": 28356.871128082275,
+      "percentile_99_ms": 28356.871128082275,
+      "response_time_status": "unacceptable",
+      "consistency_score": 87.7820779502685,
+      "performance_score": 43.89103897513425,
+      "test_results": [
+        {
+          "tool_name": "ping",
+          "test_iteration": 1,
+          "response_time_ms": 24668.153047561646,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "ping",
+          "test_iteration": 2,
+          "response_time_ms": 21460.97755432129,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "ping",
+          "test_iteration": 3,
+          "response_time_ms": 21134.456157684326,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "ping",
+          "test_iteration": 4,
+          "response_time_ms": 23796.493530273438,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        },
+        {
+          "tool_name": "ping",
+          "test_iteration": 5,
+          "response_time_ms": 28356.871128082275,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 295,
+          "arguments_used": {}
+        }
+      ]
+    },
+    {
+      "tool_name": "store_embedding",
+      "total_tests": 5,
+      "successful_tests": 4,
+      "failed_tests": 1,
+      "average_response_time_ms": 24243.188440799713,
+      "median_response_time_ms": 23864.400625228882,
+      "min_response_time_ms": 23325.12331008911,
+      "max_response_time_ms": 25918.829202651978,
+      "standard_deviation_ms": 1145.864536150475,
+      "percentile_95_ms": 25918.829202651978,
+      "percentile_99_ms": 25918.829202651978,
+      "response_time_status": "unacceptable",
+      "consistency_score": 95.27345778403446,
+      "performance_score": 47.63672889201723,
+      "test_results": [
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 1,
+          "response_time_ms": 23891.239404678345,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 79,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        },
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 2,
+          "response_time_ms": 23837.56184577942,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 79,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        },
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 3,
+          "response_time_ms": 25918.829202651978,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 79,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        },
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 4,
+          "response_time_ms": 30176.770210266113,
+          "response_time_status": "unacceptable",
+          "success": false,
+          "error_message": "Tool execution timed out after 30 seconds",
+          "response_size_bytes": null,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        },
+        {
+          "tool_name": "store_embedding",
+          "test_iteration": 5,
+          "response_time_ms": 23325.12331008911,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 79,
+          "arguments_used": {
+            "name": "test_embedding",
+            "content": "Test content for embedding"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "similarity_search",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 24058.648681640625,
+      "median_response_time_ms": 23007.265329360962,
+      "min_response_time_ms": 22093.249559402466,
+      "max_response_time_ms": 28526.464223861694,
+      "standard_deviation_ms": 2629.3613093042504,
+      "percentile_95_ms": 28526.464223861694,
+      "percentile_99_ms": 28526.464223861694,
+      "response_time_status": "unacceptable",
+      "consistency_score": 89.0710349359283,
+      "performance_score": 44.53551746796415,
+      "test_results": [
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 1,
+          "response_time_ms": 24247.41840362549,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        },
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 2,
+          "response_time_ms": 23007.265329360962,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        },
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 3,
+          "response_time_ms": 22418.845891952515,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        },
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 4,
+          "response_time_ms": 22093.249559402466,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        },
+        {
+          "tool_name": "similarity_search",
+          "test_iteration": 5,
+          "response_time_ms": 28526.464223861694,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 67,
+          "arguments_used": {
+            "query": "test query",
+            "limit": 3
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "process_text_with_llm",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 23504.03323173523,
+      "median_response_time_ms": 23421.602725982666,
+      "min_response_time_ms": 21326.104640960693,
+      "max_response_time_ms": 25585.09087562561,
+      "standard_deviation_ms": 1527.5227843986872,
+      "percentile_95_ms": 25585.09087562561,
+      "percentile_99_ms": 25585.09087562561,
+      "response_time_status": "unacceptable",
+      "consistency_score": 93.5010184450547,
+      "performance_score": 46.75050922252735,
+      "test_results": [
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 1,
+          "response_time_ms": 23421.602725982666,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        },
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 2,
+          "response_time_ms": 23937.384605407715,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        },
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 3,
+          "response_time_ms": 25585.09087562561,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        },
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 4,
+          "response_time_ms": 23249.983310699463,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        },
+        {
+          "tool_name": "process_text_with_llm",
+          "test_iteration": 5,
+          "response_time_ms": 21326.104640960693,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 76,
+          "arguments_used": {
+            "text": "Test text",
+            "task": "summarize"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "dataframe_operations",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 24400.51884651184,
+      "median_response_time_ms": 23930.389404296875,
+      "min_response_time_ms": 21023.870944976807,
+      "max_response_time_ms": 29384.137868881226,
+      "standard_deviation_ms": 3082.1376093288272,
+      "percentile_95_ms": 29384.137868881226,
+      "percentile_99_ms": 29384.137868881226,
+      "response_time_status": "unacceptable",
+      "consistency_score": 87.3685570839022,
+      "performance_score": 43.6842785419511,
+      "test_results": [
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 1,
+          "response_time_ms": 21023.870944976807,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        },
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 2,
+          "response_time_ms": 23930.389404296875,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        },
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 3,
+          "response_time_ms": 24500.24962425232,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        },
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 4,
+          "response_time_ms": 29384.137868881226,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        },
+        {
+          "tool_name": "dataframe_operations",
+          "test_iteration": 5,
+          "response_time_ms": 23163.946390151978,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 81,
+          "arguments_used": {
+            "operation": "head",
+            "data": "col1,col2\n1,2\n3,4"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "split_text",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 22353.41796875,
+      "median_response_time_ms": 22115.050077438354,
+      "min_response_time_ms": 20161.213636398315,
+      "max_response_time_ms": 24701.37619972229,
+      "standard_deviation_ms": 2023.6790714944004,
+      "percentile_95_ms": 24701.37619972229,
+      "percentile_99_ms": 24701.37619972229,
+      "response_time_status": "unacceptable",
+      "consistency_score": 90.94689199511458,
+      "performance_score": 45.47344599755729,
+      "test_results": [
+        {
+          "tool_name": "split_text",
+          "test_iteration": 1,
+          "response_time_ms": 22115.050077438354,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        },
+        {
+          "tool_name": "split_text",
+          "test_iteration": 2,
+          "response_time_ms": 24701.37619972229,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        },
+        {
+          "tool_name": "split_text",
+          "test_iteration": 3,
+          "response_time_ms": 24127.094507217407,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        },
+        {
+          "tool_name": "split_text",
+          "test_iteration": 4,
+          "response_time_ms": 20161.213636398315,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        },
+        {
+          "tool_name": "split_text",
+          "test_iteration": 5,
+          "response_time_ms": 20662.355422973633,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 66,
+          "arguments_used": {
+            "text": "This is a test sentence. This is another sentence.",
+            "method": "sentences"
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "structured_output",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 23587.682723999023,
+      "median_response_time_ms": 24278.23543548584,
+      "min_response_time_ms": 21026.926279067993,
+      "max_response_time_ms": 25089.853525161743,
+      "standard_deviation_ms": 1722.6248801178099,
+      "percentile_95_ms": 25089.853525161743,
+      "percentile_99_ms": 25089.853525161743,
+      "response_time_status": "unacceptable",
+      "consistency_score": 92.69693042646726,
+      "performance_score": 46.34846521323363,
+      "test_results": [
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 1,
+          "response_time_ms": 25089.853525161743,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        },
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 2,
+          "response_time_ms": 24892.22764968872,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        },
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 3,
+          "response_time_ms": 24278.23543548584,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        },
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 4,
+          "response_time_ms": 22651.17073059082,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        },
+        {
+          "tool_name": "structured_output",
+          "test_iteration": 5,
+          "response_time_ms": 21026.926279067993,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 78,
+          "arguments_used": {
+            "text": "Name: John, Age: 30",
+            "schema": {
+              "name": "string",
+              "age": "integer"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tool_name": "type_convert",
+      "total_tests": 5,
+      "successful_tests": 5,
+      "failed_tests": 0,
+      "average_response_time_ms": 23503.943395614624,
+      "median_response_time_ms": 22900.465726852417,
+      "min_response_time_ms": 21962.099313735962,
+      "max_response_time_ms": 26575.847625732422,
+      "standard_deviation_ms": 1778.5795855228548,
+      "percentile_95_ms": 26575.847625732422,
+      "percentile_99_ms": 26575.847625732422,
+      "response_time_status": "unacceptable",
+      "consistency_score": 92.43284603104216,
+      "performance_score": 46.21642301552108,
+      "test_results": [
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 1,
+          "response_time_ms": 22900.465726852417,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        },
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 2,
+          "response_time_ms": 26575.847625732422,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        },
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 3,
+          "response_time_ms": 21962.099313735962,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        },
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 4,
+          "response_time_ms": 22888.92912864685,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        },
+        {
+          "tool_name": "type_convert",
+          "test_iteration": 5,
+          "response_time_ms": 23192.37518310547,
+          "response_time_status": "unacceptable",
+          "success": true,
+          "error_message": null,
+          "response_size_bytes": 83,
+          "arguments_used": {
+            "data": "{\"name\": \"test\"}",
+            "target_type": "yaml"
+          }
+        }
+      ]
+    }
+  ],
+  "test_timestamp": "2025-08-04T16:22:50.798958",
+  "test_duration_seconds": 2738.479933
+}

@@ -1,0 +1,33 @@
+{
+  "timestamp": "20250805_090557",
+  "snapshots": [
+    {
+      "timestamp": "2025-08-05T09:05:52.469508",
+      "cpu_percent": 9.3,
+      "memory_percent": 71.7,
+      "memory_available": 4831125504,
+      "disk_usage_percent": 61.7,
+      "network_io": {
+        "bytes_sent": 2903703590,
+        "bytes_recv": 68724366578,
+        "packets_sent": 12959655,
+        "packets_recv": 633844
+      },
+      "process_count": 308
+    },
+    {
+      "timestamp": "2025-08-05T09:05:57.572742",
+      "cpu_percent": 11.8,
+      "memory_percent": 71.7,
+      "memory_available": 4831010816,
+      "disk_usage_percent": 61.7,
+      "network_io": {
+        "bytes_sent": 2903704325,
+        "bytes_recv": 68724368265,
+        "packets_sent": 12959662,
+        "packets_recv": 633854
+      },
+      "process_count": 308
+    }
+  ]
+}

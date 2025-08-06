@@ -1,0 +1,107 @@
+{
+  "test_suite": "Inspector Quality Assurance Tests (Task 3.2)",
+  "timestamp": "2025-08-04T21:48:15.926572",
+  "summary": {
+    "total_tests": 17,
+    "passed_tests": 10,
+    "failed_tests": 7,
+    "success_rate": 58.82352941176471,
+    "execution_time": 0.024994
+  },
+  "recommendations": [
+    "Address 7 failed tests",
+    "Improve overall test success rate"
+  ],
+  "test_results": {
+    "Quality Metric Addition": {
+      "status": "PASSED",
+      "execution_time": 0.0,
+      "error": null
+    },
+    "Quality Score Calculation": {
+      "status": "PASSED",
+      "execution_time": 0.0,
+      "error": null
+    },
+    "Quality Report Generation": {
+      "status": "PASSED",
+      "execution_time": 0.0,
+      "error": null
+    },
+    "Quality Trends Analysis": {
+      "status": "PASSED",
+      "execution_time": 0.0,
+      "error": null
+    },
+    "Quality Data Export": {
+      "status": "PASSED",
+      "execution_time": 0.004018545150756836,
+      "error": null
+    },
+    "Defect Creation": {
+      "status": "FAILED",
+      "execution_time": 0.0,
+      "error": "Object of type DefectSeverity is not JSON serializable"
+    },
+    "Defect Updates": {
+      "status": "FAILED",
+      "execution_time": 0.0,
+      "error": "Object of type DefectSeverity is not JSON serializable"
+    },
+    "Defect Search": {
+      "status": "PASSED",
+      "execution_time": 0.0,
+      "error": null
+    },
+    "Defect Statistics": {
+      "status": "PASSED",
+      "execution_time": 0.0,
+      "error": null
+    },
+    "Defect Export": {
+      "status": "FAILED",
+      "execution_time": 0.0,
+      "error": "Object of type DefectSeverity is not JSON serializable"
+    },
+    "Dashboard Initialization": {
+      "status": "PASSED",
+      "execution_time": 0.0,
+      "error": null
+    },
+    "Dashboard Status": {
+      "status": "PASSED",
+      "execution_time": 0.0,
+      "error": null
+    },
+    "Dashboard HTML Generation": {
+      "status": "FAILED",
+      "execution_time": 0.0,
+      "error": "'NoneType' object has no attribute 'makefile'"
+    },
+    "End-to-End Quality Workflow": {
+      "status": "FAILED",
+      "execution_time": 0.0,
+      "error": "Object of type DefectSeverity is not JSON serializable"
+    },
+    "Defect-Quality Correlation": {
+      "status": "FAILED",
+      "execution_time": 0.0,
+      "error": "Object of type DefectSeverity is not JSON serializable"
+    },
+    "Quality Data Persistence": {
+      "status": "PASSED",
+      "execution_time": 0.01689004898071289,
+      "error": null
+    },
+    "Defect Data Persistence": {
+      "status": "FAILED",
+      "execution_time": 0.0,
+      "error": "Object of type DefectSeverity is not JSON serializable"
+    }
+  },
+  "module_status": {
+    "quality_assurance": "✅ Implemented",
+    "defect_tracker": "✅ Implemented",
+    "quality_dashboard": "⚠️ Needs improvement"
+  }
+}

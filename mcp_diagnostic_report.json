@@ -1,0 +1,136 @@
+{
+  "timestamp": "2025-08-02 23:56:18,309",
+  "summary": {
+    "total_tests": 20,
+    "passed_tests": 16,
+    "failed_tests": 4,
+    "success_rate": 80.0
+  },
+  "results": [
+    {
+      "test": "Python Version",
+      "success": true,
+      "details": "Python 3.12.3",
+      "timestamp": "2025-08-02 23:56:07,275"
+    },
+    {
+      "test": "Virtual Environment",
+      "success": false,
+      "details": "No virtual environment",
+      "timestamp": "2025-08-02 23:56:07,275"
+    },
+    {
+      "test": "Import asyncio",
+      "success": true,
+      "details": "Successfully imported asyncio",
+      "timestamp": "2025-08-02 23:56:07,366"
+    },
+    {
+      "test": "Import json",
+      "success": true,
+      "details": "Successfully imported json",
+      "timestamp": "2025-08-02 23:56:07,366"
+    },
+    {
+      "test": "Import logging",
+      "success": true,
+      "details": "Successfully imported logging",
+      "timestamp": "2025-08-02 23:56:07,366"
+    },
+    {
+      "test": "Import sys",
+      "success": true,
+      "details": "Successfully imported sys",
+      "timestamp": "2025-08-02 23:56:07,366"
+    },
+    {
+      "test": "Import os",
+      "success": true,
+      "details": "Successfully imported os",
+      "timestamp": "2025-08-02 23:56:07,367"
+    },
+    {
+      "test": "Import pathlib",
+      "success": true,
+      "details": "Successfully imported pathlib",
+      "timestamp": "2025-08-02 23:56:07,367"
+    },
+    {
+      "test": "Import typing",
+      "success": true,
+      "details": "Successfully imported typing",
+      "timestamp": "2025-08-02 23:56:07,367"
+    },
+    {
+      "test": "Import psycopg2",
+      "success": true,
+      "details": "Successfully imported psycopg2-binary",
+      "timestamp": "2025-08-02 23:56:07,389"
+    },
+    {
+      "test": "Import numpy",
+      "success": true,
+      "details": "Successfully imported numpy",
+      "timestamp": "2025-08-02 23:56:07,548"
+    },
+    {
+      "test": "Import pandas",
+      "success": true,
+      "details": "Successfully imported pandas",
+      "timestamp": "2025-08-02 23:56:08,118"
+    },
+    {
+      "test": "Import psutil",
+      "success": true,
+      "details": "Successfully imported psutil",
+      "timestamp": "2025-08-02 23:56:08,132"
+    },
+    {
+      "test": "PostgreSQL Connection",
+      "success": false,
+      "details": "Connection failed: connection to server at \"localhost\" (::1), port 5432 failed: fe_sendauth: no password supplied\n",
+      "timestamp": "2025-08-02 23:56:08,184"
+    },
+    {
+      "test": "pgvector Extension",
+      "success": false,
+      "details": "Extension test failed: connection to server at \"localhost\" (::1), port 5432 failed: fe_sendauth: no password supplied\n",
+      "timestamp": "2025-08-02 23:56:08,226"
+    },
+    {
+      "test": "MCP Server Import",
+      "success": true,
+      "details": "Successfully imported MCP server module",
+      "timestamp": "2025-08-02 23:56:08,227"
+    },
+    {
+      "test": "MCP Server Initialization",
+      "success": true,
+      "details": "Successfully created MCP server instance",
+      "timestamp": "2025-08-02 23:56:08,271"
+    },
+    {
+      "test": "Minimal Server",
+      "success": true,
+      "details": "Minimal MCP server works correctly",
+      "timestamp": "2025-08-02 23:56:08,277"
+    },
+    {
+      "test": "MCP Inspector",
+      "success": false,
+      "details": "npx not found - Node.js may not be installed",
+      "timestamp": "2025-08-02 23:56:08,285"
+    },
+    {
+      "test": "Server Startup",
+      "success": true,
+      "details": "Server started and is running (timeout)",
+      "timestamp": "2025-08-02 23:56:18,309"
+    }
+  ],
+  "recommendations": [
+    "Install and configure PostgreSQL database",
+    "Install pgvector extension for PostgreSQL",
+    "Install Node.js and MCP Inspector"
+  ]
+}

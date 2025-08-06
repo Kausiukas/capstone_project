@@ -1,0 +1,58 @@
+[
+  {
+    "id": "chart_20250729_191311_cost_trends_over_time",
+    "title": "Cost Trends Over Time",
+    "chart_type": "line",
+    "data_source": "module_data_cost_trends",
+    "x_axis": "date",
+    "y_axis": "cost",
+    "color_field": "category",
+    "size_field": null,
+    "filters": {},
+    "options": {},
+    "created_at": "2025-07-29T19:13:11.484507",
+    "updated_at": "2025-07-29T19:13:11.484507"
+  },
+  {
+    "id": "chart_20250729_191311_budget_usage_by_category",
+    "title": "Budget Usage by Category",
+    "chart_type": "pie",
+    "data_source": "module_data_budget_usage",
+    "x_axis": "category",
+    "y_axis": "amount",
+    "color_field": "category",
+    "size_field": null,
+    "filters": {},
+    "options": {},
+    "created_at": "2025-07-29T19:13:11.486387",
+    "updated_at": "2025-07-29T19:13:11.486387"
+  },
+  {
+    "id": "chart_20250729_191311_system_performance_metrics",
+    "title": "System Performance Metrics",
+    "chart_type": "bar",
+    "data_source": "module_data_performance_metrics",
+    "x_axis": "metric",
+    "y_axis": "value",
+    "color_field": "status",
+    "size_field": null,
+    "filters": {},
+    "options": {},
+    "created_at": "2025-07-29T19:13:11.487382",
+    "updated_at": "2025-07-29T19:13:11.487382"
+  },
+  {
+    "id": "chart_20250729_191311_optimization_impact_analysis",
+    "title": "Optimization Impact Analysis",
+    "chart_type": "area",
+    "data_source": "module_data_optimization_impact",
+    "x_axis": "date",
+    "y_axis": "savings",
+    "color_field": "strategy",
+    "size_field": null,
+    "filters": {},
+    "options": {},
+    "created_at": "2025-07-29T19:13:11.488381",
+    "updated_at": "2025-07-29T19:13:11.488381"
+  }
+]

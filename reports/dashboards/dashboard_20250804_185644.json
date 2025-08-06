@@ -1,0 +1,286 @@
+{
+  "dashboard_id": "dashboard_20250804_185644",
+  "overall_score": 5225.4807692307695,
+  "overall_grade": "A+",
+  "category_scores": {
+    "mcp_protocol": 0.0,
+    "tool_standards": 6750.0,
+    "quality_standards": 7500.0,
+    "performance_standards": 6400.0,
+    "security_standards": 8500.0
+  },
+  "recent_trends": [
+    {
+      "metric": "Overall Score",
+      "values": [
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539,
+        5038.461538461539
+      ],
+      "dates": [
+        "2025-08-04 15:54:37.737748+00:00",
+        "2025-08-04 15:54:09.503852+00:00",
+        "2025-08-04 15:52:30.578183+00:00",
+        "2025-08-04 15:52:02.394305+00:00",
+        "2025-08-04 15:49:13.141828+00:00",
+        "2025-08-04 15:48:45.799353+00:00",
+        "2025-08-04 15:48:15.627816+00:00",
+        "2025-08-04 15:47:49.583718+00:00",
+        "2025-08-04 15:41:51.600036+00:00",
+        "2025-08-04 15:40:56.368981+00:00",
+        "2025-08-04 15:39:02.105714+00:00",
+        "2025-08-04 15:38:06.522822+00:00",
+        "2025-08-04 15:37:10.407003+00:00",
+        "2025-08-04 15:36:14.503364+00:00",
+        "2025-08-04 15:35:16.473478+00:00",
+        "2025-08-04 15:34:19.308826+00:00",
+        "2025-08-04 15:33:19.399252+00:00",
+        "2025-08-04 15:30:32.185211+00:00",
+        "2025-08-04 15:29:35.355666+00:00",
+        "2025-08-04 15:28:37.794648+00:00",
+        "2025-08-04 15:27:41.345817+00:00",
+        "2025-08-04 15:26:41.186905+00:00",
+        "2025-08-04 15:25:40.669202+00:00",
+        "2025-08-04 15:24:41.580226+00:00",
+        "2025-08-04 15:22:53.091461+00:00",
+        "2025-08-04 15:21:55.566523+00:00",
+        "2025-08-04 15:20:58.599572+00:00",
+        "2025-08-04 15:20:01.451927+00:00",
+        "2025-08-04 15:19:04.172091+00:00"
+      ],
+      "trend_direction": "stable",
+      "trend_strength": 1.407747947547503e-13,
+      "change_percentage": 0.0,
+      "confidence_level": -4.241379310344827
+    },
+    {
+      "metric": "Compliance Score",
+      "values": [
+        5412.5,
+        5412.5,
+        5412.5,
+        5412.5,
+        5412.5,
+        5412.5,
+        5412.5,
+        5412.5
+      ],
+      "dates": [
+        "2025-08-04 15:55:32.959401+00:00",
+        "2025-08-04 15:55:05.146257+00:00",
+        "2025-08-04 15:53:26.422661+00:00",
+        "2025-08-04 15:52:57.991477+00:00",
+        "2025-08-04 15:51:19.109503+00:00",
+        "2025-08-04 15:50:51.615982+00:00",
+        "2025-08-04 15:50:08.339859+00:00",
+        "2025-08-04 15:49:41.076215+00:00"
+      ],
+      "trend_direction": "stable",
+      "trend_strength": 1.1660374802947877e-13,
+      "change_percentage": 0.0,
+      "confidence_level": 0
+    }
+  ],
+  "top_issues": [
+    "Critical: JSON-RPC 2.0 Format Compliance",
+    "Critical: Request/Response Structure",
+    "Critical: MCP Protocol Compliance",
+    "High Priority: MCP Protocol Compliance",
+    "High Priority: Tool Registration Format",
+    "High Priority: Tool Execution Protocol",
+    "High Priority: Testing Standards",
+    "High Priority: Response Time Standards",
+    "High Priority: Error Information Disclosure"
+  ],
+  "improvement_opportunities": [
+    {
+      "category": "json_rpc_2_0",
+      "priority": "Critical",
+      "title": "Fix JSON-RPC 2.0 Format Compliance",
+      "description": "Server must comply with JSON-RPC 2.0 specification format",
+      "impact_score": 3.0,
+      "effort_score": 2.0,
+      "roi_score": 1.5,
+      "timeline": "Immediate",
+      "dependencies": [],
+      "action_items": [
+        "Address JSON-RPC 2.0 Format Compliance",
+        "Implement required fixes",
+        "Retest after implementation"
+      ]
+    },
+    {
+      "category": "json_rpc_2_0",
+      "priority": "Critical",
+      "title": "Fix Request/Response Structure",
+      "description": "All requests and responses must follow JSON-RPC 2.0 structure",
+      "impact_score": 3.0,
+      "effort_score": 2.0,
+      "roi_score": 1.5,
+      "timeline": "Immediate",
+      "dependencies": [],
+      "action_items": [
+        "Address Request/Response Structure",
+        "Implement required fixes",
+        "Retest after implementation"
+      ]
+    },
+    {
+      "category": "mcp_protocol",
+      "priority": "Critical",
+      "title": "Fix MCP Protocol Compliance",
+      "description": "Server must comply with MCP protocol specification",
+      "impact_score": 3.0,
+      "effort_score": 2.0,
+      "roi_score": 1.5,
+      "timeline": "Immediate",
+      "dependencies": [],
+      "action_items": [
+        "Address MCP Protocol Compliance",
+        "Implement required fixes",
+        "Retest after implementation"
+      ]
+    },
+    {
+      "category": "mcp_protocol",
+      "priority": "High",
+      "title": "Improve MCP Protocol Compliance",
+      "description": "Verify compliance with MCP protocol specification",
+      "impact_score": 2.5,
+      "effort_score": 1.5,
+      "roi_score": 1.7,
+      "timeline": "1-2 weeks",
+      "dependencies": [],
+      "action_items": [
+        "Address MCP Protocol Compliance",
+        "Review and implement improvements",
+        "Validate improvements"
+      ]
+    },
+    {
+      "category": "mcp_protocol",
+      "priority": "Medium",
+      "title": "Improve Tool Registration Format",
+      "description": "Verify tools are registered in correct MCP format",
+      "impact_score": 2.5,
+      "effort_score": 1.5,
+      "roi_score": 1.7,
+      "timeline": "1-2 weeks",
+      "dependencies": [],
+      "action_items": [
+        "Address Tool Registration Format",
+        "Review and implement improvements",
+        "Validate improvements"
+      ]
+    },
+    {
+      "category": "mcp_protocol",
+      "priority": "Medium",
+      "title": "Improve Tool Execution Protocol",
+      "description": "Verify tool execution follows MCP protocol",
+      "impact_score": 2.5,
+      "effort_score": 1.5,
+      "roi_score": 1.7,
+      "timeline": "1-2 weeks",
+      "dependencies": [],
+      "action_items": [
+        "Address Tool Execution Protocol",
+        "Review and implement improvements",
+        "Validate improvements"
+      ]
+    },
+    {
+      "category": "quality_standards",
+      "priority": "Medium",
+      "title": "Improve Testing Standards",
+      "description": "Verify testing coverage and quality",
+      "impact_score": 2.5,
+      "effort_score": 1.5,
+      "roi_score": 1.7,
+      "timeline": "1-2 weeks",
+      "dependencies": [],
+      "action_items": [
+        "Address Testing Standards",
+        "Review and implement improvements",
+        "Validate improvements"
+      ]
+    },
+    {
+      "category": "performance_standards",
+      "priority": "Medium",
+      "title": "Improve Response Time Standards",
+      "description": "Verify response times meet standards",
+      "impact_score": 2.5,
+      "effort_score": 1.5,
+      "roi_score": 1.7,
+      "timeline": "1-2 weeks",
+      "dependencies": [],
+      "action_items": [
+        "Address Response Time Standards",
+        "Review and implement improvements",
+        "Validate improvements"
+      ]
+    },
+    {
+      "category": "security_standards",
+      "priority": "Medium",
+      "title": "Improve Error Information Disclosure",
+      "description": "Verify errors don't disclose sensitive information",
+      "impact_score": 2.5,
+      "effort_score": 1.5,
+      "roi_score": 1.7,
+      "timeline": "1-2 weeks",
+      "dependencies": [],
+      "action_items": [
+        "Address Error Information Disclosure",
+        "Review and implement improvements",
+        "Validate improvements"
+      ]
+    },
+    {
+      "category": "performance_standards",
+      "priority": "Critical",
+      "title": "Address MCP Server Performance Issues",
+      "description": "Fix performance and stability issues identified in Task 2.4",
+      "impact_score": 3.0,
+      "effort_score": 3.0,
+      "roi_score": 1.0,
+      "timeline": "2-4 weeks",
+      "dependencies": [],
+      "action_items": [
+        "Optimize MCP server response times",
+        "Fix concurrent execution issues",
+        "Improve server stability under load",
+        "Implement proper error recovery"
+      ]
+    }
+  ],
+  "last_updated": "2025-08-04 15:56:44.448425+00:00",
+  "next_review_date": "2025-08-11 15:56:44.448425+00:00"
+}

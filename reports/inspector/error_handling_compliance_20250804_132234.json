@@ -1,0 +1,13 @@
+{
+  "test_suite": "Error Handling Compliance",
+  "total_tests": 7,
+  "passed_tests": 2,
+  "failed_tests": 2,
+  "warning_tests": 0,
+  "error_tests": 3,
+  "compliance_score": 28.57142857142857,
+  "test_results": [
+    {
+      "test_name": "Error Response Structure",
+      "test_description": "Validate error response structure follows JSON-RPC 2.0 specification",
+      "status": 

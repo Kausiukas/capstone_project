@@ -1,0 +1,116 @@
+{
+  "timestamp": "2025-07-30T20:56:36.908524",
+  "test_stats": {
+    "total_tests": 12,
+    "passed_tests": 9,
+    "failed_tests": 3,
+    "total_duration": 3.0213088989257812
+  },
+  "test_results": [
+    {
+      "test_name": "WorkspaceManager Unit Test",
+      "success": false,
+      "duration": 0.008998394012451172,
+      "error": "'WorkspaceManager' object has no attribute 'list_files'",
+      "details": {
+        "exception_type": "AttributeError",
+        "traceback": "'WorkspaceManager' object has no attribute 'list_files'"
+      },
+      "timestamp": "2025-07-30T20:56:33.854518"
+    },
+    {
+      "test_name": "CodeAnalyzer Unit Test",
+      "success": true,
+      "duration": 0.0,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T20:56:33.861539"
+    },
+    {
+      "test_name": "CostTracker Unit Test",
+      "success": true,
+      "duration": 0.0020012855529785156,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T20:56:33.866540"
+    },
+    {
+      "test_name": "HealthMonitor Unit Test",
+      "success": false,
+      "duration": 1.0084407329559326,
+      "error": "",
+      "details": {
+        "exception_type": "AssertionError",
+        "traceback": ""
+      },
+      "timestamp": "2025-07-30T20:56:34.877721"
+    },
+    {
+      "test_name": "Module 1 Integration Test",
+      "success": true,
+      "duration": 0.024004459381103516,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T20:56:34.905237"
+    },
+    {
+      "test_name": "Module 2 Integration Test",
+      "success": true,
+      "duration": 1.0077064037322998,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T20:56:35.915447"
+    },
+    {
+      "test_name": "Module 3 Integration Test",
+      "success": false,
+      "duration": 0.011032342910766602,
+      "error": "type object 'BudgetManager' has no attribute 'BudgetPeriod'",
+      "details": {
+        "exception_type": "AttributeError",
+        "traceback": "type object 'BudgetManager' has no attribute 'BudgetPeriod'"
+      },
+      "timestamp": "2025-07-30T20:56:35.929501"
+    },
+    {
+      "test_name": "MCP Server Tools Test",
+      "success": true,
+      "duration": 0.8672657012939453,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T20:56:36.799767"
+    },
+    {
+      "test_name": "MCP Tool Execution Test",
+      "success": true,
+      "duration": 0.012720584869384766,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T20:56:36.815487"
+    },
+    {
+      "test_name": "Complete Workflow Test",
+      "success": true,
+      "duration": 0.013171911239624023,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T20:56:36.832528"
+    },
+    {
+      "test_name": "Performance Under Load Test",
+      "success": true,
+      "duration": 0.05590057373046875,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T20:56:36.891429"
+    },
+    {
+      "test_name": "Error Handling Test",
+      "success": true,
+      "duration": 0.010066509246826172,
+      "error": null,
+      "details": {},
+      "timestamp": "2025-07-30T20:56:36.904494"
+    }
+  ]
+}

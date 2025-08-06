@@ -1,0 +1,423 @@
+{
+  "total_test_cases": 19,
+  "passed_tests": 2,
+  "failed_tests": 1,
+  "partial_tests": 16,
+  "error_tests": 0,
+  "timeout_tests": 0,
+  "average_test_duration_ms": 3029.179999702855,
+  "max_test_duration_ms": 3210.937261581421,
+  "min_test_duration_ms": 2887.9616260528564,
+  "test_results": [
+    {
+      "tool_name": "read_file",
+      "test_case": "read_existing_file",
+      "functionality_status": "partial",
+      "expected_behavior": "Should return file content as string",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 2941.6937828063965,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "file_path": "README.md"
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error reading file: expected str, bytes or os.PathLike object, not NoneType"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "write_file",
+      "test_case": "write_new_file",
+      "functionality_status": "partial",
+      "expected_behavior": "Should create new file with specified content",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 3039.306163787842,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "file_path": "test_functionality.txt",
+        "content": "Test content for functionality testing"
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error writing file: expected str, bytes or os.PathLike object, not NoneType"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "list_files",
+      "test_case": "list_current_directory",
+      "functionality_status": "passed",
+      "expected_behavior": "Should return list of files in current directory",
+      "actual_behavior": "Output matches expected behavior",
+      "test_duration_ms": 3054.570436477661,
+      "output_validation": true,
+      "error_message": null,
+      "test_arguments": {
+        "directory": ".",
+        "batch_size": 5
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"success\": true,\n  \"batch\": {\n    \"files\": [\n      {\n        \"name\": \"__pycache__\",\n        \"path\": \"__pycache__\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1754303580.521331,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"ACTUAL_STATUS.md\",\n        \"path\": \"ACTUAL_STATUS.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 5973,\n        \"size_mb\": 0.01,\n        \"modified\": 1753817459.2088127,\n        \"extension\": \".md\"\n      },\n      {\n        \"name\": \"cache\",\n        \"path\": \"cache\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1754122148.7470982,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"check_tools.py\",\n        \"path\": \"check_tools.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 1208,\n        \"size_mb\": 0.0,\n        \"modified\": 1754118938.8045883,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"clean_demo.py\",\n        \"path\": \"clean_demo.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 8977,\n        \"size_mb\": 0.01,\n        \"modified\": 1753817459.2088127,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"comprehensive_test_results.json\",\n        \"path\": \"comprehensive_test_results.json\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 2841,\n        \"size_mb\": 0.0,\n        \"modified\": 1753902714.4994462,\n        \"extension\": \".json\"\n      },\n      {\n        \"name\": \"comprehensive_test_suite.log\",\n        \"path\": \"comprehensive_test_suite.log\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 90942,\n        \"size_mb\": 0.09,\n        \"modified\": 1753902714.4994462,\n        \"extension\": \".log\"\n      },\n      {\n        \"name\": \"config\",\n        \"path\": \"config\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1754168307.6960866,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"cost_data\",\n        \"path\": \"cost_data\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1753891698.9736304,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"create_data_directories.py\",\n        \"path\": \"create_data_directories.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 3627,\n        \"size_mb\": 0.0,\n        \"modified\": 1754163992.9942136,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"CRITICAL_ISSUE_RESOLUTION_PLAN.md\",\n        \"path\": \"CRITICAL_ISSUE_RESOLUTION_PLAN.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 16005,\n        \"size_mb\": 0.02,\n        \"modified\": 1754158817.2275312,\n        \"extension\": \".md\"\n      },\n      {\n        \"name\": \"CRITICAL_TIMEOUT_FIX.md\",\n        \"path\": \"CRITICAL_TIMEOUT_FIX.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 4311,\n        \"size_mb\": 0.0,\n        \"modified\": 1753995086.2623856,\n        \"extension\": \".md\"\n      },\n      {\n        \"name\": \"CURRENT_STATUS_FINAL.md\",\n        \"path\": \"CURRENT_STATUS_FINAL.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 5731,\n        \"size_mb\": 0.01,\n        \"modified\": 1754163298.899176,\n        \"extension\": \".md\"\n      },\n      {\n        \"name\": \"data\",\n        \"path\": \"data\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1753891696.3464782,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"debug_file_generator.py\",\n        \"path\": \"debug_file_generator.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 3398,\n        \"size_mb\": 0.0,\n        \"modified\": 1754120069.7379904,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"debug_inspector_test.py\",\n        \"path\": \"debug_inspector_test.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 1838,\n        \"size_mb\": 0.0,\n        \"modified\": 1754301075.5397365,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"debug_path_issue.py\",\n        \"path\": \"debug_path_issue.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 2107,\n        \"size_mb\": 0.0,\n        \"modified\": 1754122384.6284516,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"demo.py\",\n        \"path\": \"demo.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 19133,\n        \"size_mb\": 0.02,\n        \"modified\": 1753815140.2422872,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"deployment\",\n        \"path\": \"deployment\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1753818322.12951,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"DEPLOYMENT_GUIDE.md\",\n        \"path\": \"DEPLOYMENT_GUIDE.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 10573,\n        \"size_mb\": 0.01,\n        \"modified\": 1753818535.4736803,\n        \"extension\": \".md\"\n      }\n    ],\n    \"offset\": 0,\n    \"limit\": 20,\n    \"total_files\": 155,\n    \"has_more\": true,\n    \"next_offset\": 20\n  },\n  \"summary\": {\n    \"total_files\": 155,\n    \"total_directories\": 18,\n    \"total_size_mb\": 1.44,\n    \"file_types\": {\n      \"\": 19,\n      \".md\": 65,\n      \".py\": 56,\n      \".json\": 9,\n      \".log\": 2,\n      \".mcp\": 1,\n      \".txt\": 2,\n      \".csv\": 1\n    },\n    \"processing_time_seconds\": 0.02,\n    \"memory_usage_mb\": 0.08\n  },\n  \"directory\": \".\",\n  \"filters\": {\n    \"max_depth\": 1,\n    \"include_hidden\": false,\n    \"file_types\": [],\n    \"sort_by\": \"name\",\n    \"sort_order\": \"asc\"\n  }\n}"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "list_files",
+      "test_case": "list_with_file_types_filter",
+      "functionality_status": "partial",
+      "expected_behavior": "Should return only Python files",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 3074.4662284851074,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "directory": ".",
+        "file_types": [
+          ".py"
+        ],
+        "batch_size": 3
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"success\": true,\n  \"batch\": {\n    \"files\": [\n      {\n        \"name\": \"__pycache__\",\n        \"path\": \"__pycache__\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1754303580.521331,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"ACTUAL_STATUS.md\",\n        \"path\": \"ACTUAL_STATUS.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 5973,\n        \"size_mb\": 0.01,\n        \"modified\": 1753817459.2088127,\n        \"extension\": \".md\"\n      },\n      {\n        \"name\": \"cache\",\n        \"path\": \"cache\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1754122148.7470982,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"check_tools.py\",\n        \"path\": \"check_tools.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 1208,\n        \"size_mb\": 0.0,\n        \"modified\": 1754118938.8045883,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"clean_demo.py\",\n        \"path\": \"clean_demo.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 8977,\n        \"size_mb\": 0.01,\n        \"modified\": 1753817459.2088127,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"comprehensive_test_results.json\",\n        \"path\": \"comprehensive_test_results.json\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 2841,\n        \"size_mb\": 0.0,\n        \"modified\": 1753902714.4994462,\n        \"extension\": \".json\"\n      },\n      {\n        \"name\": \"comprehensive_test_suite.log\",\n        \"path\": \"comprehensive_test_suite.log\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 90942,\n        \"size_mb\": 0.09,\n        \"modified\": 1753902714.4994462,\n        \"extension\": \".log\"\n      },\n      {\n        \"name\": \"config\",\n        \"path\": \"config\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1754168307.6960866,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"cost_data\",\n        \"path\": \"cost_data\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1753891698.9736304,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"create_data_directories.py\",\n        \"path\": \"create_data_directories.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 3627,\n        \"size_mb\": 0.0,\n        \"modified\": 1754163992.9942136,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"CRITICAL_ISSUE_RESOLUTION_PLAN.md\",\n        \"path\": \"CRITICAL_ISSUE_RESOLUTION_PLAN.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 16005,\n        \"size_mb\": 0.02,\n        \"modified\": 1754158817.2275312,\n        \"extension\": \".md\"\n      },\n      {\n        \"name\": \"CRITICAL_TIMEOUT_FIX.md\",\n        \"path\": \"CRITICAL_TIMEOUT_FIX.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 4311,\n        \"size_mb\": 0.0,\n        \"modified\": 1753995086.2623856,\n        \"extension\": \".md\"\n      },\n      {\n        \"name\": \"CURRENT_STATUS_FINAL.md\",\n        \"path\": \"CURRENT_STATUS_FINAL.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 5731,\n        \"size_mb\": 0.01,\n        \"modified\": 1754163298.899176,\n        \"extension\": \".md\"\n      },\n      {\n        \"name\": \"data\",\n        \"path\": \"data\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1753891696.3464782,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"debug_file_generator.py\",\n        \"path\": \"debug_file_generator.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 3398,\n        \"size_mb\": 0.0,\n        \"modified\": 1754120069.7379904,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"debug_inspector_test.py\",\n        \"path\": \"debug_inspector_test.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 1838,\n        \"size_mb\": 0.0,\n        \"modified\": 1754301075.5397365,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"debug_path_issue.py\",\n        \"path\": \"debug_path_issue.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 2107,\n        \"size_mb\": 0.0,\n        \"modified\": 1754122384.6284516,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"demo.py\",\n        \"path\": \"demo.py\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 19133,\n        \"size_mb\": 0.02,\n        \"modified\": 1753815140.2422872,\n        \"extension\": \".py\"\n      },\n      {\n        \"name\": \"deployment\",\n        \"path\": \"deployment\",\n        \"is_file\": false,\n        \"is_dir\": true,\n        \"size_bytes\": 0,\n        \"size_mb\": 0,\n        \"modified\": 1753818322.12951,\n        \"extension\": \"\"\n      },\n      {\n        \"name\": \"DEPLOYMENT_GUIDE.md\",\n        \"path\": \"DEPLOYMENT_GUIDE.md\",\n        \"is_file\": true,\n        \"is_dir\": false,\n        \"size_bytes\": 10573,\n        \"size_mb\": 0.01,\n        \"modified\": 1753818535.4736803,\n        \"extension\": \".md\"\n      }\n    ],\n    \"offset\": 0,\n    \"limit\": 20,\n    \"total_files\": 155,\n    \"has_more\": true,\n    \"next_offset\": 20\n  },\n  \"summary\": {\n    \"total_files\": 155,\n    \"total_directories\": 18,\n    \"total_size_mb\": 1.44,\n    \"file_types\": {\n      \"\": 19,\n      \".md\": 65,\n      \".py\": 56,\n      \".json\": 9,\n      \".log\": 2,\n      \".mcp\": 1,\n      \".txt\": 2,\n      \".csv\": 1\n    },\n    \"processing_time_seconds\": 0.02,\n    \"memory_usage_mb\": 0.08\n  },\n  \"directory\": \".\",\n  \"filters\": {\n    \"max_depth\": 1,\n    \"include_hidden\": false,\n    \"file_types\": [],\n    \"sort_by\": \"name\",\n    \"sort_order\": \"asc\"\n  }\n}"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "list_files_readable",
+      "test_case": "readable_format",
+      "functionality_status": "failed",
+      "expected_behavior": "Should return human-readable file list",
+      "actual_behavior": "Tool execution failed",
+      "test_duration_ms": 3082.643508911133,
+      "output_validation": false,
+      "error_message": "Tool execution failed with exception: 'NoneType' object has no attribute 'strip'",
+      "test_arguments": {
+        "directory": ".",
+        "batch_size": 3
+      },
+      "actual_output": null
+    },
+    {
+      "tool_name": "list_files_table",
+      "test_case": "table_format",
+      "functionality_status": "passed",
+      "expected_behavior": "Should return table-formatted file list",
+      "actual_behavior": "Output matches expected behavior",
+      "test_duration_ms": 3014.472007751465,
+      "output_validation": true,
+      "error_message": null,
+      "test_arguments": {
+        "directory": ".",
+        "offset": "0",
+        "batch_size": 3
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "| summary | Directory: . | Directory listing | Total: 155 files, 18 directories | Size: 1.44 MB | Processed: 2025-08-04T13:36:20.809242 |\n| directory | __pycache__ | Directory | Modified: 2025-08-04 13:33:00 | Type: Directory |\n| .md | ACTUAL_STATUS.md | Documentation | Size: 0.01 MB | Modified: 2025-07-29 22:30:59 | Extension: .md |\n| directory | cache | Directory | Modified: 2025-08-02 11:09:08 | Type: Directory |\n| .py | check_tools.py | Python file | Size: 0.0 MB | Modified: 2025-08-02 10:15:38 | Extension: .py |\n| .py | clean_demo.py | Python file | Size: 0.01 MB | Modified: 2025-07-29 22:30:59 | Extension: .py |\n| .json | comprehensive_test_results.json | Configuration | Size: 0.0 MB | Modified: 2025-07-30 22:11:54 | Extension: .json |\n| .log | comprehensive_test_suite.log | Log file | Size: 0.09 MB | Modified: 2025-07-30 22:11:54 | Extension: .log |\n| directory | config | Directory | Modified: 2025-08-02 23:58:27 | Type: Directory |\n| directory | cost_data | Directory | Modified: 2025-07-30 19:08:18 | Type: Directory |\n| .py | create_data_directories.py | Python file | Size: 0.0 MB | Modified: 2025-08-02 22:46:32 | Extension: .py |\n| .md | CRITICAL_ISSUE_RESOLUTION_PLAN.md | Documentation | Size: 0.02 MB | Modified: 2025-08-02 21:20:17 | Extension: .md |\n| .md | CRITICAL_TIMEOUT_FIX.md | Documentation | Size: 0.0 MB | Modified: 2025-07-31 23:51:26 | Extension: .md |\n| .md | CURRENT_STATUS_FINAL.md | Documentation | Size: 0.01 MB | Modified: 2025-08-02 22:34:58 | Extension: .md |\n| directory | data | Directory | Modified: 2025-07-30 19:08:16 | Type: Directory |\n| .py | debug_file_generator.py | Python file | Size: 0.0 MB | Modified: 2025-08-02 10:34:29 | Extension: .py |\n| .py | debug_inspector_test.py | Python file | Size: 0.0 MB | Modified: 2025-08-04 12:51:15 | Extension: .py |\n| .py | debug_path_issue.py | Python file | Size: 0.0 MB | Modified: 2025-08-02 11:13:04 | Extension: .py |\n| .py | demo.py | Python file | Size: 0.02 MB | Modified: 2025-07-29 21:52:20 | Extension: .py |\n| directory | deployment | Directory | Modified: 2025-07-29 22:45:22 | Type: Directory |\n| .md | DEPLOYMENT_GUIDE.md | Documentation | Size: 0.01 MB | Modified: 2025-07-29 22:48:55 | Extension: .md |\n| pagination | Showing batch 1-20 of 155 | More files available | Next offset: 20 | Processing time: 0.02s |\n| next_offset | 20 | Use this value for next batch | Batch size: 20 |"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "analyze_code",
+      "test_case": "analyze_python_file",
+      "functionality_status": "partial",
+      "expected_behavior": "Should return code analysis results",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 3043.2162284851074,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "file_path": "README.md"
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error analyzing code: expected str, bytes or os.PathLike object, not NoneType"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "track_token_usage",
+      "test_case": "track_usage",
+      "functionality_status": "partial",
+      "expected_behavior": "Should track and return token usage",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 3038.548231124878,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "operation": "test",
+        "model": "gpt-3.5-turbo",
+        "input_tokens": 10,
+        "output_tokens": 5
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Token usage tracked: None using None - Input: None, Output: None"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "get_cost_summary",
+      "test_case": "cost_summary",
+      "functionality_status": "partial",
+      "expected_behavior": "Should return cost summary information",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 2970.456838607788,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {},
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Cost summary:\n{\n  \"total_operations\": 0,\n  \"total_tokens\": 0,\n  \"estimated_cost\": \"$0.00\"\n}"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "get_system_health",
+      "test_case": "health_check",
+      "functionality_status": "partial",
+      "expected_behavior": "Should return system health information",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 3090.061902999878,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {},
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "System health:\n{\n  \"status\": \"healthy\",\n  \"uptime\": \"0 seconds\",\n  \"memory_usage\": \"0 MB\"\n}"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "get_system_status",
+      "test_case": "status_check",
+      "functionality_status": "partial",
+      "expected_behavior": "Should return system status information",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 2954.9684524536133,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {},
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "System status:\n{\n  \"is_running\": true,\n  \"start_time\": \"2025-07-31T23:00:00\",\n  \"modules_initialized\": [\n    \"simple_mcp\"\n  ],\n  \"active_connections\": 1,\n  \"total_operations\": 0,\n  \"system_health\": \"healthy\",\n  \"last_heartbeat\": \"2025-07-31T23:00:00\"\n}"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "ping",
+      "test_case": "basic_ping",
+      "functionality_status": "partial",
+      "expected_behavior": "Should return pong response",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 3210.937261581421,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {},
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Ping response:\n{\n  \"message\": \"Hello from MCP Server!\",\n  \"timestamp\": \"2025-08-04T13:36:39.120832\",\n  \"server_status\": \"running\",\n  \"tools_available\": 22,\n  \"server_name\": \"langflow-connect-simple\",\n  \"version\": \"1.0.0\"\n}"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "store_embedding",
+      "test_case": "store_text_embedding",
+      "functionality_status": "partial",
+      "expected_behavior": "Should store embedding and return success",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 3203.4175395965576,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "name": "test_functionality",
+        "content": "Test content for embedding functionality"
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error: name and content are required"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "similarity_search",
+      "test_case": "search_similarity",
+      "functionality_status": "partial",
+      "expected_behavior": "Should return similarity search results",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 3013.8468742370605,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "query": "test query",
+        "limit": 3
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error: query is required"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "process_text_with_llm",
+      "test_case": "text_processing",
+      "functionality_status": "partial",
+      "expected_behavior": "Should process text and return result",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 3083.3303928375244,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "text": "This is a test text for LLM processing",
+        "task": "summarize"
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error: text and task are required"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "dataframe_operations",
+      "test_case": "head_operation",
+      "functionality_status": "partial",
+      "expected_behavior": "Should return first few rows of data",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 2970.242500305176,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "operation": "head",
+        "data": "col1,col2\n1,2\n3,4\n5,6"
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error: operation and data are required"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "split_text",
+      "test_case": "sentence_splitting",
+      "functionality_status": "partial",
+      "expected_behavior": "Should split text into sentences",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 2905.355453491211,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "text": "This is sentence one. This is sentence two.",
+        "method": "sentences"
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error: text is required"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "structured_output",
+      "test_case": "extract_structured_data",
+      "functionality_status": "partial",
+      "expected_behavior": "Should extract structured data according to schema",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 2887.9616260528564,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "text": "Name: John Doe, Age: 30, City: New York",
+        "schema": {
+          "name": "string",
+          "age": "integer",
+          "city": "string"
+        }
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error: text and schema are required"
+          }
+        ]
+      }
+    },
+    {
+      "tool_name": "type_convert",
+      "test_case": "json_to_yaml",
+      "functionality_status": "partial",
+      "expected_behavior": "Should convert JSON to YAML format",
+      "actual_behavior": "Output received but doesn't match expected behavior",
+      "test_duration_ms": 2974.9245643615723,
+      "output_validation": false,
+      "error_message": null,
+      "test_arguments": {
+        "data": "{\"name\": \"test\", \"value\": 123}",
+        "target_type": "yaml"
+      },
+      "actual_output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error: data and target_type are required"
+          }
+        ]
+      }
+    }
+  ],
+  "test_timestamp": "2025-08-04T13:37:00.210148",
+  "test_duration_seconds": 60.713966,
+  "functionality_success_rate": 94.73684210526315
+}

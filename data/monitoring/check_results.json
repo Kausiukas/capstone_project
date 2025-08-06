@@ -1,0 +1,1814 @@
+{
+  "check_20250730_171913_langflow_api_health": [
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:06:24.189495",
+      "status": "critical",
+      "response_time": 2278.601,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:07:00.560164",
+      "status": "critical",
+      "response_time": 2282.171,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:07:32.882145",
+      "status": "critical",
+      "response_time": 2303.443,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:08:09.292784",
+      "status": "critical",
+      "response_time": 2301.292,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:08:41.627163",
+      "status": "critical",
+      "response_time": 2298.228,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:09:18.032026",
+      "status": "critical",
+      "response_time": 2321.113,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:09:50.384661",
+      "status": "critical",
+      "response_time": 2279.083,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:10:26.785995",
+      "status": "critical",
+      "response_time": 2283.6470000000004,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:10:59.114635",
+      "status": "critical",
+      "response_time": 2287.395,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:11:35.473997",
+      "status": "critical",
+      "response_time": 2290.543,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:12:15.653012",
+      "status": "critical",
+      "response_time": 2306.361,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:12:52.108793",
+      "status": "critical",
+      "response_time": 2283.5899999999997,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:13:24.420520",
+      "status": "critical",
+      "response_time": 2277.043,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:45:50.733366",
+      "status": "critical",
+      "response_time": 2291.489,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:46:27.220071",
+      "status": "critical",
+      "response_time": 2280.32,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:46:59.530830",
+      "status": "critical",
+      "response_time": 2282.817,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:47:35.943600",
+      "status": "critical",
+      "response_time": 2272.8579999999997,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:48:08.254320",
+      "status": "critical",
+      "response_time": 2279.3329999999996,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:48:44.634338",
+      "status": "critical",
+      "response_time": 2290.2019999999998,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:49:16.967742",
+      "status": "critical",
+      "response_time": 2296.497,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:49:53.402926",
+      "status": "critical",
+      "response_time": 2280.874,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:50:25.720063",
+      "status": "critical",
+      "response_time": 2277.138,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:51:02.114304",
+      "status": "critical",
+      "response_time": 2309.815,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:51:34.475897",
+      "status": "critical",
+      "response_time": 2284.4359999999997,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:52:10.918339",
+      "status": "critical",
+      "response_time": 2281.974,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:52:43.976784",
+      "status": "critical",
+      "response_time": 2295.2889999999998,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:53:20.432094",
+      "status": "critical",
+      "response_time": 2297.3089999999997,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:53:52.764177",
+      "status": "critical",
+      "response_time": 2299.7580000000003,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:54:29.198058",
+      "status": "critical",
+      "response_time": 2282.0860000000002,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:55:01.514518",
+      "status": "critical",
+      "response_time": 2269.413,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:55:37.948725",
+      "status": "critical",
+      "response_time": 2295.267,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:56:11.092311",
+      "status": "critical",
+      "response_time": 2285.524,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:56:47.503929",
+      "status": "critical",
+      "response_time": 2285.506,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:57:19.871880",
+      "status": "critical",
+      "response_time": 2301.767,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:57:56.332000",
+      "status": "critical",
+      "response_time": 2288.067,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:58:28.678649",
+      "status": "critical",
+      "response_time": 2290.983,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:59:05.068472",
+      "status": "critical",
+      "response_time": 2275.882,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T21:59:37.374744",
+      "status": "critical",
+      "response_time": 2265.5539999999996,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:00:13.761471",
+      "status": "critical",
+      "response_time": 2278.9860000000003,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:00:46.074626",
+      "status": "critical",
+      "response_time": 2292.358,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:01:22.460067",
+      "status": "critical",
+      "response_time": 2294.107,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:01:54.796216",
+      "status": "critical",
+      "response_time": 2304.164,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:02:31.220110",
+      "status": "critical",
+      "response_time": 2292.0389999999998,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:03:04.332921",
+      "status": "critical",
+      "response_time": 2284.17,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:03:40.758681",
+      "status": "critical",
+      "response_time": 2299.342,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:04:13.099674",
+      "status": "critical",
+      "response_time": 2294.19,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:04:49.506997",
+      "status": "critical",
+      "response_time": 2289.86,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:05:21.853109",
+      "status": "critical",
+      "response_time": 2275.171,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:05:58.266085",
+      "status": "critical",
+      "response_time": 2285.8390000000004,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:06:31.438296",
+      "status": "critical",
+      "response_time": 2287.096,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:07:07.864062",
+      "status": "critical",
+      "response_time": 2307.225,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:07:40.215485",
+      "status": "critical",
+      "response_time": 2285.4199999999996,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:08:16.602703",
+      "status": "critical",
+      "response_time": 2297.8489999999997,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:08:48.931629",
+      "status": "critical",
+      "response_time": 2275.031,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:09:25.342442",
+      "status": "critical",
+      "response_time": 2305.7780000000002,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:09:57.706991",
+      "status": "critical",
+      "response_time": 2292.1059999999998,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:10:34.157762",
+      "status": "critical",
+      "response_time": 2304.637,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:11:06.494718",
+      "status": "critical",
+      "response_time": 2308.532,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:11:42.951765",
+      "status": "critical",
+      "response_time": 2303.397,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:12:15.292566",
+      "status": "critical",
+      "response_time": 2282.1980000000003,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:12:51.720089",
+      "status": "critical",
+      "response_time": 2295.571,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:13:24.629800",
+      "status": "critical",
+      "response_time": 2273.475,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:14:01.038543",
+      "status": "critical",
+      "response_time": 2291.449,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:14:33.375834",
+      "status": "critical",
+      "response_time": 2308.3469999999998,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:15:09.811920",
+      "status": "critical",
+      "response_time": 2284.97,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:15:42.169857",
+      "status": "critical",
+      "response_time": 2274.518,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:16:18.561746",
+      "status": "critical",
+      "response_time": 2305.297,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:16:51.704704",
+      "status": "critical",
+      "response_time": 2289.6519999999996,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:17:28.117258",
+      "status": "critical",
+      "response_time": 2301.5249999999996,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-07-31T22:18:00.486631",
+      "status": "critical",
+      "response_time": 2299.348,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:32:31.652111",
+      "status": "critical",
+      "response_time": 2283.8379999999997,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:46:03.926824",
+      "status": "critical",
+      "response_time": 2284.041,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:46:40.374594",
+      "status": "critical",
+      "response_time": 2291.62,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:47:12.702283",
+      "status": "critical",
+      "response_time": 2305.0950000000003,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:47:49.195979",
+      "status": "critical",
+      "response_time": 2285.115,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:48:21.515033",
+      "status": "critical",
+      "response_time": 2284.7200000000003,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:48:57.968972",
+      "status": "critical",
+      "response_time": 2284.144,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:49:30.292988",
+      "status": "critical",
+      "response_time": 2277.927,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:50:06.730026",
+      "status": "critical",
+      "response_time": 2281.589,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:50:39.074646",
+      "status": "critical",
+      "response_time": 2310.0209999999997,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:51:15.500546",
+      "status": "critical",
+      "response_time": 2316.899,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:51:47.872290",
+      "status": "critical",
+      "response_time": 2293.7949999999996,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:52:24.295966",
+      "status": "critical",
+      "response_time": 2289.416,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:52:57.109837",
+      "status": "critical",
+      "response_time": 2277.567,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:53:33.494851",
+      "status": "critical",
+      "response_time": 2267.384,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:54:05.819624",
+      "status": "critical",
+      "response_time": 2306.9790000000003,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:54:42.303429",
+      "status": "critical",
+      "response_time": 2267.061,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:55:14.603241",
+      "status": "critical",
+      "response_time": 2282.7920000000004,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:55:51.023571",
+      "status": "critical",
+      "response_time": 2282.808,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:56:24.182263",
+      "status": "critical",
+      "response_time": 2290.138,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:57:00.591618",
+      "status": "critical",
+      "response_time": 2271.655,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:57:32.898280",
+      "status": "critical",
+      "response_time": 2295.135,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:58:09.302381",
+      "status": "critical",
+      "response_time": 2293.889,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:58:41.622195",
+      "status": "critical",
+      "response_time": 2276.355,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:59:18.020250",
+      "status": "critical",
+      "response_time": 2287.537,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T19:59:50.367672",
+      "status": "critical",
+      "response_time": 2291.7670000000003,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T20:00:26.752872",
+      "status": "critical",
+      "response_time": 2276.874,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T20:00:59.053960",
+      "status": "critical",
+      "response_time": 2277.131,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {
+        "exception": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_langflow_api_health",
+      "timestamp": "2025-08-02T20:11:06.921829+00:00",
+      "status": "critical",
+      "response_time": 2291.848,
+      "error_message": "Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+      "details": {}
+    }
+  ],
+  "check_20250730_171913_websocket_connection": [
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:06:26.471405",
+      "status": "critical",
+      "response_time": 4054.151,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:07:35.191385",
+      "status": "critical",
+      "response_time": 4079.14,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:08:43.933657",
+      "status": "critical",
+      "response_time": 4072.2569999999996,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:09:52.676130",
+      "status": "critical",
+      "response_time": 4064.3849999999998,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:11:01.410369",
+      "status": "critical",
+      "response_time": 4045.7999999999997,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:12:17.975677",
+      "status": "critical",
+      "response_time": 4089.1409999999996,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:13:26.710102",
+      "status": "critical",
+      "response_time": 4055.866,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:45:53.033718",
+      "status": "critical",
+      "response_time": 4159.589999999999,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:47:01.825407",
+      "status": "critical",
+      "response_time": 4071.212,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:48:10.542206",
+      "status": "critical",
+      "response_time": 4067.29,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:49:19.275798",
+      "status": "critical",
+      "response_time": 4064.2709999999997,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:50:28.010068",
+      "status": "critical",
+      "response_time": 4056.3529999999996,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:51:36.800535",
+      "status": "critical",
+      "response_time": 4047.8329999999996,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:52:46.310509",
+      "status": "critical",
+      "response_time": 4065.8950000000004,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:53:55.076731",
+      "status": "critical",
+      "response_time": 4076.735,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:55:03.796709",
+      "status": "critical",
+      "response_time": 4081.583,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:56:13.390278",
+      "status": "critical",
+      "response_time": 4060.106,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:57:22.201030",
+      "status": "critical",
+      "response_time": 4055.134,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:58:30.983128",
+      "status": "critical",
+      "response_time": 4047.921,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T21:59:39.653333",
+      "status": "critical",
+      "response_time": 4073.181,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:00:48.383003",
+      "status": "critical",
+      "response_time": 4056.4280000000003,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:01:57.116504",
+      "status": "critical",
+      "response_time": 4066.5699999999997,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:03:06.636003",
+      "status": "critical",
+      "response_time": 4071.5070000000005,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:04:15.407580",
+      "status": "critical",
+      "response_time": 4071.5389999999998,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:05:24.143134",
+      "status": "critical",
+      "response_time": 4089.0639999999994,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:06:33.737732",
+      "status": "critical",
+      "response_time": 4063.471,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:07:42.516827",
+      "status": "critical",
+      "response_time": 4062.441,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:08:51.223310",
+      "status": "critical",
+      "response_time": 4063.546,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:10:00.036870",
+      "status": "critical",
+      "response_time": 4074.471,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:11:08.820917",
+      "status": "critical",
+      "response_time": 4082.137,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:12:17.590572",
+      "status": "critical",
+      "response_time": 4061.8480000000004,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:13:26.919895",
+      "status": "critical",
+      "response_time": 4075.8559999999998,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:14:35.702240",
+      "status": "critical",
+      "response_time": 4059.5990000000006,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:15:44.483228",
+      "status": "critical",
+      "response_time": 4044.903,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:16:54.016382",
+      "status": "critical",
+      "response_time": 4045.977,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-07-31T22:18:02.801706",
+      "status": "critical",
+      "response_time": 4072.74,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:32:33.993560",
+      "status": "critical",
+      "response_time": 4264.58,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:46:06.229360",
+      "status": "critical",
+      "response_time": 4085.8230000000003,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:47:15.032250",
+      "status": "critical",
+      "response_time": 4062.0919999999996,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:48:23.818787",
+      "status": "critical",
+      "response_time": 4066.833,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:49:32.599855",
+      "status": "critical",
+      "response_time": 4073.177,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:50:41.404186",
+      "status": "critical",
+      "response_time": 4059.8869999999997,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:51:50.184256",
+      "status": "critical",
+      "response_time": 4066.2070000000003,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:52:59.406065",
+      "status": "critical",
+      "response_time": 4057.7639999999997,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:54:08.181696",
+      "status": "critical",
+      "response_time": 4056.4970000000003,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:55:16.910469",
+      "status": "critical",
+      "response_time": 4045.9259999999995,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:56:26.494037",
+      "status": "critical",
+      "response_time": 4058.662,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:57:35.214308",
+      "status": "critical",
+      "response_time": 4041.766,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:58:43.918529",
+      "status": "critical",
+      "response_time": 4051.772,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T19:59:52.679897",
+      "status": "critical",
+      "response_time": 4050.16,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T20:01:01.352340",
+      "status": "critical",
+      "response_time": 4026.853,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {
+        "exception": "[WinError 1225] The remote computer refused the network connection"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_websocket_connection",
+      "timestamp": "2025-08-02T20:11:09.235975+00:00",
+      "status": "critical",
+      "response_time": 4097.558,
+      "error_message": "[WinError 1225] The remote computer refused the network connection",
+      "details": {}
+    }
+  ],
+  "check_20250730_171913_database_connection": [
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:06:30.531045",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:08:31.626705",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:10:39.093846",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:12:42.093896",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:45:57.201815",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:47:58.242983",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:50:05.713447",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:52:13.240240",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:54:19.186591",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:56:27.479590",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T21:58:35.042304",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T22:00:36.074450",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T22:02:43.530038",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T22:04:51.817519",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T22:06:57.843006",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T22:09:05.320232",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T22:11:12.929600",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T22:13:14.611623",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T22:15:22.143512",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-07-31T22:17:30.440184",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T19:32:38.271624",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T19:46:10.332100",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T19:48:11.507257",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T19:50:19.040072",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T19:52:26.600786",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T19:54:32.282013",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T19:56:40.584303",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T19:58:47.986190",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T20:00:49.055437",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    },
+    {
+      "check_id": "check_20250730_171913_database_connection",
+      "timestamp": "2025-08-02T20:11:13.356969+00:00",
+      "status": "healthy",
+      "response_time": 0.0,
+      "error_message": null,
+      "details": {
+        "custom_check": "passed"
+      }
+    }
+  ]
+}

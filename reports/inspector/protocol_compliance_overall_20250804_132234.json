@@ -1,0 +1,75 @@
+{
+  "test_suite": "Protocol Compliance Test Suite",
+  "timestamp": "2025-08-04T13:22:34.655025",
+  "overall_compliance_score": 29.523809523809522,
+  "total_tests": 18,
+  "passed_tests": 5,
+  "failed_tests": 13,
+  "test_results": {
+    "jsonrpc": {
+      "test_suite": "JSON-RPC 2.0 Compliance",
+      "compliance_score": 60.0,
+      "total_tests": 5,
+      "passed_tests": 3,
+      "failed_tests": 1,
+      "warning_tests": 1,
+      "error_tests": 0,
+      "summary": "JSON-RPC 2.0 Compliance Test Results:\n- Total Tests: 5\n- Passed: 3\n- Failed: 1\n- Warnings: 1\n- Errors: 0\n- Compliance Score: 60.0%\n\n\u26a0\ufe0f Moderate compliance with significant issues",
+      "recommendations": [
+        "Fix Error Code Compliance: Error response missing 'message' field",
+        "Review Request Structure Compliance: Moderate request structure compliance - 50.0% success rate",
+        "Review JSON-RPC 2.0 specification compliance"
+      ],
+      "status": "fail"
+    },
+    "mcp_protocol": {
+      "test_suite": "MCP Protocol Compliance",
+      "compliance_score": 0.0,
+      "total_tests": 6,
+      "passed_tests": 0,
+      "failed_tests": 5,
+      "warning_tests": 1,
+      "error_tests": 0,
+      "summary": "MCP Protocol Compliance Test Results:\n- Total Tests: 6\n- Passed: 0\n- Failed: 5\n- Warnings: 1\n- Errors: 0\n- Compliance Score: 0.0%\n\n\u274c Poor compliance - major issues need to be addressed",
+      "recommendations": [
+        "Fix Tool Registration Format: Failed to get tools list: [WinError 2] The system cannot find the file specified",
+        "Fix Tool Execution Protocol: Tool execution failed: [WinError 2] The system cannot find the file specified",
+        "Fix Method Availability: Failed methods: tools/list: [WinError 2] The system cannot find the file specified, tools/call: [WinError 2] The system cannot find the file specified",
+        "Fix Error Handling Protocol: Error response is not a dictionary",
+        "Fix Content Format Compliance: Tool execution failed: [WinError 2] The system cannot find the file specified",
+        "Review Protocol Extensions: Server info method not supported: [WinError 2] The system cannot find the file specified",
+        "Review MCP protocol specification compliance"
+      ],
+      "status": "fail"
+    },
+    "error_handling": {
+      "test_suite": "Error Handling Compliance",
+      "compliance_score": 28.57142857142857,
+      "total_tests": 7,
+      "passed_tests": 2,
+      "failed_tests": 2,
+      "warning_tests": 0,
+      "error_tests": 3,
+      "summary": "Error Handling Compliance Test Results:\n- Total Tests: 7\n- Passed: 2\n- Failed: 2\n- Warnings: 0\n- Errors: 3\n- Compliance Score: 28.6%\n\n\u274c Poor error handling - major issues need to be addressed",
+      "recommendations": [
+        "Fix Error Response Structure: Error response is not a dictionary",
+        "Fix Error Recovery: System failed to recover from error - valid request failed",
+        "Review error handling standards and best practices"
+      ],
+      "status": "fail"
+    }
+  },
+  "summary": "Protocol Compliance Test Suite Results:\n- Overall Compliance Score: 29.5%\n- Total Tests: 18\n- Passed Tests: 5\n- Failed Tests: 13\n\n\u274c Poor protocol compliance - major issues need addressing",
+  "recommendations": [
+    "Improve JSON-RPC 2.0 Compliance compliance (current: 60.0%)",
+    "Improve MCP Protocol Compliance compliance (current: 0.0%)",
+    "Improve Error Handling Compliance compliance (current: 28.6%)",
+    "Fix Error Code Compliance: Error response missing 'message' field",
+    "Review Request Structure Compliance: Moderate request structure compliance - 50.0% success rate",
+    "Fix Tool Registration Format: Failed to get tools list: [WinError 2] The system cannot find the file specified",
+    "Fix Tool Execution Protocol: Tool execution failed: [WinError 2] The system cannot find the file specified",
+    "Fix Error Response Structure: Error response is not a dictionary",
+    "Fix Error Recovery: System failed to recover from error - valid request failed"
+  ],
+  "status": "fail"
+}

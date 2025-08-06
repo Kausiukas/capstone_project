@@ -1,0 +1,19 @@
+{
+  "timestamp": "20250805_090526",
+  "snapshots": [
+    {
+      "timestamp": "2025-08-05T09:05:26.904511",
+      "cpu_percent": 13.9,
+      "memory_percent": 71.4,
+      "memory_available": 4869541888,
+      "disk_usage_percent": 61.7,
+      "network_io": {
+        "bytes_sent": 2903653802,
+        "bytes_recv": 68724285558,
+        "packets_sent": 12959516,
+        "packets_recv": 633624
+      },
+      "process_count": 307
+    }
+  ]
+}

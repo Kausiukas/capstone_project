@@ -1,0 +1,145 @@
+{
+  "suite_name": "Task 3.1: Inspector Standards Validator",
+  "total_tests": 11,
+  "passed_tests": 8,
+  "failed_tests": 3,
+  "error_tests": 0,
+  "skipped_tests": 0,
+  "timeout_tests": 0,
+  "overall_score": 72.72727272727273,
+  "test_results": [
+    {
+      "test_name": "standards_validator_execution",
+      "test_description": "Test standards validation execution",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 0.0,
+      "details": "Test standards_validator_execution completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 16:31:45.761446+00:00",
+      "start_time": "2025-08-04 19:31:45.761446",
+      "end_time": "2025-08-04 19:31:45.761446"
+    },
+    {
+      "test_name": "standards_requirements_loading",
+      "test_description": "Test standards requirements loading",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 0.0,
+      "details": "Test standards_requirements_loading completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 16:31:45.761446+00:00",
+      "start_time": "2025-08-04 19:31:45.761446",
+      "end_time": "2025-08-04 19:31:45.761446"
+    },
+    {
+      "test_name": "standards_report_generation",
+      "test_description": "Test standards report generation",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 11.233,
+      "details": "Test standards_report_generation failed",
+      "error_message": "",
+      "timestamp": "2025-08-04 16:31:45.772679+00:00",
+      "start_time": "2025-08-04 19:31:45.761446",
+      "end_time": "2025-08-04 19:31:45.772679"
+    },
+    {
+      "test_name": "compliance_checker_execution",
+      "test_description": "Test compliance checking execution",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 0.0,
+      "details": "Test compliance_checker_execution completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 16:31:45.772679+00:00",
+      "start_time": "2025-08-04 19:31:45.772679",
+      "end_time": "2025-08-04 19:31:45.772679"
+    },
+    {
+      "test_name": "compliance_checks_loading",
+      "test_description": "Test compliance checks loading",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 0.0,
+      "details": "Test compliance_checks_loading completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 16:31:45.772679+00:00",
+      "start_time": "2025-08-04 19:31:45.772679",
+      "end_time": "2025-08-04 19:31:45.772679"
+    },
+    {
+      "test_name": "compliance_report_generation",
+      "test_description": "Test compliance report generation",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 0.0,
+      "details": "Test compliance_report_generation failed",
+      "error_message": "",
+      "timestamp": "2025-08-04 16:31:45.772679+00:00",
+      "start_time": "2025-08-04 19:31:45.772679",
+      "end_time": "2025-08-04 19:31:45.772679"
+    },
+    {
+      "test_name": "standards_reporter_execution",
+      "test_description": "Test standards reporter execution",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 1.193,
+      "details": "Test standards_reporter_execution completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 16:31:45.775041+00:00",
+      "start_time": "2025-08-04 19:31:45.773848",
+      "end_time": "2025-08-04 19:31:45.775041"
+    },
+    {
+      "test_name": "dashboard_creation",
+      "test_description": "Test dashboard creation",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 0.0,
+      "details": "Test dashboard_creation completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 16:31:45.775041+00:00",
+      "start_time": "2025-08-04 19:31:45.775041",
+      "end_time": "2025-08-04 19:31:45.775041"
+    },
+    {
+      "test_name": "report_formatting",
+      "test_description": "Test report formatting",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 2.2079999999999997,
+      "details": "Test report_formatting completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 16:31:45.777249+00:00",
+      "start_time": "2025-08-04 19:31:45.775041",
+      "end_time": "2025-08-04 19:31:45.777249"
+    },
+    {
+      "test_name": "end_to_end_workflow",
+      "test_description": "Test end-to-end standards validation workflow",
+      "status": "TestStatus.PASSED",
+      "execution_time_ms": 0.0,
+      "details": "Test end_to_end_workflow completed successfully",
+      "error_message": null,
+      "timestamp": "2025-08-04 16:31:45.777249+00:00",
+      "start_time": "2025-08-04 19:31:45.777249",
+      "end_time": "2025-08-04 19:31:45.777249"
+    },
+    {
+      "test_name": "data_consistency",
+      "test_description": "Test data consistency between modules",
+      "status": "TestStatus.FAILED",
+      "execution_time_ms": 0.0,
+      "details": "Test data_consistency failed",
+      "error_message": "",
+      "timestamp": "2025-08-04 16:31:45.777249+00:00",
+      "start_time": "2025-08-04 19:31:45.777249",
+      "end_time": "2025-08-04 19:31:45.777249"
+    }
+  ],
+  "summary": "\nStandards Validation Test Suite Summary\n\nOverall Test Score: 72.7%\nTotal Execution Time: N/A\n\nTotal Tests: 11\n- Passed: 8\n- Failed: 3\n- Errors: 0\n- Skipped: 0\n- Timeouts: 0\n\nTest Results:\n\u2705 standards_validator_execution: passed (0.0ms)\n\u2705 standards_requirements_loading: passed (0.0ms)\n\u274c standards_report_generation: failed (11.2ms)\n\u2705 compliance_checker_execution: passed (0.0ms)\n\u2705 compliance_checks_loading: passed (0.0ms)\n\u274c compliance_report_generation: failed (0.0ms)\n\u2705 standards_reporter_execution: passed (1.2ms)\n\u2705 dashboard_creation: passed (0.0ms)\n\u2705 report_formatting: passed (2.2ms)\n\u2705 end_to_end_workflow: passed (0.0ms)\n\u274c data_consistency: failed (0.0ms)\nTest suite completed at: 2025-08-04 16:29:44 UTC",
+  "recommendations": [
+    "Address 3 failed tests",
+    "Fix standards_report_generation: ",
+    "Fix compliance_report_generation: ",
+    "Fix data_consistency: ",
+    "Improve overall test coverage and reliability"
+  ],
+  "timestamp": "2025-08-04 16:29:44.611629+00:00",
+  "start_time": "2025-08-04 19:29:44.624501",
+  "end_time": null,
+  "total_execution_time": 0.0
+}

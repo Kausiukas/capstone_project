@@ -1,0 +1,2882 @@
+[
+  {
+    "id": "alert_20250730_172213",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: BaseEventLoop.create_connection() got an unexpected keyword argument 'timeout'",
+    "severity": "critical",
+    "timestamp": "2025-07-30T17:22:13.402274",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250730_172245",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-30T17:22:45.721676",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250730_172318",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: BaseEventLoop.create_connection() got an unexpected keyword argument 'timeout'",
+    "severity": "critical",
+    "timestamp": "2025-07-30T17:23:18.021949",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250730_172350",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-30T17:23:50.298766",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194343",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:43:43.468320",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194348",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:43:48.016333",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194420",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:44:20.335934",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194452",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:44:52.665755",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194456",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:44:56.722123",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194529",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:45:29.037694",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194601",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:46:01.366345",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194605",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:46:05.431404",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194638",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:46:38.516557",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194710",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:47:10.824543",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194714",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:47:14.879093",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194747",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:47:47.212275",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194820",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:48:20.237009",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194824",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:48:24.304056",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194856",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:48:56.598161",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194928",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:49:28.907610",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_194932",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:49:32.956488",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195005",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:50:05.586710",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195037",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:50:37.931134",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195041",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:50:41.973027",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195114",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:51:14.270998",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195146",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:51:46.568087",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195150",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:51:50.633083",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195222",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:52:22.941310",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195255",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:52:55.251208",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195259",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:52:59.386189",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195332",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:53:32.678655",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195404",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:54:04.993783",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195409",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:54:09.063961",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195441",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:54:41.362986",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195513",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:55:13.700352",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195517",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:55:17.800547",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195550",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:55:50.103709",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195622",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:56:22.417639",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195626",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:56:26.476526",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195658",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:56:58.773448",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195731",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:57:31.063914",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195735",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:57:35.110622",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195807",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:58:07.381924",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195840",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:58:40.614687",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195844",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:58:44.648689",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195917",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:59:17.025336",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195949",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:59:49.337706",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_195953",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T19:59:53.377854",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200026",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:00:26.029377",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200058",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:00:58.300787",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200102",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:01:02.367659",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200134",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:01:34.678565",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200207",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:02:07.007204",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200211",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:02:11.070937",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200243",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:02:43.369647",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200315",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:03:15.668235",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200319",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:03:19.802361",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200353",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:03:53.097674",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200425",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:04:25.412688",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200429",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:04:29.461362",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200501",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:05:01.745802",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200534",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:05:34.067662",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200538",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:05:38.147770",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200610",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:06:10.473580",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200642",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:06:42.805970",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200646",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:06:46.876531",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200719",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:07:19.177358",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200751",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:07:51.483884",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200755",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:07:55.538001",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200827",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:08:27.870344",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200900",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:09:00.952908",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200905",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:09:05.002052",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_200937",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:09:37.337593",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201009",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:10:09.653490",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201013",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:10:13.730545",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201046",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:10:46.317557",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201118",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:11:18.644105",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201122",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:11:22.714401",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201155",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:11:55.048586",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201227",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:12:27.328187",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201231",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:12:31.390697",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201303",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:13:03.701843",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201336",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:13:36.003468",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201340",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:13:40.138454",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201413",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:14:13.487574",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201445",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:14:45.791800",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201449",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:14:49.871907",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201522",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:15:22.175811",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201554",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:15:54.511885",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201558",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:15:58.589631",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201630",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:16:30.912388",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201703",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:17:03.242838",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201707",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:17:07.309958",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201739",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:17:39.637437",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201811",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:18:11.962178",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201816",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:18:16.047763",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201848",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:18:48.382027",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201921",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:19:21.301100",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201925",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:19:25.370823",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_201957",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:19:57.667613",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_202939",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:29:39.675046",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_202943",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:29:43.780192",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203016",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:30:16.070206",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203048",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:30:48.382467",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203052",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:30:52.457825",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203124",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:31:24.743027",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203157",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:31:57.076944",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203201",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:32:01.147805",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203233",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:32:33.453745",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203305",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:33:05.793232",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203309",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:33:09.867980",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203342",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:33:42.175648",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203414",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:34:14.505549",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203418",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:34:18.566882",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203450",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:34:50.885804",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203523",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:35:23.187529",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203527",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:35:27.252088",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203559",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:35:59.592101",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203632",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:36:32.903567",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203636",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:36:36.971826",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203709",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:37:09.290186",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203741",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:37:41.597689",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203745",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:37:45.668279",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203817",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:38:17.974530",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203850",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:38:50.263618",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203854",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:38:54.320575",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203926",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:39:26.678593",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_203959",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:39:59.959192",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_204004",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:40:04.039002",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_204036",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:40:36.329462",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_204108",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:41:08.654307",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_204112",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:41:12.704588",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_204144",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:41:44.994525",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_204217",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:42:17.332845",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_204221",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T20:42:21.398150",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210626",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T21:06:26.469601",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210630",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T21:06:30.525556",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210702",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T21:07:02.842335",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210735",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T21:07:35.186587",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210739",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T21:07:39.271613",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210811",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T21:08:11.594076",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210843",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:08:43.930837",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210848",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T21:08:48.005914",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210920",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:09:20.358138",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210952",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:09:52.672117",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_210956",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T21:09:56.742310",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_211029",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:10:29.073718",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_211101",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:11:01.406104",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_211105",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:11:05.460454",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_211137",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:11:37.771020",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_211217",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:12:17.966606",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_211222",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:12:22.070310",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_211254",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:12:54.401084",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_211326",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:13:26.706596",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_211330",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:13:30.772638",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214553",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:45:53.030332",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214557",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:45:57.200068",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214629",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:46:29.515752",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214701",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:47:01.820673",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214705",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:47:05.914029",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214738",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:47:38.221154",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214810",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:48:10.540434",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214814",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:48:14.615089",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214846",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:48:46.935388",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214919",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:49:19.270431",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214923",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:49:23.360397",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_214955",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:49:55.692045",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215027",
+    "title": "Critical Failure - Langflow API Health",
+    "message": "Health check failed: Cannot connect to host localhost:3000 ssl:default [The remote computer refused the network connection]",
+    "severity": "critical",
+    "timestamp": "2025-07-31T21:50:27.999207",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215028",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:50:28.004753",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215032",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:50:32.090329",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215104",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:51:04.441245",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215136",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:51:36.790615",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215140",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:51:40.881489",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215213",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:52:13.230173",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215246",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:52:46.300333",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215250",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:52:50.400142",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215322",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:53:22.732212",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215355",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:53:55.072559",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215359",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:53:59.173120",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215431",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:54:31.488644",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215503",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:55:03.791517",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215507",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:55:07.910145",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215540",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:55:40.276842",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215613",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:56:13.386082",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215617",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:56:17.470999",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215649",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:56:49.822317",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215722",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:57:22.196070",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215726",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:57:26.293937",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215758",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:57:58.653994",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215830",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:58:30.978282",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215835",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:58:35.039485",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215907",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:59:07.352859",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215939",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:59:39.651557",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_215943",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T21:59:43.730464",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220016",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:00:16.061379",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220048",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:00:48.374550",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220052",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:00:52.448552",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220124",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:01:24.763315",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220157",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:01:57.109456",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220201",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:02:01.191946",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220233",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:02:33.520985",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220306",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:03:06.630341",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220310",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:03:10.715705",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220343",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:03:43.067428",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220415",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:04:15.401897",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220419",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:04:19.488581",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220451",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:04:51.809582",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220524",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:05:24.134070",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220528",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:05:28.244064",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220600",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:06:00.562318",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220633",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:06:33.733882",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220637",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:06:37.820929",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220710",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:07:10.180017",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220742",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:07:42.509400",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220746",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:07:46.587778",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220818",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:08:18.909236",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220851",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:08:51.216689",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220855",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:08:55.308027",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_220927",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:09:27.677311",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221000",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:10:00.031399",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221004",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:10:04.121369",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221036",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:10:36.473600",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221108",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:11:08.814578",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221112",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:11:12.923088",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221145",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:11:45.266160",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221217",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:12:17.584966",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221221",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:12:21.686667",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221254",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:12:54.026645",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221326",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:13:26.915812",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221330",
+    "title": "Critical Failure - WebSocket Connection",
+    "message": "Health check failed: [WinError 1225] The remote computer refused the network connection",
+    "severity": "critical",
+    "timestamp": "2025-07-31T22:13:30.997527",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221331",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:13:31.005730",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221403",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:14:03.341226",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221435",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:14:35.692853",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221439",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:14:39.783290",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221512",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:15:12.113480",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221544",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:15:44.474273",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221548",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:15:48.537036",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221620",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:16:20.885267",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221654",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:16:54.008413",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221658",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:16:58.092403",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221730",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:17:30.431455",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221802",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:18:02.785979",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250731_221806",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-07-31T22:18:06.899883",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_193233",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:32:33.989533",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_193238",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:32:38.268864",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194606",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:46:06.210865",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194610",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:46:10.323584",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194642",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:46:42.680552",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194715",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:47:15.023835",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194719",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:47:19.127871",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194751",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:47:51.489559",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194823",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:48:23.808225",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194827",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:48:27.927067",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194900",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:49:00.269141",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194932",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:49:32.587158",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_194936",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:49:36.702127",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195009",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:50:09.024274",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195041",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:50:41.397194",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195045",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:50:45.476567",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195117",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:51:17.830584",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195150",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:51:50.173956",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195154",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:51:54.260898",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195226",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:52:26.591501",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195259",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:52:59.399888",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195303",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:53:03.470465",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195335",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:53:35.775039",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195408",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:54:08.170575",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195412",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:54:12.250620",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195444",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:54:44.581745",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195516",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:55:16.901872",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195520",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:55:20.973613",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195553",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:55:53.306379",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195626",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:56:26.484860",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195630",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:56:30.564930",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195702",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:57:02.876616",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195735",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:57:35.206306",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195739",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:57:39.270409",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195811",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:58:11.596270",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195843",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:58:43.898550",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195847",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:58:47.983040",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195920",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:59:20.318209",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195952",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:59:52.672570",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_195956",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T19:59:56.741601",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_200029",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T20:00:29.045545",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_200101",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T20:01:01.344147",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_200105",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T20:01:05.392708",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_201109",
+    "title": "High Error Rate - Langflow API Health",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T20:11:09.228084+00:00",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  },
+  {
+    "id": "alert_20250802_201113",
+    "title": "High Error Rate - WebSocket Connection",
+    "message": "Error rate 100.0% exceeds threshold",
+    "severity": "error",
+    "timestamp": "2025-08-02T20:11:13.347197+00:00",
+    "resolved": false,
+    "resolved_at": null,
+    "metadata": {}
+  }
+]

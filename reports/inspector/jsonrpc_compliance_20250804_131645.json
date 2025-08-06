@@ -1,0 +1,13 @@
+{
+  "test_suite": "JSON-RPC 2.0 Compliance",
+  "total_tests": 5,
+  "passed_tests": 0,
+  "failed_tests": 5,
+  "warning_tests": 0,
+  "error_tests": 0,
+  "compliance_score": 0.0,
+  "test_results": [
+    {
+      "test_name": "JSON-RPC Format Compliance",
+      "test_description": "Validate that requests and responses follow JSON-RPC 2.0 format",
+      "status": 

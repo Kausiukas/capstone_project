@@ -1,0 +1,115 @@
+{
+  "test_configuration": {
+    "version": "1.0.0",
+    "description": "Configuration for LangFlow Connect comprehensive testing suite",
+    "timestamp": "2025-01-27T00:00:00Z"
+  },
+  "test_suites": {
+    "comprehensive": {
+      "enabled": true,
+      "timeout_seconds": 300,
+      "max_retries": 3,
+      "parallel_execution": false
+    },
+    "unit_tests": {
+      "enabled": true,
+      "timeout_seconds": 60,
+      "success_rate_threshold": 90.0,
+      "parallel_execution": true
+    },
+    "performance": {
+      "enabled": true,
+      "timeout_seconds": 600,
+      "memory_threshold_mb": 100,
+      "cpu_threshold_percent": 80,
+      "execution_time_threshold_seconds": 30
+    },
+    "mcp_server": {
+      "enabled": true,
+      "timeout_seconds": 120,
+      "server_startup_timeout": 10,
+      "expected_tools": [
+        "read_file",
+        "write_file",
+        "list_files",
+        "analyze_code",
+        "suggest_refactoring",
+        "track_cost",
+        "get_health_status",
+        "get_performance_metrics",
+        "get_cost_summary",
+        "optimize_workflow",
+        "get_system_status",
+        "get_workspace_info"
+      ]
+    },
+    "integration": {
+      "enabled": true,
+      "timeout_seconds": 180,
+      "components_to_test": [
+        "workspace_manager",
+        "code_analyzer",
+        "cost_tracker",
+        "budget_manager",
+        "health_monitor"
+      ]
+    }
+  },
+  "performance_benchmarks": {
+    "file_operations": {
+      "read_file_1kb_max_ms": 100,
+      "read_file_10kb_max_ms": 200,
+      "read_file_100kb_max_ms": 500,
+      "write_file_1kb_max_ms": 150,
+      "write_file_10kb_max_ms": 300,
+      "write_file_100kb_max_ms": 800
+    },
+    "code_analysis": {
+      "analyze_1kb_max_ms": 200,
+      "analyze_10kb_max_ms": 500,
+      "analyze_100kb_max_ms": 2000
+    },
+    "cost_tracking": {
+      "track_token_usage_max_ms": 50,
+      "track_api_call_max_ms": 30,
+      "get_cost_summary_max_ms": 100
+    },
+    "health_monitoring": {
+      "check_system_health_max_ms": 200
+    },
+    "concurrent_operations": {
+      "concurrent_5_operations_max_ms": 1000,
+      "concurrent_10_operations_max_ms": 2000,
+      "concurrent_20_operations_max_ms": 4000
+    }
+  },
+  "test_data": {
+    "file_sizes_kb": [1, 10, 100, 1000],
+    "code_complexity_levels": ["simple", "medium", "complex"],
+    "concurrency_levels": [1, 5, 10, 20],
+    "test_iterations": {
+      "unit_tests": 1,
+      "performance_tests": 10,
+      "memory_leak_tests": 1000
+    }
+  },
+  "reporting": {
+    "generate_json_reports": true,
+    "generate_html_reports": false,
+    "save_logs": true,
+    "log_level": "INFO",
+    "output_directory": "test_reports"
+  },
+  "environment": {
+    "cleanup_test_files": true,
+    "use_temp_directories": true,
+    "mock_external_services": true,
+    "skip_slow_tests": false
+  },
+  "thresholds": {
+    "overall_success_rate": 90.0,
+    "max_memory_usage_mb": 500,
+    "max_cpu_usage_percent": 90,
+    "max_test_duration_seconds": 1800
+  }
+} 
