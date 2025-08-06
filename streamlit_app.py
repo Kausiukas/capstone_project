@@ -10,18 +10,26 @@ import json
 import time
 from datetime import datetime
 
-# Configuration - Update this to your domain
-API_BASE_URL = "https://capstone-project-i1xm.onrender.com"  # Your existing API
+# Configuration - Default API URL
+DEFAULT_API_URL = "https://capstone-project-i1xm.onrender.com"
 API_KEY = "demo_key_123"
-HEADERS = {
-    'X-API-Key': API_KEY,
-    'Content-Type': 'application/json'
-}
+
+def get_api_url():
+    """Get API URL from session state or default"""
+    return st.session_state.get('api_url', DEFAULT_API_URL)
+
+def get_headers():
+    """Get headers with current API key"""
+    return {
+        'X-API-Key': API_KEY,
+        'Content-Type': 'application/json'
+    }
 
 def test_health_endpoint():
     """Test the health endpoint"""
     try:
-        response = requests.get(f"{API_BASE_URL}/health", timeout=10)
+        api_url = get_api_url()
+        response = requests.get(f"{api_url}/health", timeout=10)
         if response.status_code == 200:
             return True, response.json()
         else:
@@ -32,7 +40,9 @@ def test_health_endpoint():
 def get_tools_list():
     """Get list of available tools"""
     try:
-        response = requests.get(f"{API_BASE_URL}/tools/list", headers=HEADERS, timeout=10)
+        api_url = get_api_url()
+        headers = get_headers()
+        response = requests.get(f"{api_url}/tools/list", headers=headers, timeout=10)
         if response.status_code == 200:
             return True, response.json()
         else:
@@ -43,13 +53,15 @@ def get_tools_list():
 def execute_tool(tool_name, arguments):
     """Execute a tool with given arguments"""
     try:
+        api_url = get_api_url()
+        headers = get_headers()
         payload = {
             'name': tool_name,
             'arguments': arguments
         }
         response = requests.post(
-            f"{API_BASE_URL}/api/v1/tools/call",
-            headers=HEADERS,
+            f"{api_url}/api/v1/tools/call",
+            headers=headers,
             data=json.dumps(payload),
             timeout=30
         )
@@ -269,7 +281,7 @@ def main():
         st.header("📚 API Documentation")
         
         st.subheader("Base URL")
-        st.code(API_BASE_URL)
+        st.code(get_api_url())
         
         st.subheader("Authentication")
         st.markdown("All API requests require the `X-API-Key` header:")
@@ -281,23 +293,23 @@ def main():
         with st.expander("🏥 Health Check"):
             st.markdown("**GET** `/health`")
             st.markdown("Check if the service is running.")
-            st.code("curl -X GET https://capstone-project-i1xm.onrender.com/health")
+            st.code(f"curl -X GET {get_api_url()}/health")
         
         # Tools list endpoint
         with st.expander("🛠️ List Tools"):
             st.markdown("**GET** `/tools/list`")
             st.markdown("Get list of available tools.")
-            st.code("""curl -X GET https://capstone-project-i1xm.onrender.com/tools/list \\
+            st.code(f"""curl -X GET {get_api_url()}/tools/list \\
   -H "X-API-Key: demo_key_123" """)
         
         # Tool execution endpoint
         with st.expander("⚡ Execute Tool"):
             st.markdown("**POST** `/api/v1/tools/call`")
             st.markdown("Execute a specific tool.")
-            st.code("""curl -X POST https://capstone-project-i1xm.onrender.com/api/v1/tools/call \\
+            st.code(f"""curl -X POST {get_api_url()}/api/v1/tools/call \\
   -H "X-API-Key: demo_key_123" \\
   -H "Content-Type: application/json" \\
-  -d '{"name": "ping", "arguments": {}}' """)
+  -d '{{"name": "ping", "arguments": {{}}}}' """)
         
         st.subheader("Available Tools")
         tools_info = [
@@ -317,7 +329,40 @@ def main():
     elif page == "🔧 System Status":
         st.header("🔧 System Status")
         
+        # API Configuration Section
+        st.subheader("🔧 API Configuration")
+        
+        # API URL input
+        current_api_url = get_api_url()
+        new_api_url = st.text_input(
+            "API Base URL",
+            value=current_api_url,
+            help="Enter the base URL of your API (e.g., https://your-api.onrender.com)"
+        )
+        
+        # Update API URL button
+        col1, col2 = st.columns([1, 3])
+        with col1:
+            if st.button("🔄 Update API URL"):
+                if new_api_url != current_api_url:
+                    st.session_state['api_url'] = new_api_url
+                    st.success(f"✅ API URL updated to: {new_api_url}")
+                    st.rerun()
+        
+        with col2:
+            if st.button("🧪 Test Connection"):
+                with st.spinner("Testing API connection..."):
+                    success, result = test_health_endpoint()
+                    if success:
+                        st.success("✅ API connection successful!")
+                        st.json(result)
+                    else:
+                        st.error(f"❌ API connection failed: {result}")
+        
+        st.divider()
+        
         # Real-time status
+        st.subheader("📊 System Status")
         if st.button("🔄 Refresh Status"):
             with st.spinner("Checking system status..."):
                 success, result = execute_tool("get_system_status", {})
@@ -331,9 +376,9 @@ def main():
                     st.error(f"❌ Failed to get system status: {result}")
         
         # Service information
-        st.subheader("Service Information")
+        st.subheader("ℹ️ Service Information")
         st.markdown(f"""
-        - **API URL:** {API_BASE_URL}
+        - **Current API URL:** {get_api_url()}
         - **Dashboard URL:** {st.get_option('server.baseUrlPath')}
         - **Version:** 1.0.0
         - **Status:** 🟢 Online
@@ -341,6 +386,7 @@ def main():
         """)
         
         # Quick health check
+        st.subheader("🏥 Health Check")
         success, health_data = test_health_endpoint()
         if success:
             st.success("🟢 API is healthy and responding")
