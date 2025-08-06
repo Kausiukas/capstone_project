@@ -1,0 +1,83 @@
+# LangFlow Connect MVP - Monitoring Configuration
+
+# API Configuration
+api:
+  base_url: "https://capstone-project-api-jg3n.onrender.com"
+  api_key: "demo_key_123"
+  timeout: 30
+
+# Monitoring Settings
+monitoring:
+  check_interval: 300  # 5 minutes
+  alert_threshold: 3   # 3 consecutive failures
+  performance_threshold: 1000  # 1 second response time threshold
+
+# Health Check Endpoints
+endpoints:
+  - name: "Health Check"
+    path: "/health"
+    method: "GET"
+    timeout: 10
+    expected_status: 200
+  
+  - name: "Tools List"
+    path: "/tools/list"
+    method: "GET"
+    timeout: 10
+    expected_status: 200
+    requires_auth: true
+  
+  - name: "Tool Execution"
+    path: "/api/v1/tools/call"
+    method: "POST"
+    timeout: 30
+    expected_status: 200
+    requires_auth: true
+    test_payload:
+      name: "ping"
+      arguments: {}
+
+# Alert Configuration
+alerts:
+  email:
+    enabled: false
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    username: ""
+    password: ""
+    recipients: []
+  
+  webhook:
+    enabled: false
+    url: ""
+    headers: {}
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  file: "logs/monitoring.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# Dashboard Configuration
+dashboard:
+  refresh_interval: 60  # 1 minute
+  max_data_points: 1000
+  charts:
+    response_time: true
+    success_rate: true
+    endpoint_performance: true
+
+# Performance Thresholds
+thresholds:
+  response_time:
+    warning: 500   # ms
+    critical: 1000 # ms
+  
+  success_rate:
+    warning: 95    # %
+    critical: 90   # %
+  
+  uptime:
+    warning: 99    # %
+    critical: 95   # %
