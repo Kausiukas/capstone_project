@@ -1,0 +1,533 @@
+{
+  "timestamp": "2025-08-07T00:43:32.087240",
+  "api_url": "https://capstone-project-api-jg3n.onrender.com",
+  "success": true,
+  "results": {
+    "tools_list": {
+      "success": true,
+      "tools_count": 5,
+      "tools": [
+        {
+          "name": "ping",
+          "description": "Test server connectivity",
+          "inputSchema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          }
+        },
+        {
+          "name": "read_file",
+          "description": "Read contents of a file",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "file_path": {
+                "type": "string",
+                "description": "Path to the file to read"
+              }
+            },
+            "required": [
+              "file_path"
+            ]
+          }
+        },
+        {
+          "name": "list_files",
+          "description": "List files in a directory",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "directory": {
+                "type": "string",
+                "description": "Directory to list files from",
+                "default": "."
+              }
+            },
+            "required": []
+          }
+        },
+        {
+          "name": "get_system_status",
+          "description": "Get system status information",
+          "inputSchema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          }
+        },
+        {
+          "name": "analyze_code",
+          "description": "Analyze code files",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "file_path": {
+                "type": "string",
+                "description": "Path to the code file to analyze"
+              }
+            },
+            "required": [
+              "file_path"
+            ]
+          }
+        }
+      ],
+      "analysis": {
+        "ping": {
+          "description": "Test server connectivity",
+          "has_schema": true,
+          "schema_properties": 0,
+          "required_fields": 0
+        },
+        "read_file": {
+          "description": "Read contents of a file",
+          "has_schema": true,
+          "schema_properties": 1,
+          "required_fields": 1
+        },
+        "list_files": {
+          "description": "List files in a directory",
+          "has_schema": true,
+          "schema_properties": 1,
+          "required_fields": 0
+        },
+        "get_system_status": {
+          "description": "Get system status information",
+          "has_schema": true,
+          "schema_properties": 0,
+          "required_fields": 0
+        },
+        "analyze_code": {
+          "description": "Analyze code files",
+          "has_schema": true,
+          "schema_properties": 1,
+          "required_fields": 1
+        }
+      }
+    },
+    "ping_tool": {
+      "basic_test": {
+        "tool": "ping",
+        "success": true,
+        "response_time": 105.84330558776855,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "pong"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "retry_tests": [
+        {
+          "tool": "ping",
+          "success": true,
+          "response_time": 103.46484184265137,
+          "status_code": 200,
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "pong"
+              }
+            ]
+          },
+          "expected_success": true
+        },
+        {
+          "tool": "ping",
+          "success": true,
+          "response_time": 109.06100273132324,
+          "status_code": 200,
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "pong"
+              }
+            ]
+          },
+          "expected_success": true
+        },
+        {
+          "tool": "ping",
+          "success": true,
+          "response_time": 103.56521606445312,
+          "status_code": 200,
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "pong"
+              }
+            ]
+          },
+          "expected_success": true
+        }
+      ],
+      "average_response_time": 105.3636868794759,
+      "success_rate": 1.0
+    },
+    "list_files_tool": {
+      ".": {
+        "tool": "list_files",
+        "success": true,
+        "response_time": 175.88400840759277,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Files in .:\n\ud83d\udcc4 inspector_automation_framework.py\n\ud83d\udcc4 inspector_defect_tracker.py\n\ud83d\udcc4 Dockerfile.mcp\n\ud83d\udcc4 run_continuous_monitoring_tests.py\n\ud83d\udcc4 inspector_alerting_system.py\n\ud83d\udcc4 LANGFLOW_VARIABLES.md\n\ud83d\udcc4 inspector_compliance_checker.py\n\ud83d\udcc4 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\n\ud83d\udcc4 test_fixed_server_performance.py\n\ud83d\udcc4 test_mcp_protocol.py\n\ud83d\udcc4 LANGFLOW_MCP_CONNECTION_TESTING.md\n\ud83d\udcc4 LANGFLOW_CONNECTION_GUIDE.md\n\ud83d\udcc4 UPDATED_INTEGRATION_STRATEGY.md\n\ud83d\udcc4 FINAL_MCP_SERVER_STATUS.md\n\ud83d\udcc4 inspector_quality_dashboard.py\n\ud83d\udcc4 INSPECTOR_TASK_STATUS_REVIEW.md\n\ud83d\udcc4 LANGFLOW_MCP_TROUBLESHOOTING.md\n\ud83d\udcc4 test_tool_functionality.py\n\ud83d\udcc4 FILE_LISTING_FIX_SUMMARY.md\n\ud83d\udcc4 FINAL_SUMMARY.md"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "/": {
+        "tool": "list_files",
+        "success": true,
+        "response_time": 100.78930854797363,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Files in /:\n\ud83d\udcc1 run/\n\ud83d\udcc1 lib64/\n\ud83d\udcc1 lib/\n\ud83d\udcc1 var/\n\ud83d\udcc1 home/\n\ud83d\udcc1 tmp/\n\ud83d\udcc1 opt/\n\ud83d\udcc1 dev/\n\ud83d\udcc1 media/\n\ud83d\udcc1 boot/\n\ud83d\udcc1 etc/\n\ud83d\udcc1 srv/\n\ud83d\udcc1 root/\n\ud83d\udcc1 sbin/\n\ud83d\udcc1 mnt/\n\ud83d\udcc1 proc/\n\ud83d\udcc1 bin/\n\ud83d\udcc1 usr/\n\ud83d\udcc1 sys/"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "/tmp": {
+        "tool": "list_files",
+        "success": true,
+        "response_time": 150.19488334655762,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Files in /tmp:\n"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "nonexistent_path": {
+        "tool": "list_files",
+        "success": true,
+        "response_time": 116.59717559814453,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Error listing files: [Errno 2] No such file or directory: 'nonexistent_path'"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "D:\\GUI\\System-Reference-Clean\\LangFlow_Connect": {
+        "tool": "list_files",
+        "success": true,
+        "response_time": 87.97645568847656,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Error listing files: [Errno 2] No such file or directory: 'D:\\\\GUI\\\\System-Reference-Clean\\\\LangFlow_Connect'"
+            }
+          ]
+        },
+        "expected_success": true
+      }
+    },
+    "read_file_tool": {
+      "README.md": {
+        "tool": "read_file",
+        "success": true,
+        "response_time": 86.05694770812988,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "File contents of README.md:\n# LangFlow Connect MCP Server - Capstone Project\n\n## \ud83c\udfaf Project Overview\n\nThis is a **Capstone Project** demonstration of the LangFlow Connect MCP (Model Context Protocol) server.\n\n## \ud83d\ude80 Quick Start\n\n```bash\n# Install dependencies\npip install -r requirements.txt\n\n# Run MCP server\npython src/mcp_server_http.py\n\n# Run web interface (in another terminal)\nstreamlit run web/app.py\n```\n\n## \ud83d\udee0 Features\n\n- **5 Core Tools**: ping, read_file, list_files, get_system_status, analyze_code\n- **Web Interface**: S..."
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "requirements.txt": {
+        "tool": "read_file",
+        "success": true,
+        "response_time": 115.09966850280762,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "fastapi==0.104.1\nuvicorn[standard]==0.24.0\nstreamlit==1.28.0\nrequests==2.31.0\npytest==7.4.3\naiofiles==23.2.1\npsutil==5.9.6\naiohttp==3.9.1\nasyncpg==0.29.0\nPyJWT==2.8.0\n"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "nonexistent_file.txt": {
+        "tool": "read_file",
+        "success": true,
+        "response_time": 104.10022735595703,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Error: File nonexistent_file.txt not found"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "D:\\GUI\\System-Reference-Clean\\LangFlow_Connect\\README.md": {
+        "tool": "read_file",
+        "success": true,
+        "response_time": 155.0149917602539,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Error: File D:\\GUI\\System-Reference-Clean\\LangFlow_Connect\\README.md not found"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "/etc/passwd": {
+        "tool": "read_file",
+        "success": true,
+        "response_time": 91.73107147216797,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "File contents of /etc/passwd:\nroot:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\nman:x:6:12:man:/var/cache/man:/usr/sbin/nologin\nlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin\nmail:x:8:8:mail:/var/mail:/usr/sbin/nologin\nnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin\nuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin\nproxy:x:13:13:proxy:/bin..."
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "src/mcp_server_http.py": {
+        "tool": "read_file",
+        "success": true,
+        "response_time": 105.2846908569336,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "File contents of src/mcp_server_http.py:\n#!/usr/bin/env python3\n\"\"\"\nLangFlow Connect MCP Server - HTTP Version for MVP Demo\n\nThis is an HTTP-based MCP server for the capstone project MVP demo.\nIt provides RESTful API endpoints for tool execution.\n\nUsage:\n    uvicorn src.mcp_server_http:app --host 0.0.0.0 --port 8000\n\"\"\"\n\nimport json\nimport logging\nimport os\nfrom typing import Any, Dict, List\nfrom pathlib import Path\nfrom fastapi import FastAPI, HTTPException, Header\nfrom fastapi.responses import JSONResponse, HTMLResponse\nfrom pydantic..."
+            }
+          ]
+        },
+        "expected_success": true
+      }
+    },
+    "system_status_tool": {
+      "tests": [
+        {
+          "tool": "get_system_status",
+          "success": true,
+          "response_time": 182.10625648498535,
+          "status_code": 200,
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "System Status:\n- CPU Usage: 51.4%\n- Memory Usage: 53.5%\n- Available Memory: 14 GB\n- Total Memory: 30 GB\n- Status: Healthy"
+              }
+            ]
+          },
+          "expected_success": true
+        },
+        {
+          "tool": "get_system_status",
+          "success": true,
+          "response_time": 98.23822975158691,
+          "status_code": 200,
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "System Status:\n- CPU Usage: 28.4%\n- Memory Usage: 53.5%\n- Available Memory: 14 GB\n- Total Memory: 30 GB\n- Status: Healthy"
+              }
+            ]
+          },
+          "expected_success": true
+        },
+        {
+          "tool": "get_system_status",
+          "success": true,
+          "response_time": 105.35407066345215,
+          "status_code": 200,
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "System Status:\n- CPU Usage: 29.5%\n- Memory Usage: 53.5%\n- Available Memory: 14 GB\n- Total Memory: 30 GB\n- Status: Healthy"
+              }
+            ]
+          },
+          "expected_success": true
+        }
+      ],
+      "average_response_time": 128.56618563334146,
+      "success_rate": 1.0,
+      "total_tests": 3
+    },
+    "analyze_code_tool": {
+      "src/mcp_server_http.py": {
+        "tool": "analyze_code",
+        "success": true,
+        "response_time": 96.78363800048828,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Code Analysis for src/mcp_server_http.py:\n- Lines of Code: 255\n- Characters: 8837\n- File Size: 8843 bytes\n- Language: .py\n- Analysis: Code appears well-structured"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "streamlit_app.py": {
+        "tool": "analyze_code",
+        "success": true,
+        "response_time": 91.95852279663086,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Code Analysis for streamlit_app.py:\n- Lines of Code: 400\n- Characters: 14821\n- File Size: 15009 bytes\n- Language: .py\n- Analysis: Code appears well-structured"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "README.md": {
+        "tool": "analyze_code",
+        "success": true,
+        "response_time": 101.85885429382324,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Code Analysis for README.md:\n- Lines of Code: 29\n- Characters: 611\n- File Size: 623 bytes\n- Language: .md\n- Analysis: Code appears well-structured"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "requirements.txt": {
+        "tool": "analyze_code",
+        "success": true,
+        "response_time": 108.39009284973145,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Code Analysis for requirements.txt:\n- Lines of Code: 11\n- Characters: 167\n- File Size: 167 bytes\n- Language: .txt\n- Analysis: Code appears well-structured"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "nonexistent_file.py": {
+        "tool": "analyze_code",
+        "success": true,
+        "response_time": 99.5476245880127,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Error: File nonexistent_file.py not found"
+            }
+          ]
+        },
+        "expected_success": true
+      },
+      "D:\\GUI\\System-Reference-Clean\\LangFlow_Connect\\src\\mcp_server_http.py": {
+        "tool": "analyze_code",
+        "success": true,
+        "response_time": 96.3752269744873,
+        "status_code": 200,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Error: File D:\\GUI\\System-Reference-Clean\\LangFlow_Connect\\src\\mcp_server_http.py not found"
+            }
+          ]
+        },
+        "expected_success": true
+      }
+    }
+  },
+  "performance_data": {
+    "ping_performance": {
+      "tool": "ping",
+      "iterations": 10,
+      "success_count": 10,
+      "success_rate": 1.0,
+      "average_response_time": 95.27289867401123,
+      "min_response_time": 78.01961898803711,
+      "max_response_time": 110.23497581481934,
+      "errors": []
+    },
+    "system_status_performance": {
+      "tool": "get_system_status",
+      "iterations": 5,
+      "success_count": 5,
+      "success_rate": 1.0,
+      "average_response_time": 101.99871063232422,
+      "min_response_time": 89.5700454711914,
+      "max_response_time": 126.67274475097656,
+      "errors": []
+    },
+    "load_test": {
+      "concurrent_requests": 10,
+      "total_time": 188.72976303100586,
+      "success_count": 10,
+      "success_rate": 1.0,
+      "average_response_time": 106.59966468811035,
+      "requests_per_second": 52.98581336297831
+    }
+  },
+  "error_log": [],
+  "recommendations": {
+    "performance": [],
+    "reliability": [],
+    "security": [],
+    "user_experience": []
+  },
+  "summary": {
+    "total_tests": 19,
+    "successful_tests": 19,
+    "success_rate": 100.0,
+    "total_errors": 0,
+    "performance_score": 100.0
+  }
+}
