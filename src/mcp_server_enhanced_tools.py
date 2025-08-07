@@ -206,8 +206,9 @@ class PathResolver:
                     
                     # For directory paths, map to the current working directory
                     # since the Windows path structure doesn't match the Render structure
+                    # The Windows path D:\GUI\System-Reference-Clean\LangFlow_Connect should map to /opt/render/project/src
                     possible_paths = [
-                        "/opt/render/project/src",  # Current working directory where server runs
+                        "/opt/render/project/src",  # Current working directory where server runs (most likely)
                         "/opt/render/project",      # Project root
                         f"/opt/render/project/src/{directory_name}",
                         f"/opt/render/project/{directory_name}",
@@ -215,6 +216,11 @@ class PathResolver:
                         f"/home/render/{directory_name}",
                         linux_path  # Try as-is
                     ]
+                    
+                    # Special case: if the directory name matches common project names,
+                    # prioritize mapping to the current working directory
+                    if directory_name.lower() in ['langflow_connect', 'langflow', 'connect', 'project']:
+                        possible_paths.insert(0, "/opt/render/project/src")
                 
                 # Test each possible path
                 for test_path in possible_paths:
