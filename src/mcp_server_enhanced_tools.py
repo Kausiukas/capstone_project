@@ -179,23 +179,28 @@ class PathResolver:
                 # Try to find the file in common locations with different strategies
                 possible_paths = []
                 
-                # Strategy 1: Direct mapping to Render project root
-                possible_paths.append(f"/opt/render/project/{filename}")
+                # Strategy 1: Map to current working directory (where the server runs)
+                # This is the most likely scenario for Windows paths
+                possible_paths.append(f"/opt/render/project/src/{filename}")
                 
-                # Strategy 2: Look in common subdirectories
+                # Strategy 2: If it's a directory listing, map to current directory
+                if not filename or filename == directory.split('/')[-1] if directory else "":
+                    possible_paths.append("/opt/render/project/src")
+                
+                # Strategy 3: Look in common subdirectories
                 if directory:
                     possible_paths.extend([
+                        f"/opt/render/project/src/{directory}/{filename}",
                         f"/opt/render/project/{directory}/{filename}",
-                        f"/opt/render/project/src/{filename}",
-                        f"/opt/render/project/{filename}"
+                        f"/opt/render/project/src/{filename}"
                     ])
                 else:
                     possible_paths.extend([
-                        f"/opt/render/project/{filename}",
-                        f"/opt/render/project/src/{filename}"
+                        f"/opt/render/project/src/{filename}",
+                        f"/opt/render/project/{filename}"
                     ])
                 
-                # Strategy 3: Alternative deployment paths
+                # Strategy 4: Alternative deployment paths
                 possible_paths.extend([
                     f"/app/{filename}",
                     f"/home/render/{filename}",
@@ -213,7 +218,7 @@ class PathResolver:
                         }
                 
                 # If not found, return the most likely path for better error reporting
-                most_likely_path = f"/opt/render/project/{filename}"
+                most_likely_path = f"/opt/render/project/src/{filename}" if filename else "/opt/render/project/src"
                 return {
                     'source_type': 'local_absolute',
                     'path': most_likely_path,
