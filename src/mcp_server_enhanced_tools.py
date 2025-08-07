@@ -296,24 +296,10 @@ async def performance_monitoring_middleware(request: Request, call_next):
     """Monitor performance of all requests"""
     start_time = time.time()
     
-    # Process the request
-    response = await call_next(request)
-    
-    # Calculate response time
-    response_time = (time.time() - start_time) * 1000  # Convert to milliseconds
-    
-    # Determine if request was successful
-    success = 200 <= response.status_code < 400
-    
-    # Extract tool name from path if it's a tool call
+    # Extract tool name from path only (avoid reading request body)
     tool_name = "unknown"
     if request.url.path == "/api/v1/tools/call":
-        try:
-            body = await request.body()
-            data = json.loads(body)
-            tool_name = data.get('name', 'unknown_tool')
-        except:
-            tool_name = "tool_call_error"
+        tool_name = "tool_call"  # Generic name for all tool calls
     elif request.url.path.startswith("/health"):
         tool_name = "health_check"
     elif request.url.path.startswith("/debug"):
@@ -322,8 +308,19 @@ async def performance_monitoring_middleware(request: Request, call_next):
         tool_name = "tools_endpoint"
     elif request.url.path.startswith("/security"):
         tool_name = "security_endpoint"
+    elif request.url.path.startswith("/performance"):
+        tool_name = "performance_endpoint"
     else:
         tool_name = "other"
+    
+    # Process the request
+    response = await call_next(request)
+    
+    # Calculate response time
+    response_time = (time.time() - start_time) * 1000  # Convert to milliseconds
+    
+    # Determine if request was successful
+    success = 200 <= response.status_code < 400
     
     # Record performance metrics
     performance_monitor.record_request(tool_name, response_time, success)
@@ -857,13 +854,22 @@ async def execute_tool(request: Request):
         if not isinstance(arguments, dict):
             raise HTTPException(status_code=400, detail="Arguments must be an object")
         
-        result = await execute_tool_enhanced(tool_name, arguments)
-        
-        return {
-            "success": True,
-            "tool": tool_name,
-            "content": result
-        }
+        # Record specific tool execution for detailed metrics
+        start_time = time.time()
+        try:
+            result = await execute_tool_enhanced(tool_name, arguments)
+            execution_time = (time.time() - start_time) * 1000
+            performance_monitor.record_request(tool_name, execution_time, True)
+            
+            return {
+                "success": True,
+                "tool": tool_name,
+                "content": result
+            }
+        except Exception as e:
+            execution_time = (time.time() - start_time) * 1000
+            performance_monitor.record_request(tool_name, execution_time, False)
+            raise e
         
     except HTTPException:
         raise
