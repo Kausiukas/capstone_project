@@ -1,0 +1,176 @@
+{
+  "timestamp": "2025-08-07T01:15:40.818368",
+  "api_url": "https://capstone-project-api-jg3n.onrender.com",
+  "summary": {
+    "total_tests": 23,
+    "passed_tests": 21,
+    "failed_tests": 2,
+    "success_rate": 91.30434782608695
+  },
+  "results": [
+    {
+      "test_name": "Authentication Required - Tools List",
+      "success": true,
+      "details": "Expected 401, got 401",
+      "timestamp": "2025-08-07T01:15:38.376430"
+    },
+    {
+      "test_name": "Authentication Required - Tool Execution",
+      "success": true,
+      "details": "Expected 401, got 401",
+      "timestamp": "2025-08-07T01:15:38.500420"
+    },
+    {
+      "test_name": "Invalid API Key Rejection",
+      "success": true,
+      "details": "Expected 401, got 401",
+      "timestamp": "2025-08-07T01:15:38.586286"
+    },
+    {
+      "test_name": "Path Traversal Protection - ../../../etc/passwd",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:38.744203"
+    },
+    {
+      "test_name": "Path Traversal Protection - ..\\..\\..\\windows\\system32\\drivers\\etc\\hosts",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:38.836583"
+    },
+    {
+      "test_name": "Path Traversal Protection - /etc/passwd",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:39.002922"
+    },
+    {
+      "test_name": "Path Traversal Protection - C:\\Windows\\System32\\drivers\\etc\\hosts",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:39.082599"
+    },
+    {
+      "test_name": "SQL Injection Protection - '; DROP TABLE users;...",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:39.184573"
+    },
+    {
+      "test_name": "SQL Injection Protection - ' OR '1'='1...",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:39.274445"
+    },
+    {
+      "test_name": "SQL Injection Protection - '; INSERT INTO users...",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:39.382863"
+    },
+    {
+      "test_name": "XSS Protection - <script>alert('xss')...",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:39.491106"
+    },
+    {
+      "test_name": "XSS Protection - javascript:alert('xs...",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:39.666528"
+    },
+    {
+      "test_name": "XSS Protection - <img src=x onerror=a...",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:39.767490"
+    },
+    {
+      "test_name": "XSS Protection - ';alert('xss');//...",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:39.847479"
+    },
+    {
+      "test_name": "Security Headers Present",
+      "success": false,
+      "details": "Present headers: []",
+      "timestamp": "2025-08-07T01:15:39.946508"
+    },
+    {
+      "test_name": "Input Validation - Invalid Tool: ",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:40.050979"
+    },
+    {
+      "test_name": "Input Validation - Invalid Tool: invalid_tool",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:40.158859"
+    },
+    {
+      "test_name": "Input Validation - Invalid Tool: admin",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:40.258928"
+    },
+    {
+      "test_name": "Input Validation - Invalid Tool: system",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:40.365867"
+    },
+    {
+      "test_name": "Input Validation - Invalid Arguments",
+      "success": false,
+      "details": "Response code: 422",
+      "timestamp": "2025-08-07T01:15:40.477226"
+    },
+    {
+      "test_name": "Concurrent Request Handling",
+      "success": true,
+      "details": "Successful requests: 10/10",
+      "timestamp": "2025-08-07T01:15:40.610642"
+    },
+    {
+      "test_name": "Error Handling - Malformed JSON",
+      "success": true,
+      "details": "Response code: 422",
+      "timestamp": "2025-08-07T01:15:40.707528"
+    },
+    {
+      "test_name": "Error Handling - Missing Fields",
+      "success": true,
+      "details": "Response code: 200",
+      "timestamp": "2025-08-07T01:15:40.815607"
+    }
+  ],
+  "security_issues": [
+    {
+      "test_name": "Security Headers Present",
+      "success": false,
+      "details": "Present headers: []",
+      "timestamp": "2025-08-07T01:15:39.946508"
+    },
+    {
+      "test_name": "Input Validation - Invalid Arguments",
+      "success": false,
+      "details": "Response code: 422",
+      "timestamp": "2025-08-07T01:15:40.477226"
+    }
+  ],
+  "recommendations": [
+    "Implement rate limiting to prevent abuse",
+    "Add comprehensive input validation",
+    "Set up security headers (X-Content-Type-Options, X-Frame-Options, etc.)",
+    "Implement request logging and monitoring",
+    "Add API key rotation mechanism",
+    "Set up automated security testing",
+    "Implement CORS properly",
+    "Add request size limits",
+    "Set up error handling without information disclosure",
+    "Implement API versioning"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-08-07T13:49:55.338545",
+  "api_url": "https://capstone-project-api-jg3n.onrender.com",
+  "results": {
+    "health_status": 200,
+    "found_headers": [
+      "X-Content-Type-Options",
+      "X-Frame-Options",
+      "X-XSS-Protection",
+      "Strict-Transport-Security",
+      "Content-Security-Policy",
+      "Referrer-Policy",
+      "Permissions-Policy"
+    ],
+    "missing_headers": [],
+    "auth_status": 200,
+    "auth_headers_found": 7
+  },
+  "recommendations": [
+    "Security headers are working correctly"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-08-07T00:59:29.755741",
+  "system_status": {
+    "status": "healthy",
+    "success_rate": 100.0,
+    "average_response_time": 128.51444880167642,
+    "failure_count": 0,
+    "last_success": "2025-08-07T00:59:29.496796",
+    "active_alerts": 0,
+    "total_health_checks": 3,
+    "uptime_percentage": 100.0
+  },
+  "health_checks": [
+    {
+      "timestamp": "2025-08-07T00:59:29.496796",
+      "endpoint": "/health",
+      "status_code": 200,
+      "response_time": 133.08978080749512,
+      "success": true,
+      "error_message": null
+    },
+    {
+      "timestamp": "2025-08-07T00:59:29.656506",
+      "endpoint": "/tools/list",
+      "status_code": 200,
+      "response_time": 157.93466567993164,
+      "success": true,
+      "error_message": null
+    },
+    {
+      "timestamp": "2025-08-07T00:59:29.752801",
+      "endpoint": "/api/v1/tools/call (ping)",
+      "status_code": 200,
+      "response_time": 94.51889991760254,
+      "success": true,
+      "error_message": null
+    }
+  ],
+  "alerts": [],
+  "configuration": {
+    "api_url": "https://capstone-project-api-jg3n.onrender.com",
+    "check_interval": 300,
+    "alert_threshold": 3
+  }
+}
