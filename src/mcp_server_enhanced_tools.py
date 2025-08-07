@@ -1438,7 +1438,7 @@ async def get_performance_health():
 
 # Content Preview Endpoints
 @app.get("/preview/file")
-async def preview_file(file_path: str, preview_type: Optional[str] = None):
+async def preview_file(request: Request, file_path: str, preview_type: Optional[str] = None):
     """Preview file content with syntax highlighting and rendering"""
     api_key = request.headers.get('X-API-Key', '')
     
@@ -1504,7 +1504,7 @@ async def preview_file(file_path: str, preview_type: Optional[str] = None):
         raise HTTPException(status_code=500, detail=f"Error previewing file: {str(e)}")
 
 @app.get("/preview/supported-types")
-async def get_supported_preview_types():
+async def get_supported_preview_types(request: Request):
     """Get list of supported file types for preview"""
     return {
         "success": True,
@@ -1604,7 +1604,7 @@ async def preview_multiple_files(request: Request):
         raise HTTPException(status_code=500, detail=f"Error in batch preview: {str(e)}")
 
 @app.get("/preview/analyze")
-async def analyze_file_for_preview(file_path: str):
+async def analyze_file_for_preview(request: Request, file_path: str):
     """Analyze file to determine preview capabilities"""
     api_key = request.headers.get('X-API-Key', '')
     
