@@ -88,6 +88,9 @@ class PathResolver:
                 return 'http'
         elif os.path.isabs(path):
             return 'local_absolute'
+        elif ':' in path and len(path) > 2 and path[1] == ':':
+            # Windows-style absolute path (e.g., D:\path\to\file)
+            return 'local_absolute'
         else:
             return 'local_relative'
     
@@ -159,19 +162,54 @@ class PathResolver:
     def _validate_absolute_path(path: str) -> Dict[str, Any]:
         """Validate and normalize absolute path"""
         try:
-            normalized = os.path.normpath(path)
-            if os.path.exists(normalized):
+            # Handle Windows-style paths on Linux
+            if ':' in path and len(path) > 2 and path[1] == ':':
+                # Convert Windows path to Linux-style path
+                # Remove drive letter and convert backslashes to forward slashes
+                linux_path = path.replace('\\', '/').split(':', 1)[1]
+                # Remove leading slash if present
+                if linux_path.startswith('/'):
+                    linux_path = linux_path[1:]
+                
+                # Try to find the file in common locations
+                possible_paths = [
+                    f"/opt/render/project/{linux_path}",
+                    f"/app/{linux_path}",
+                    f"/home/render/{linux_path}",
+                    linux_path  # Try as-is
+                ]
+                
+                for test_path in possible_paths:
+                    if os.path.exists(test_path):
+                        return {
+                            'source_type': 'local_absolute',
+                            'path': test_path,
+                            'original_windows_path': path,
+                            'exists': True
+                        }
+                
+                # If not found, return the most likely path
                 return {
                     'source_type': 'local_absolute',
-                    'path': normalized,
-                    'exists': True
-                }
-            else:
-                return {
-                    'source_type': 'local_absolute',
-                    'path': normalized,
+                    'path': f"/opt/render/project/{linux_path}",
+                    'original_windows_path': path,
                     'exists': False
                 }
+            else:
+                # Standard absolute path handling
+                normalized = os.path.normpath(path)
+                if os.path.exists(normalized):
+                    return {
+                        'source_type': 'local_absolute',
+                        'path': normalized,
+                        'exists': True
+                    }
+                else:
+                    return {
+                        'source_type': 'local_absolute',
+                        'path': normalized,
+                        'exists': False
+                    }
         except Exception as e:
             raise HTTPException(status_code=400, detail=f"Invalid absolute path: {str(e)}")
     
@@ -248,12 +286,20 @@ class FileAccessManager:
         """Get content from local file"""
         try:
             if not path_info.get('exists', False):
-                raise FileNotFoundError(f"File not found: {path_info['path']}")
+                original_path = path_info.get('original_windows_path', path_info['path'])
+                error_msg = f"File not found: {path_info['path']}"
+                if 'original_windows_path' in path_info:
+                    error_msg += f" (converted from Windows path: {original_path})"
+                raise FileNotFoundError(error_msg)
             
             with open(path_info['path'], 'r', encoding='utf-8') as f:
                 return f.read()
         except Exception as e:
-            raise HTTPException(status_code=404, detail=f"Local file not found: {str(e)}")
+            original_path = path_info.get('original_windows_path', path_info['path'])
+            error_msg = f"Local file not found: {str(e)}"
+            if 'original_windows_path' in path_info:
+                error_msg += f" (converted from Windows path: {original_path})"
+            raise HTTPException(status_code=404, detail=error_msg)
     
     @staticmethod
     async def list_directory(path_info: Dict[str, Any]) -> List[str]:
@@ -297,14 +343,22 @@ class FileAccessManager:
         """List local directory contents"""
         try:
             if not path_info.get('exists', False):
-                raise FileNotFoundError(f"Directory not found: {path_info['path']}")
+                original_path = path_info.get('original_windows_path', path_info['path'])
+                error_msg = f"Directory not found: {path_info['path']}"
+                if 'original_windows_path' in path_info:
+                    error_msg += f" (converted from Windows path: {original_path})"
+                raise FileNotFoundError(error_msg)
             
             if not os.path.isdir(path_info['path']):
                 raise NotADirectoryError(f"Path is not a directory: {path_info['path']}")
             
             return os.listdir(path_info['path'])
         except Exception as e:
-            raise HTTPException(status_code=404, detail=f"Local directory not found: {str(e)}")
+            original_path = path_info.get('original_windows_path', path_info['path'])
+            error_msg = f"Local directory not found: {str(e)}"
+            if 'original_windows_path' in path_info:
+                error_msg += f" (converted from Windows path: {original_path})"
+            raise HTTPException(status_code=404, detail=error_msg)
 
 @app.get("/health")
 async def health_check():
