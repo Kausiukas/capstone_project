@@ -171,41 +171,50 @@ class PathResolver:
                 if linux_path.startswith('/'):
                     linux_path = linux_path[1:]
                 
-                # Extract the filename/directory name from the path
+                # Extract the path components
                 path_parts = linux_path.split('/')
-                filename = path_parts[-1] if path_parts else ""
-                directory = '/'.join(path_parts[:-1]) if len(path_parts) > 1 else ""
                 
-                # Try to find the file in common locations with different strategies
-                possible_paths = []
+                # Determine if this is likely a file or directory
+                # If the path ends with a common file extension, treat as file
+                # Otherwise, treat as directory
+                has_file_extension = any(path_parts[-1].lower().endswith(ext) for ext in 
+                                       ['.py', '.js', '.ts', '.html', '.css', '.json', '.md', '.txt', '.yml', '.yaml'])
                 
-                # Strategy 1: Map to current working directory (where the server runs)
-                # This is the most likely scenario for Windows paths
-                possible_paths.append(f"/opt/render/project/src/{filename}")
-                
-                # Strategy 2: If it's a directory listing, map to current directory
-                if not filename or filename == directory.split('/')[-1] if directory else "":
-                    possible_paths.append("/opt/render/project/src")
-                
-                # Strategy 3: Look in common subdirectories
-                if directory:
-                    possible_paths.extend([
-                        f"/opt/render/project/src/{directory}/{filename}",
-                        f"/opt/render/project/{directory}/{filename}",
-                        f"/opt/render/project/src/{filename}"
-                    ])
+                if has_file_extension:
+                    # This is likely a file path
+                    filename = path_parts[-1]
+                    directory = '/'.join(path_parts[:-1]) if len(path_parts) > 1 else ""
+                    
+                    # Try to find the file in common locations
+                    possible_paths = [
+                        f"/opt/render/project/src/{filename}",  # Most likely location
+                        f"/opt/render/project/{filename}",
+                        f"/app/{filename}",
+                        f"/home/render/{filename}",
+                        linux_path  # Try as-is
+                    ]
+                    
+                    # Add directory-based paths if directory exists
+                    if directory:
+                        possible_paths.extend([
+                            f"/opt/render/project/src/{directory}/{filename}",
+                            f"/opt/render/project/{directory}/{filename}"
+                        ])
                 else:
-                    possible_paths.extend([
-                        f"/opt/render/project/src/{filename}",
-                        f"/opt/render/project/{filename}"
-                    ])
-                
-                # Strategy 4: Alternative deployment paths
-                possible_paths.extend([
-                    f"/app/{filename}",
-                    f"/home/render/{filename}",
-                    linux_path  # Try as-is
-                ])
+                    # This is likely a directory path
+                    directory_name = path_parts[-1] if path_parts else ""
+                    
+                    # For directory paths, map to the current working directory
+                    # since the Windows path structure doesn't match the Render structure
+                    possible_paths = [
+                        "/opt/render/project/src",  # Current working directory where server runs
+                        "/opt/render/project",      # Project root
+                        f"/opt/render/project/src/{directory_name}",
+                        f"/opt/render/project/{directory_name}",
+                        f"/app/{directory_name}",
+                        f"/home/render/{directory_name}",
+                        linux_path  # Try as-is
+                    ]
                 
                 # Test each possible path
                 for test_path in possible_paths:
@@ -218,7 +227,11 @@ class PathResolver:
                         }
                 
                 # If not found, return the most likely path for better error reporting
-                most_likely_path = f"/opt/render/project/src/{filename}" if filename else "/opt/render/project/src"
+                if has_file_extension:
+                    most_likely_path = f"/opt/render/project/src/{filename}"
+                else:
+                    most_likely_path = "/opt/render/project/src"  # Default to current directory
+                
                 return {
                     'source_type': 'local_absolute',
                     'path': most_likely_path,
