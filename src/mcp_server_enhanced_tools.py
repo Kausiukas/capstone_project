@@ -23,10 +23,296 @@ import statistics
 from collections import defaultdict, deque
 import threading
 import asyncio
+import mimetypes
+import base64
+from pathlib import Path
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('EnhancedToolsAPI')
+
+# Content Preview System
+class ContentPreviewManager:
+    """Manage file content preview with syntax highlighting and rendering"""
+    
+    # Supported file types for preview
+    SUPPORTED_PREVIEW_TYPES = {
+        # Code files with syntax highlighting
+        'code': {
+            'extensions': ['.py', '.js', '.ts', '.html', '.css', '.json', '.xml', '.yaml', '.yml', '.md', '.txt', '.sh', '.bash', '.sql', '.java', '.cpp', '.c', '.h', '.php', '.rb', '.go', '.rs', '.swift', '.kt'],
+            'mime_types': ['text/plain', 'application/json', 'text/xml', 'text/yaml', 'text/markdown']
+        },
+        # Image files
+        'image': {
+            'extensions': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp', '.ico'],
+            'mime_types': ['image/jpeg', 'image/png', 'image/gif', 'image/bmp', 'image/svg+xml', 'image/webp']
+        },
+        # Document files
+        'document': {
+            'extensions': ['.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx'],
+            'mime_types': ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']
+        }
+    }
+    
+    @staticmethod
+    def detect_file_type(file_path: str) -> str:
+        """Detect file type for preview"""
+        file_ext = Path(file_path).suffix.lower()
+        
+        # Check extensions first
+        for preview_type, config in ContentPreviewManager.SUPPORTED_PREVIEW_TYPES.items():
+            if file_ext in config['extensions']:
+                return preview_type
+        
+        # Check MIME type as fallback
+        mime_type, _ = mimetypes.guess_type(file_path)
+        if mime_type:
+            for preview_type, config in ContentPreviewManager.SUPPORTED_PREVIEW_TYPES.items():
+                if mime_type in config['mime_types']:
+                    return preview_type
+        
+        return 'unknown'
+    
+    @staticmethod
+    def get_syntax_highlighting_language(file_path: str) -> str:
+        """Get syntax highlighting language for code files"""
+        file_ext = Path(file_path).suffix.lower()
+        
+        language_map = {
+            '.py': 'python',
+            '.js': 'javascript',
+            '.ts': 'typescript',
+            '.html': 'html',
+            '.css': 'css',
+            '.json': 'json',
+            '.xml': 'xml',
+            '.yaml': 'yaml',
+            '.yml': 'yaml',
+            '.md': 'markdown',
+            '.txt': 'text',
+            '.sh': 'bash',
+            '.bash': 'bash',
+            '.sql': 'sql',
+            '.java': 'java',
+            '.cpp': 'cpp',
+            '.c': 'c',
+            '.h': 'cpp',
+            '.php': 'php',
+            '.rb': 'ruby',
+            '.go': 'go',
+            '.rs': 'rust',
+            '.swift': 'swift',
+            '.kt': 'kotlin'
+        }
+        
+        return language_map.get(file_ext, 'text')
+    
+    @staticmethod
+    def format_code_with_syntax_highlighting(content: str, language: str) -> str:
+        """Format code with syntax highlighting (simplified version)"""
+        # This is a simplified syntax highlighting implementation
+        # In a production environment, you might want to use libraries like Pygments
+        
+        if language == 'python':
+            # Basic Python syntax highlighting
+            keywords = ['def', 'class', 'import', 'from', 'if', 'else', 'elif', 'for', 'while', 'try', 'except', 'finally', 'with', 'as', 'return', 'yield', 'True', 'False', 'None']
+            content = ContentPreviewManager._highlight_keywords(content, keywords, 'keyword')
+            content = ContentPreviewManager._highlight_strings(content)
+            content = ContentPreviewManager._highlight_comments(content)
+        elif language == 'javascript':
+            # Basic JavaScript syntax highlighting
+            keywords = ['function', 'var', 'let', 'const', 'if', 'else', 'for', 'while', 'try', 'catch', 'finally', 'return', 'class', 'import', 'export', 'default']
+            content = ContentPreviewManager._highlight_keywords(content, keywords, 'keyword')
+            content = ContentPreviewManager._highlight_strings(content)
+            content = ContentPreviewManager._highlight_comments(content)
+        elif language == 'json':
+            # JSON syntax highlighting
+            content = ContentPreviewManager._highlight_json(content)
+        elif language == 'html':
+            # HTML syntax highlighting
+            content = ContentPreviewManager._highlight_html(content)
+        elif language == 'css':
+            # CSS syntax highlighting
+            content = ContentPreviewManager._highlight_css(content)
+        
+        return content
+    
+    @staticmethod
+    def _highlight_keywords(content: str, keywords: List[str], class_name: str) -> str:
+        """Highlight keywords in content"""
+        for keyword in keywords:
+            content = re.sub(r'\b' + re.escape(keyword) + r'\b', f'<span class="{class_name}">{keyword}</span>', content)
+        return content
+    
+    @staticmethod
+    def _highlight_strings(content: str) -> str:
+        """Highlight string literals"""
+        # Highlight single and double quoted strings
+        content = re.sub(r'(".*?")', r'<span class="string">\1</span>', content)
+        content = re.sub(r"('.*?')", r'<span class="string">\1</span>', content)
+        return content
+    
+    @staticmethod
+    def _highlight_comments(content: str) -> str:
+        """Highlight comments"""
+        # Highlight Python comments
+        content = re.sub(r'(#.*?)$', r'<span class="comment">\1</span>', content, flags=re.MULTILINE)
+        # Highlight JavaScript comments
+        content = re.sub(r'(//.*?)$', r'<span class="comment">\1</span>', content, flags=re.MULTILINE)
+        content = re.sub(r'(/\*.*?\*/)', r'<span class="comment">\1</span>', content, flags=re.DOTALL)
+        return content
+    
+    @staticmethod
+    def _highlight_json(content: str) -> str:
+        """Highlight JSON syntax"""
+        content = re.sub(r'(".*?":)', r'<span class="key">\1</span>', content)
+        content = re.sub(r'(".*?")', r'<span class="string">\1</span>', content)
+        content = re.sub(r'\b(true|false|null)\b', r'<span class="keyword">\1</span>', content)
+        return content
+    
+    @staticmethod
+    def _highlight_html(content: str) -> str:
+        """Highlight HTML syntax"""
+        content = re.sub(r'(<.*?>)', r'<span class="tag">\1</span>', content)
+        content = re.sub(r'(".*?")', r'<span class="string">\1</span>', content)
+        return content
+    
+    @staticmethod
+    def _highlight_css(content: str) -> str:
+        """Highlight CSS syntax"""
+        content = re.sub(r'([a-zA-Z-]+):', r'<span class="property">\1</span>:', content)
+        content = re.sub(r'(".*?")', r'<span class="string">\1</span>', content)
+        content = re.sub(r'(/\*.*?\*/)', r'<span class="comment">\1</span>', content, flags=re.DOTALL)
+        return content
+    
+    @staticmethod
+    def render_markdown(content: str) -> str:
+        """Render markdown content to HTML"""
+        # This is a simplified markdown renderer
+        # In production, you might want to use libraries like markdown2 or mistune
+        
+        # Headers
+        content = re.sub(r'^### (.*?)$', r'<h3>\1</h3>', content, flags=re.MULTILINE)
+        content = re.sub(r'^## (.*?)$', r'<h2>\1</h2>', content, flags=re.MULTILINE)
+        content = re.sub(r'^# (.*?)$', r'<h1>\1</h1>', content, flags=re.MULTILINE)
+        
+        # Bold and italic
+        content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', content)
+        content = re.sub(r'\*(.*?)\*', r'<em>\1</em>', content)
+        
+        # Code blocks
+        content = re.sub(r'```(.*?)```', r'<pre><code>\1</code></pre>', content, flags=re.DOTALL)
+        content = re.sub(r'`(.*?)`', r'<code>\1</code>', content)
+        
+        # Links
+        content = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', content)
+        
+        # Lists
+        content = re.sub(r'^\* (.*?)$', r'<li>\1</li>', content, flags=re.MULTILINE)
+        content = re.sub(r'^- (.*?)$', r'<li>\1</li>', content, flags=re.MULTILINE)
+        
+        # Paragraphs
+        content = re.sub(r'\n\n', r'</p><p>', content)
+        content = f'<p>{content}</p>'
+        
+        return content
+    
+    @staticmethod
+    def encode_image_to_base64(image_path: str) -> str:
+        """Encode image to base64 for inline display"""
+        try:
+            with open(image_path, 'rb') as image_file:
+                encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+                mime_type, _ = mimetypes.guess_type(image_path)
+                return f"data:{mime_type};base64,{encoded_string}"
+        except Exception as e:
+            logger.error(f"Error encoding image {image_path}: {e}")
+            return ""
+    
+    @staticmethod
+    def create_preview_html(content: str, file_type: str, language: str = None) -> str:
+        """Create HTML preview for file content"""
+        css_styles = """
+        <style>
+            .preview-container {
+                font-family: 'Courier New', monospace;
+                background-color: #f8f9fa;
+                border: 1px solid #dee2e6;
+                border-radius: 5px;
+                padding: 15px;
+                margin: 10px 0;
+                overflow-x: auto;
+            }
+            .code-content {
+                white-space: pre-wrap;
+                line-height: 1.5;
+            }
+            .keyword { color: #007bff; font-weight: bold; }
+            .string { color: #28a745; }
+            .comment { color: #6c757d; font-style: italic; }
+            .key { color: #dc3545; font-weight: bold; }
+            .tag { color: #fd7e14; }
+            .property { color: #6f42c1; }
+            .image-preview {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #dee2e6;
+                border-radius: 5px;
+            }
+            .markdown-content {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+            }
+            .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+                color: #333;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            .markdown-content code {
+                background-color: #f1f3f4;
+                padding: 2px 4px;
+                border-radius: 3px;
+                font-family: 'Courier New', monospace;
+            }
+            .markdown-content pre {
+                background-color: #f8f9fa;
+                padding: 10px;
+                border-radius: 5px;
+                overflow-x: auto;
+            }
+        </style>
+        """
+        
+        if file_type == 'code':
+            highlighted_content = ContentPreviewManager.format_code_with_syntax_highlighting(content, language or 'text')
+            return f"""
+            {css_styles}
+            <div class="preview-container">
+                <div class="code-content">{highlighted_content}</div>
+            </div>
+            """
+        elif file_type == 'image':
+            return f"""
+            {css_styles}
+            <div class="preview-container">
+                <img src="{content}" alt="Image Preview" class="image-preview">
+            </div>
+            """
+        elif file_type == 'document':
+            return f"""
+            {css_styles}
+            <div class="preview-container">
+                <p><strong>Document Preview:</strong> This file type requires external viewer.</p>
+                <p>File content length: {len(content)} characters</p>
+            </div>
+            """
+        else:
+            return f"""
+            {css_styles}
+            <div class="preview-container">
+                <div class="code-content">{content}</div>
+            </div>
+            """
 
 # Performance Monitoring System
 class PerformanceMonitor:
@@ -1149,6 +1435,217 @@ async def get_performance_health():
     except Exception as e:
         logger.error(f"Error getting performance health: {e}")
         raise HTTPException(status_code=500, detail=f"Error retrieving performance health: {str(e)}")
+
+# Content Preview Endpoints
+@app.get("/preview/file")
+async def preview_file(file_path: str, preview_type: Optional[str] = None):
+    """Preview file content with syntax highlighting and rendering"""
+    api_key = request.headers.get('X-API-Key', '')
+    
+    if not validate_api_key(api_key):
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid API key"
+        )
+    
+    try:
+        # Resolve path
+        path_info = PathResolver.resolve_path(file_path)
+        
+        # Get file content
+        content = await FileAccessManager.get_file_content(path_info)
+        
+        # Detect file type if not provided
+        if not preview_type:
+            preview_type = ContentPreviewManager.detect_file_type(file_path)
+        
+        # Get language for syntax highlighting
+        language = None
+        if preview_type == 'code':
+            language = ContentPreviewManager.get_syntax_highlighting_language(file_path)
+        
+        # Create preview based on file type
+        if preview_type == 'code':
+            if language == 'markdown':
+                # Render markdown
+                rendered_content = ContentPreviewManager.render_markdown(content)
+                preview_html = ContentPreviewManager.create_preview_html(rendered_content, 'markdown')
+            else:
+                # Syntax highlighting for code
+                preview_html = ContentPreviewManager.create_preview_html(content, 'code', language)
+        elif preview_type == 'image':
+            # For images, we need to encode to base64
+            if path_info['source_type'] == 'local_absolute':
+                image_data = ContentPreviewManager.encode_image_to_base64(path_info['path'])
+                preview_html = ContentPreviewManager.create_preview_html(image_data, 'image')
+            else:
+                # For remote images, use the URL directly
+                preview_html = ContentPreviewManager.create_preview_html(content, 'image')
+        else:
+            # Default preview
+            preview_html = ContentPreviewManager.create_preview_html(content, preview_type)
+        
+        return {
+            "success": True,
+            "file_path": file_path,
+            "file_type": preview_type,
+            "language": language,
+            "content_length": len(content),
+            "preview_html": preview_html,
+            "metadata": {
+                "source_type": path_info['source_type'],
+                "resolved_path": path_info.get('path', ''),
+                "file_extension": Path(file_path).suffix.lower()
+            }
+        }
+        
+    except Exception as e:
+        logger.error(f"Error previewing file {file_path}: {e}")
+        raise HTTPException(status_code=500, detail=f"Error previewing file: {str(e)}")
+
+@app.get("/preview/supported-types")
+async def get_supported_preview_types():
+    """Get list of supported file types for preview"""
+    return {
+        "success": True,
+        "supported_types": ContentPreviewManager.SUPPORTED_PREVIEW_TYPES,
+        "languages": {
+            "python": [".py"],
+            "javascript": [".js"],
+            "typescript": [".ts"],
+            "html": [".html"],
+            "css": [".css"],
+            "json": [".json"],
+            "markdown": [".md"],
+            "yaml": [".yaml", ".yml"],
+            "bash": [".sh", ".bash"],
+            "sql": [".sql"],
+            "java": [".java"],
+            "cpp": [".cpp", ".c", ".h"],
+            "php": [".php"],
+            "ruby": [".rb"],
+            "go": [".go"],
+            "rust": [".rs"],
+            "swift": [".swift"],
+            "kotlin": [".kt"]
+        }
+    }
+
+@app.post("/preview/batch")
+async def preview_multiple_files(request: Request):
+    """Preview multiple files in batch"""
+    api_key = request.headers.get('X-API-Key', '')
+    
+    if not validate_api_key(api_key):
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid API key"
+        )
+    
+    try:
+        body = await request.json()
+        file_paths = body.get('file_paths', [])
+        
+        if not file_paths or not isinstance(file_paths, list):
+            raise HTTPException(status_code=400, detail="file_paths must be a non-empty list")
+        
+        if len(file_paths) > 10:  # Limit batch size
+            raise HTTPException(status_code=400, detail="Maximum 10 files per batch")
+        
+        results = []
+        for file_path in file_paths:
+            try:
+                # Resolve path
+                path_info = PathResolver.resolve_path(file_path)
+                
+                # Get file content
+                content = await FileAccessManager.get_file_content(path_info)
+                
+                # Detect file type
+                preview_type = ContentPreviewManager.detect_file_type(file_path)
+                
+                # Get language
+                language = None
+                if preview_type == 'code':
+                    language = ContentPreviewManager.get_syntax_highlighting_language(file_path)
+                
+                # Create preview
+                if preview_type == 'code' and language == 'markdown':
+                    rendered_content = ContentPreviewManager.render_markdown(content)
+                    preview_html = ContentPreviewManager.create_preview_html(rendered_content, 'markdown')
+                else:
+                    preview_html = ContentPreviewManager.create_preview_html(content, preview_type, language)
+                
+                results.append({
+                    "file_path": file_path,
+                    "success": True,
+                    "file_type": preview_type,
+                    "language": language,
+                    "content_length": len(content),
+                    "preview_html": preview_html
+                })
+                
+            except Exception as e:
+                results.append({
+                    "file_path": file_path,
+                    "success": False,
+                    "error": str(e)
+                })
+        
+        return {
+            "success": True,
+            "results": results,
+            "total_files": len(file_paths),
+            "successful_previews": len([r for r in results if r['success']])
+        }
+        
+    except Exception as e:
+        logger.error(f"Error in batch preview: {e}")
+        raise HTTPException(status_code=500, detail=f"Error in batch preview: {str(e)}")
+
+@app.get("/preview/analyze")
+async def analyze_file_for_preview(file_path: str):
+    """Analyze file to determine preview capabilities"""
+    api_key = request.headers.get('X-API-Key', '')
+    
+    if not validate_api_key(api_key):
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid API key"
+        )
+    
+    try:
+        # Detect file type
+        preview_type = ContentPreviewManager.detect_file_type(file_path)
+        
+        # Get language if applicable
+        language = None
+        if preview_type == 'code':
+            language = ContentPreviewManager.get_syntax_highlighting_language(file_path)
+        
+        # Check if file exists and is accessible
+        path_info = PathResolver.resolve_path(file_path)
+        
+        return {
+            "success": True,
+            "file_path": file_path,
+            "preview_type": preview_type,
+            "language": language,
+            "supported": preview_type != 'unknown',
+            "file_extension": Path(file_path).suffix.lower(),
+            "source_type": path_info['source_type'],
+            "exists": path_info.get('exists', False),
+            "capabilities": {
+                "syntax_highlighting": preview_type == 'code',
+                "markdown_rendering": language == 'markdown',
+                "image_preview": preview_type == 'image',
+                "document_preview": preview_type == 'document'
+            }
+        }
+        
+    except Exception as e:
+        logger.error(f"Error analyzing file {file_path}: {e}")
+        raise HTTPException(status_code=500, detail=f"Error analyzing file: {str(e)}")
 
 if __name__ == "__main__":
     logger.info("Starting LangFlow Connect MVP - Enhanced Tools API Server")
