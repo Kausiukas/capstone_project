@@ -171,14 +171,38 @@ class PathResolver:
                 if linux_path.startswith('/'):
                     linux_path = linux_path[1:]
                 
-                # Try to find the file in common locations
-                possible_paths = [
-                    f"/opt/render/project/{linux_path}",
-                    f"/app/{linux_path}",
-                    f"/home/render/{linux_path}",
-                    linux_path  # Try as-is
-                ]
+                # Extract the filename/directory name from the path
+                path_parts = linux_path.split('/')
+                filename = path_parts[-1] if path_parts else ""
+                directory = '/'.join(path_parts[:-1]) if len(path_parts) > 1 else ""
                 
+                # Try to find the file in common locations with different strategies
+                possible_paths = []
+                
+                # Strategy 1: Direct mapping to Render project root
+                possible_paths.append(f"/opt/render/project/{filename}")
+                
+                # Strategy 2: Look in common subdirectories
+                if directory:
+                    possible_paths.extend([
+                        f"/opt/render/project/{directory}/{filename}",
+                        f"/opt/render/project/src/{filename}",
+                        f"/opt/render/project/{filename}"
+                    ])
+                else:
+                    possible_paths.extend([
+                        f"/opt/render/project/{filename}",
+                        f"/opt/render/project/src/{filename}"
+                    ])
+                
+                # Strategy 3: Alternative deployment paths
+                possible_paths.extend([
+                    f"/app/{filename}",
+                    f"/home/render/{filename}",
+                    linux_path  # Try as-is
+                ])
+                
+                # Test each possible path
                 for test_path in possible_paths:
                     if os.path.exists(test_path):
                         return {
@@ -188,12 +212,14 @@ class PathResolver:
                             'exists': True
                         }
                 
-                # If not found, return the most likely path
+                # If not found, return the most likely path for better error reporting
+                most_likely_path = f"/opt/render/project/{filename}"
                 return {
                     'source_type': 'local_absolute',
-                    'path': f"/opt/render/project/{linux_path}",
+                    'path': most_likely_path,
                     'original_windows_path': path,
-                    'exists': False
+                    'exists': False,
+                    'tried_paths': possible_paths
                 }
             else:
                 # Standard absolute path handling
@@ -290,6 +316,8 @@ class FileAccessManager:
                 error_msg = f"File not found: {path_info['path']}"
                 if 'original_windows_path' in path_info:
                     error_msg += f" (converted from Windows path: {original_path})"
+                if 'tried_paths' in path_info:
+                    error_msg += f" (tried paths: {path_info['tried_paths']})"
                 raise FileNotFoundError(error_msg)
             
             with open(path_info['path'], 'r', encoding='utf-8') as f:
@@ -299,6 +327,8 @@ class FileAccessManager:
             error_msg = f"Local file not found: {str(e)}"
             if 'original_windows_path' in path_info:
                 error_msg += f" (converted from Windows path: {original_path})"
+            if 'tried_paths' in path_info:
+                error_msg += f" (tried paths: {path_info['tried_paths']})"
             raise HTTPException(status_code=404, detail=error_msg)
     
     @staticmethod
@@ -347,6 +377,8 @@ class FileAccessManager:
                 error_msg = f"Directory not found: {path_info['path']}"
                 if 'original_windows_path' in path_info:
                     error_msg += f" (converted from Windows path: {original_path})"
+                if 'tried_paths' in path_info:
+                    error_msg += f" (tried paths: {path_info['tried_paths']})"
                 raise FileNotFoundError(error_msg)
             
             if not os.path.isdir(path_info['path']):
@@ -358,6 +390,8 @@ class FileAccessManager:
             error_msg = f"Local directory not found: {str(e)}"
             if 'original_windows_path' in path_info:
                 error_msg += f" (converted from Windows path: {original_path})"
+            if 'tried_paths' in path_info:
+                error_msg += f" (tried paths: {path_info['tried_paths']})"
             raise HTTPException(status_code=404, detail=error_msg)
 
 @app.get("/health")
@@ -371,6 +405,45 @@ async def health_check():
         "tools_count": 5,
         "capabilities": ["universal_file_access", "github_integration", "http_support"]
     }
+
+@app.get("/debug/directory-structure")
+async def debug_directory_structure():
+    """Debug endpoint to understand directory structure on Render"""
+    try:
+        current_dir = os.getcwd()
+        project_root = "/opt/render/project"
+        
+        # Get current directory contents
+        current_contents = []
+        if os.path.exists(current_dir):
+            current_contents = os.listdir(current_dir)
+        
+        # Get project root contents
+        project_contents = []
+        if os.path.exists(project_root):
+            project_contents = os.listdir(project_root)
+        
+        # Get src directory contents
+        src_contents = []
+        src_path = os.path.join(project_root, "src")
+        if os.path.exists(src_path):
+            src_contents = os.listdir(src_path)
+        
+        return {
+            "current_directory": current_dir,
+            "current_contents": current_contents,
+            "project_root": project_root,
+            "project_contents": project_contents,
+            "src_directory": src_path,
+            "src_contents": src_contents,
+            "environment": {
+                "platform": os.name,
+                "cwd": os.getcwd(),
+                "env_vars": {k: v for k, v in os.environ.items() if 'RENDER' in k or 'PATH' in k}
+            }
+        }
+    except Exception as e:
+        return {"error": str(e)}
 
 @app.get("/tools/list")
 async def get_tools_list(request: Request):
