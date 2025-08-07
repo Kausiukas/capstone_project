@@ -12,16 +12,237 @@ import os
 import logging
 import requests
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional
 import psutil
 from urllib.parse import urlparse, unquote
 import tempfile
 import shutil
+import time
+import statistics
+from collections import defaultdict, deque
+import threading
+import asyncio
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('EnhancedToolsAPI')
+
+# Performance Monitoring System
+class PerformanceMonitor:
+    """Real-time performance monitoring and metrics collection"""
+    
+    def __init__(self):
+        self.metrics = {
+            'response_times': defaultdict(lambda: deque(maxlen=100)),  # Last 100 requests per tool
+            'success_rates': defaultdict(lambda: deque(maxlen=100)),   # Last 100 results per tool
+            'error_counts': defaultdict(int),                          # Total errors per tool
+            'total_requests': defaultdict(int),                        # Total requests per tool
+            'start_time': datetime.now(),
+            'system_metrics': {
+                'cpu_usage': deque(maxlen=50),
+                'memory_usage': deque(maxlen=50),
+                'disk_usage': deque(maxlen=50)
+            }
+        }
+        self.lock = threading.Lock()
+        
+        # Start background monitoring
+        self._start_background_monitoring()
+    
+    def _start_background_monitoring(self):
+        """Start background system monitoring"""
+        def monitor_system():
+            while True:
+                try:
+                    # CPU usage
+                    cpu_percent = psutil.cpu_percent(interval=1)
+                    
+                    # Memory usage
+                    memory = psutil.virtual_memory()
+                    memory_percent = memory.percent
+                    
+                    # Disk usage
+                    disk = psutil.disk_usage('/')
+                    disk_percent = (disk.used / disk.total) * 100
+                    
+                    with self.lock:
+                        self.metrics['system_metrics']['cpu_usage'].append(cpu_percent)
+                        self.metrics['system_metrics']['memory_usage'].append(memory_percent)
+                        self.metrics['system_metrics']['disk_usage'].append(disk_percent)
+                    
+                    time.sleep(30)  # Update every 30 seconds
+                except Exception as e:
+                    logger.error(f"System monitoring error: {e}")
+                    time.sleep(60)  # Wait longer on error
+        
+        # Start monitoring thread
+        monitor_thread = threading.Thread(target=monitor_system, daemon=True)
+        monitor_thread.start()
+    
+    def record_request(self, tool_name: str, response_time: float, success: bool):
+        """Record a tool request with performance metrics"""
+        with self.lock:
+            self.metrics['response_times'][tool_name].append(response_time)
+            self.metrics['success_rates'][tool_name].append(1 if success else 0)
+            self.metrics['total_requests'][tool_name] += 1
+            
+            if not success:
+                self.metrics['error_counts'][tool_name] += 1
+    
+    def get_tool_metrics(self, tool_name: str = None) -> Dict[str, Any]:
+        """Get performance metrics for a specific tool or all tools"""
+        with self.lock:
+            if tool_name:
+                return self._get_single_tool_metrics(tool_name)
+            else:
+                return self._get_all_tools_metrics()
+    
+    def _get_single_tool_metrics(self, tool_name: str) -> Dict[str, Any]:
+        """Get metrics for a single tool"""
+        response_times = list(self.metrics['response_times'][tool_name])
+        success_rates = list(self.metrics['success_rates'][tool_name])
+        
+        if not response_times:
+            return {
+                'tool_name': tool_name,
+                'total_requests': 0,
+                'error_count': 0,
+                'success_rate': 0.0,
+                'avg_response_time': 0.0,
+                'min_response_time': 0.0,
+                'max_response_time': 0.0,
+                'recent_performance': []
+            }
+        
+        return {
+            'tool_name': tool_name,
+            'total_requests': self.metrics['total_requests'][tool_name],
+            'error_count': self.metrics['error_counts'][tool_name],
+            'success_rate': (sum(success_rates) / len(success_rates)) * 100 if success_rates else 0.0,
+            'avg_response_time': statistics.mean(response_times),
+            'min_response_time': min(response_times),
+            'max_response_time': max(response_times),
+            'recent_performance': [
+                {
+                    'timestamp': datetime.now() - timedelta(seconds=i*30),
+                    'response_time': response_times[-(i+1)] if i < len(response_times) else 0,
+                    'success': success_rates[-(i+1)] if i < len(success_rates) else 0
+                }
+                for i in range(min(10, len(response_times)))  # Last 10 requests
+            ]
+        }
+    
+    def _get_all_tools_metrics(self) -> Dict[str, Any]:
+        """Get metrics for all tools"""
+        all_tools = set(self.metrics['total_requests'].keys())
+        tools_metrics = {}
+        
+        for tool in all_tools:
+            tools_metrics[tool] = self._get_single_tool_metrics(tool)
+        
+        # System metrics
+        cpu_usage = list(self.metrics['system_metrics']['cpu_usage'])
+        memory_usage = list(self.metrics['system_metrics']['memory_usage'])
+        disk_usage = list(self.metrics['system_metrics']['disk_usage'])
+        
+        return {
+            'overview': {
+                'total_requests': sum(self.metrics['total_requests'].values()),
+                'total_errors': sum(self.metrics['error_counts'].values()),
+                'overall_success_rate': self._calculate_overall_success_rate(),
+                'uptime_seconds': (datetime.now() - self.metrics['start_time']).total_seconds(),
+                'start_time': self.metrics['start_time'].isoformat()
+            },
+            'system_metrics': {
+                'cpu_usage': {
+                    'current': cpu_usage[-1] if cpu_usage else 0,
+                    'average': statistics.mean(cpu_usage) if cpu_usage else 0,
+                    'max': max(cpu_usage) if cpu_usage else 0
+                },
+                'memory_usage': {
+                    'current': memory_usage[-1] if memory_usage else 0,
+                    'average': statistics.mean(memory_usage) if memory_usage else 0,
+                    'max': max(memory_usage) if memory_usage else 0
+                },
+                'disk_usage': {
+                    'current': disk_usage[-1] if disk_usage else 0,
+                    'average': statistics.mean(disk_usage) if disk_usage else 0,
+                    'max': max(disk_usage) if disk_usage else 0
+                }
+            },
+            'tools': tools_metrics
+        }
+    
+    def _calculate_overall_success_rate(self) -> float:
+        """Calculate overall success rate across all tools"""
+        total_success = 0
+        total_requests = 0
+        
+        for tool_name in self.metrics['success_rates']:
+            success_rates = list(self.metrics['success_rates'][tool_name])
+            total_success += sum(success_rates)
+            total_requests += len(success_rates)
+        
+        return (total_success / total_requests * 100) if total_requests > 0 else 0.0
+    
+    def get_performance_alerts(self) -> List[Dict[str, Any]]:
+        """Get performance alerts based on thresholds"""
+        alerts = []
+        
+        with self.lock:
+            # Check response time alerts
+            for tool_name, response_times in self.metrics['response_times'].items():
+                if response_times:
+                    avg_time = statistics.mean(response_times)
+                    if avg_time > 2000:  # Alert if average > 2 seconds
+                        alerts.append({
+                            'type': 'high_response_time',
+                            'tool': tool_name,
+                            'message': f'High average response time: {avg_time:.2f}ms',
+                            'severity': 'warning',
+                            'timestamp': datetime.now().isoformat()
+                        })
+            
+            # Check success rate alerts
+            for tool_name, success_rates in self.metrics['success_rates'].items():
+                if success_rates:
+                    success_rate = (sum(success_rates) / len(success_rates)) * 100
+                    if success_rate < 90:  # Alert if success rate < 90%
+                        alerts.append({
+                            'type': 'low_success_rate',
+                            'tool': tool_name,
+                            'message': f'Low success rate: {success_rate:.1f}%',
+                            'severity': 'error',
+                            'timestamp': datetime.now().isoformat()
+                        })
+            
+            # Check system resource alerts
+            cpu_usage = list(self.metrics['system_metrics']['cpu_usage'])
+            memory_usage = list(self.metrics['system_metrics']['memory_usage'])
+            
+            if cpu_usage and cpu_usage[-1] > 80:
+                alerts.append({
+                    'type': 'high_cpu_usage',
+                    'tool': 'system',
+                    'message': f'High CPU usage: {cpu_usage[-1]:.1f}%',
+                    'severity': 'warning',
+                    'timestamp': datetime.now().isoformat()
+                })
+            
+            if memory_usage and memory_usage[-1] > 80:
+                alerts.append({
+                    'type': 'high_memory_usage',
+                    'tool': 'system',
+                    'message': f'High memory usage: {memory_usage[-1]:.1f}%',
+                    'severity': 'warning',
+                    'timestamp': datetime.now().isoformat()
+                })
+        
+        return alerts
+
+# Initialize performance monitor
+performance_monitor = PerformanceMonitor()
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -67,6 +288,53 @@ async def add_security_headers(request: Request, call_next):
     response.headers["X-Tools-Capability"] = "Universal"
     
     logger.info(f"Security headers applied to {request.url.path}")
+    
+    return response
+
+@app.middleware("http")
+async def performance_monitoring_middleware(request: Request, call_next):
+    """Monitor performance of all requests"""
+    start_time = time.time()
+    
+    # Process the request
+    response = await call_next(request)
+    
+    # Calculate response time
+    response_time = (time.time() - start_time) * 1000  # Convert to milliseconds
+    
+    # Determine if request was successful
+    success = 200 <= response.status_code < 400
+    
+    # Extract tool name from path if it's a tool call
+    tool_name = "unknown"
+    if request.url.path == "/api/v1/tools/call":
+        try:
+            body = await request.body()
+            data = json.loads(body)
+            tool_name = data.get('name', 'unknown_tool')
+        except:
+            tool_name = "tool_call_error"
+    elif request.url.path.startswith("/health"):
+        tool_name = "health_check"
+    elif request.url.path.startswith("/debug"):
+        tool_name = "debug_endpoint"
+    elif request.url.path.startswith("/tools"):
+        tool_name = "tools_endpoint"
+    elif request.url.path.startswith("/security"):
+        tool_name = "security_endpoint"
+    else:
+        tool_name = "other"
+    
+    # Record performance metrics
+    performance_monitor.record_request(tool_name, response_time, success)
+    
+    # Add performance headers
+    response.headers["X-Response-Time"] = f"{response_time:.2f}ms"
+    response.headers["X-Request-Success"] = str(success).lower()
+    
+    # Log performance for slow requests
+    if response_time > 1000:  # Log requests taking more than 1 second
+        logger.warning(f"Slow request: {tool_name} took {response_time:.2f}ms")
     
     return response
 
@@ -714,27 +982,167 @@ async def get_security_status():
 
 @app.get("/tools/capabilities")
 async def get_tools_capabilities():
-    """Get detailed tools capabilities"""
+    """Get tools capabilities and supported features"""
     return {
-        "universal_file_access": {
-            "enabled": True,
-            "sources": ["local", "github", "http"],
-            "features": ["read_file", "list_files", "analyze_code"]
-        },
-        "github_integration": {
-            "enabled": True,
-            "features": ["repository_access", "file_access", "branch_support"]
-        },
-        "http_support": {
-            "enabled": True,
-            "features": ["file_download", "content_analysis"]
-        },
-        "security": {
-            "path_validation": True,
-            "rate_limiting": False,
-            "audit_logging": True
-        }
+        "capabilities": [
+            "universal_file_access",
+            "github_integration", 
+            "http_support",
+            "windows_path_handling",
+            "performance_monitoring",
+            "real_time_metrics"
+        ],
+        "supported_sources": ["local", "github", "http", "windows_paths"],
+        "performance_features": [
+            "response_time_tracking",
+            "success_rate_monitoring", 
+            "system_resource_monitoring",
+            "performance_alerts",
+            "real_time_dashboard"
+        ],
+        "version": "3.0.0",
+        "status": "enhanced"
     }
+
+@app.get("/performance/metrics")
+async def get_performance_metrics(tool_name: Optional[str] = None):
+    """Get performance metrics for all tools or a specific tool"""
+    try:
+        metrics = performance_monitor.get_tool_metrics(tool_name)
+        return {
+            "success": True,
+            "metrics": metrics,
+            "timestamp": datetime.now().isoformat()
+        }
+    except Exception as e:
+        logger.error(f"Error getting performance metrics: {e}")
+        raise HTTPException(status_code=500, detail=f"Error retrieving performance metrics: {str(e)}")
+
+@app.get("/performance/alerts")
+async def get_performance_alerts():
+    """Get current performance alerts"""
+    try:
+        alerts = performance_monitor.get_performance_alerts()
+        return {
+            "success": True,
+            "alerts": alerts,
+            "alert_count": len(alerts),
+            "timestamp": datetime.now().isoformat()
+        }
+    except Exception as e:
+        logger.error(f"Error getting performance alerts: {e}")
+        raise HTTPException(status_code=500, detail=f"Error retrieving performance alerts: {str(e)}")
+
+@app.get("/performance/dashboard")
+async def get_performance_dashboard():
+    """Get comprehensive performance dashboard data"""
+    try:
+        # Get all metrics
+        all_metrics = performance_monitor.get_tool_metrics()
+        alerts = performance_monitor.get_performance_alerts()
+        
+        # Calculate summary statistics
+        total_requests = all_metrics['overview']['total_requests']
+        total_errors = all_metrics['overview']['total_errors']
+        overall_success_rate = all_metrics['overview']['overall_success_rate']
+        uptime_seconds = all_metrics['overview']['uptime_seconds']
+        
+        # Get system health status
+        system_metrics = all_metrics['system_metrics']
+        cpu_usage = system_metrics['cpu_usage']['current']
+        memory_usage = system_metrics['memory_usage']['current']
+        disk_usage = system_metrics['disk_usage']['current']
+        
+        # Determine system health
+        system_health = "healthy"
+        if cpu_usage > 80 or memory_usage > 80 or disk_usage > 90:
+            system_health = "warning"
+        if cpu_usage > 95 or memory_usage > 95 or disk_usage > 95:
+            system_health = "critical"
+        
+        # Get top performing and problematic tools
+        tools_metrics = all_metrics['tools']
+        tool_performance = []
+        
+        for tool_name, metrics in tools_metrics.items():
+            if metrics['total_requests'] > 0:
+                tool_performance.append({
+                    'tool_name': tool_name,
+                    'total_requests': metrics['total_requests'],
+                    'success_rate': metrics['success_rate'],
+                    'avg_response_time': metrics['avg_response_time'],
+                    'error_count': metrics['error_count']
+                })
+        
+        # Sort by total requests (most used first)
+        tool_performance.sort(key=lambda x: x['total_requests'], reverse=True)
+        
+        return {
+            "success": True,
+            "dashboard": {
+                "overview": {
+                    "total_requests": total_requests,
+                    "total_errors": total_errors,
+                    "overall_success_rate": overall_success_rate,
+                    "uptime_hours": round(uptime_seconds / 3600, 2),
+                    "system_health": system_health
+                },
+                "system_metrics": {
+                    "cpu_usage": cpu_usage,
+                    "memory_usage": memory_usage,
+                    "disk_usage": disk_usage,
+                    "status": system_health
+                },
+                "alerts": {
+                    "count": len(alerts),
+                    "critical": len([a for a in alerts if a['severity'] == 'critical']),
+                    "warnings": len([a for a in alerts if a['severity'] == 'warning']),
+                    "errors": len([a for a in alerts if a['severity'] == 'error'])
+                },
+                "top_tools": tool_performance[:5],  # Top 5 most used tools
+                "problematic_tools": [
+                    tool for tool in tool_performance 
+                    if tool['success_rate'] < 90 or tool['avg_response_time'] > 2000
+                ]
+            },
+            "timestamp": datetime.now().isoformat()
+        }
+    except Exception as e:
+        logger.error(f"Error getting performance dashboard: {e}")
+        raise HTTPException(status_code=500, detail=f"Error retrieving performance dashboard: {str(e)}")
+
+@app.get("/performance/health")
+async def get_performance_health():
+    """Get performance health status"""
+    try:
+        alerts = performance_monitor.get_performance_alerts()
+        critical_alerts = [a for a in alerts if a['severity'] == 'critical']
+        error_alerts = [a for a in alerts if a['severity'] == 'error']
+        
+        # Determine overall health
+        if critical_alerts:
+            health_status = "critical"
+        elif error_alerts:
+            health_status = "error"
+        elif alerts:
+            health_status = "warning"
+        else:
+            health_status = "healthy"
+        
+        return {
+            "success": True,
+            "health": {
+                "status": health_status,
+                "alerts_count": len(alerts),
+                "critical_count": len(critical_alerts),
+                "error_count": len(error_alerts),
+                "warning_count": len([a for a in alerts if a['severity'] == 'warning'])
+            },
+            "timestamp": datetime.now().isoformat()
+        }
+    except Exception as e:
+        logger.error(f"Error getting performance health: {e}")
+        raise HTTPException(status_code=500, detail=f"Error retrieving performance health: {str(e)}")
 
 if __name__ == "__main__":
     logger.info("Starting LangFlow Connect MVP - Enhanced Tools API Server")
