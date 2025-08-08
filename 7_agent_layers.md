@@ -179,7 +179,7 @@ class InformationGathering:
 ## 🎯 Layer 3: Structure, Goals & Behaviors
 
 ### **Function & Purpose**
-This layer defines the agent's personality, goals, ethical framework, and behavioral patterns. It ensures the AI operates within defined parameters and adapts its behavior based on context and user preferences.
+This layer defines the agent's personality, goals, ethical framework, and behavioral patterns. It ensures the AI operates within defined parameters and adapts its behavior based on context and user preferences. **NEW**: Now includes self-improving behavior through local resource integration and automated learning from available code, documents, and tools.
 
 ### **Core Components**
 - **Goal Management**: Define, track, and prioritize objectives
@@ -187,6 +187,10 @@ This layer defines the agent's personality, goals, ethical framework, and behavi
 - **Ethical Framework**: Safety guidelines and ethical constraints
 - **Behavioral Patterns**: Consistent and adaptive interaction styles
 - **User Modeling**: Learning and adapting to user preferences
+- **🆕 Self-Improvement Engine**: Automated learning from local resources
+- **🆕 Resource Discovery**: Analysis of local directories for useful code and tools
+- **🆕 Local Database Integration**: PostgreSQL with pgvector for knowledge storage
+- **🆕 Code Analysis & Learning**: Extracting patterns from existing codebases
 
 ### **Current Implementation Status** ❌ **0% Complete**
 
@@ -200,49 +204,533 @@ This layer defines the agent's personality, goals, ethical framework, and behavi
 - User preference learning
 - Adaptive behavior based on context
 - Task prioritization and scheduling
+- **🆕 Self-improving behavior mechanisms**
+- **🆕 Local resource integration**
+- **🆕 Automated code analysis and learning**
 
 ### **Implementation Plan**
 
-#### **Phase 1: Goal Management System (Week 1-2)**
+#### **Phase 1: Local Resource Integration & Self-Improvement Foundation (Week 1-2)**
+
+##### **1.1 Local Database Setup with pgvector**
 ```python
-# New component: src/layers/goals_behaviors.py
-class GoalManagement:
-    def __init__(self):
+# New component: src/layers/local_resources/database_integration.py
+class LocalDatabaseIntegration:
+    def __init__(self, db_config):
+        self.connection = self.setup_postgresql_connection(db_config)
+        self.vector_store = self.setup_pgvector_extension()
+        self.knowledge_base = KnowledgeBase(self.connection)
+        self.code_patterns_db = CodePatternsDatabase(self.connection)
+    
+    def setup_pgvector_extension(self):
+        """Setup pgvector extension for embeddings storage"""
+        with self.connection.cursor() as cursor:
+            cursor.execute("CREATE EXTENSION IF NOT EXISTS vector")
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS knowledge_embeddings (
+                    id SERIAL PRIMARY KEY,
+                    content TEXT,
+                    embedding vector(1536),
+                    source_type VARCHAR(50),
+                    source_path TEXT,
+                    created_at TIMESTAMP DEFAULT NOW()
+                )
+            """)
+        return True
+    
+    def store_knowledge_embedding(self, content, embedding, source_type, source_path):
+        """Store knowledge with vector embeddings"""
+        with self.connection.cursor() as cursor:
+            cursor.execute("""
+                INSERT INTO knowledge_embeddings (content, embedding, source_type, source_path)
+                VALUES (%s, %s, %s, %s)
+            """, (content, embedding, source_type, source_path))
+        self.connection.commit()
+    
+    def search_similar_knowledge(self, query_embedding, limit=10):
+        """Search for similar knowledge using vector similarity"""
+        with self.connection.cursor() as cursor:
+            cursor.execute("""
+                SELECT content, source_type, source_path, 
+                       1 - (embedding <=> %s) as similarity
+                FROM knowledge_embeddings
+                ORDER BY embedding <=> %s
+                LIMIT %s
+            """, (query_embedding, query_embedding, limit))
+            return cursor.fetchall()
+```
+
+##### **1.2 Local Resource Discovery Engine**
+```python
+# New component: src/layers/local_resources/resource_discovery.py
+class LocalResourceDiscovery:
+    def __init__(self, base_directories=None):
+        self.base_directories = base_directories or [
+            "D:/GUI/System-Reference-Clean/",
+            "C:/Users/",
+            "D:/Projects/",
+            "./src/",
+            "./docs/",
+            "./scripts/"
+        ]
+        self.code_analyzer = CodeAnalyzer()
+        self.document_analyzer = DocumentAnalyzer()
+        self.tool_discovery = ToolDiscovery()
+    
+    def scan_local_resources(self):
+        """Comprehensive scan of local directories for useful resources"""
+        discovered_resources = {
+            'code_files': [],
+            'documents': [],
+            'tools': [],
+            'datasets': [],
+            'configurations': [],
+            'prototypes': []
+        }
+        
+        for directory in self.base_directories:
+            if os.path.exists(directory):
+                discovered_resources['code_files'].extend(
+                    self.discover_code_files(directory)
+                )
+                discovered_resources['documents'].extend(
+                    self.discover_documents(directory)
+                )
+                discovered_resources['tools'].extend(
+                    self.discover_tools(directory)
+                )
+                discovered_resources['prototypes'].extend(
+                    self.discover_prototypes(directory)
+                )
+        
+        return discovered_resources
+    
+    def discover_code_files(self, directory):
+        """Discover and analyze code files for patterns and reusable components"""
+        code_files = []
+        for root, dirs, files in os.walk(directory):
+            for file in files:
+                if file.endswith(('.py', '.js', '.ts', '.java', '.cpp', '.c')):
+                    file_path = os.path.join(root, file)
+                    analysis = self.code_analyzer.analyze_file(file_path)
+                    if analysis['usefulness_score'] > 0.6:  # Threshold for useful code
+                        code_files.append({
+                            'path': file_path,
+                            'analysis': analysis,
+                            'patterns': analysis['patterns'],
+                            'reusable_components': analysis['reusable_components']
+                        })
+        return code_files
+    
+    def discover_prototypes(self, directory):
+        """Discover AI agent prototypes and experimental code"""
+        prototypes = []
+        prototype_keywords = [
+            'agent', 'ai', 'llm', 'gpt', 'openai', 'anthropic',
+            'chatbot', 'assistant', 'intelligence', 'reasoning',
+            'memory', 'learning', 'neural', 'transformer'
+        ]
+        
+        for root, dirs, files in os.walk(directory):
+            for file in files:
+                if file.endswith('.py'):
+                    file_path = os.path.join(root, file)
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        content = f.read().lower()
+                        if any(keyword in content for keyword in prototype_keywords):
+                            prototypes.append({
+                                'path': file_path,
+                                'type': 'ai_prototype',
+                                'keywords_found': [k for k in prototype_keywords if k in content]
+                            })
+        return prototypes
+```
+
+##### **1.3 Self-Improvement Engine**
+```python
+# New component: src/layers/self_improvement_engine.py
+class SelfImprovementEngine:
+    def __init__(self, database_integration, resource_discovery):
+        self.db = database_integration
+        self.resource_discovery = resource_discovery
+        self.learning_analyzer = LearningAnalyzer()
+        self.improvement_tracker = ImprovementTracker()
+        self.adaptation_engine = AdaptationEngine()
+    
+    def continuous_self_improvement(self):
+        """Main loop for continuous self-improvement"""
+        while True:
+            try:
+                # 1. Discover new local resources
+                new_resources = self.resource_discovery.scan_local_resources()
+                
+                # 2. Analyze and learn from discovered resources
+                learned_patterns = self.learn_from_resources(new_resources)
+                
+                # 3. Update knowledge base with new patterns
+                self.update_knowledge_base(learned_patterns)
+                
+                # 4. Adapt behavior based on new knowledge
+                self.adapt_behavior(learned_patterns)
+                
+                # 5. Track improvements
+                self.improvement_tracker.record_improvement(learned_patterns)
+                
+                # Sleep for 1 hour before next improvement cycle
+                time.sleep(3600)
+                
+            except Exception as e:
+                logging.error(f"Self-improvement cycle failed: {e}")
+                time.sleep(300)  # Wait 5 minutes before retry
+    
+    def learn_from_resources(self, resources):
+        """Learn patterns and knowledge from discovered resources"""
+        learned_patterns = {
+            'code_patterns': [],
+            'behavioral_patterns': [],
+            'knowledge_snippets': [],
+            'tool_usage_patterns': []
+        }
+        
+        # Learn from code files
+        for code_file in resources['code_files']:
+            patterns = self.learning_analyzer.extract_code_patterns(code_file)
+            learned_patterns['code_patterns'].extend(patterns)
+        
+        # Learn from prototypes
+        for prototype in resources['prototypes']:
+            ai_patterns = self.learning_analyzer.extract_ai_patterns(prototype)
+            learned_patterns['behavioral_patterns'].extend(ai_patterns)
+        
+        # Learn from documents
+        for document in resources['documents']:
+            knowledge = self.learning_analyzer.extract_knowledge(document)
+            learned_patterns['knowledge_snippets'].extend(knowledge)
+        
+        return learned_patterns
+    
+    def adapt_behavior(self, learned_patterns):
+        """Adapt agent behavior based on learned patterns"""
+        # Update personality traits based on learned patterns
+        personality_updates = self.adaptation_engine.generate_personality_updates(learned_patterns)
+        self.update_personality(personality_updates)
+        
+        # Update goal management based on new knowledge
+        goal_updates = self.adaptation_engine.generate_goal_updates(learned_patterns)
+        self.update_goals(goal_updates)
+        
+        # Update behavioral patterns
+        behavior_updates = self.adaptation_engine.generate_behavior_updates(learned_patterns)
+        self.update_behaviors(behavior_updates)
+```
+
+#### **Phase 2: Enhanced Goal Management with Self-Improvement (Week 3-4)**
+
+##### **2.1 Self-Improving Goal Management System**
+```python
+# Enhanced component: src/layers/goals_behaviors.py
+class SelfImprovingGoalManagement:
+    def __init__(self, database_integration):
+        self.db = database_integration
         self.goal_tracker = GoalTracker()
         self.priority_manager = PriorityManager()
         self.achievement_monitor = AchievementMonitor()
+        self.learning_goals = LearningGoals()
+        self.improvement_goals = ImprovementGoals()
     
-    def define_goal(self, goal_description, priority="medium"):
-        """Define and track a new goal"""
-        goal = Goal(description=goal_description, priority=priority)
+    def define_goal(self, goal_description, priority="medium", goal_type="user_defined"):
+        """Define and track a new goal with self-improvement capabilities"""
+        goal = Goal(
+            description=goal_description,
+            priority=priority,
+            goal_type=goal_type,
+            created_at=datetime.now(),
+            improvement_tracked=True
+        )
+        
+        # Store goal in database with vector embedding
+        goal_embedding = self.generate_goal_embedding(goal_description)
+        self.db.store_knowledge_embedding(
+            content=goal_description,
+            embedding=goal_embedding,
+            source_type="goal",
+            source_path=f"goals/{goal.id}"
+        )
+        
         self.goal_tracker.add_goal(goal)
         return goal
     
-    def get_active_goals(self):
-        """Get currently active goals"""
-        return self.goal_tracker.get_active_goals()
+    def generate_learning_goals(self):
+        """Automatically generate learning goals based on discovered resources"""
+        discovered_resources = self.resource_discovery.scan_local_resources()
+        
+        learning_goals = []
+        
+        # Generate goals for code patterns to learn
+        for code_file in discovered_resources['code_files']:
+            if code_file['analysis']['complexity'] > 0.7:
+                learning_goals.append(Goal(
+                    description=f"Learn advanced patterns from {os.path.basename(code_file['path'])}",
+                    priority="high",
+                    goal_type="learning",
+                    source_file=code_file['path']
+                ))
+        
+        # Generate goals for AI prototypes to study
+        for prototype in discovered_resources['prototypes']:
+            learning_goals.append(Goal(
+                description=f"Study AI implementation patterns from {os.path.basename(prototype['path'])}",
+                priority="medium",
+                goal_type="learning",
+                source_file=prototype['path']
+            ))
+        
+        return learning_goals
+    
+    def track_goal_improvement(self, goal_id, progress_data):
+        """Track improvement progress for goals"""
+        improvement = GoalImprovement(
+            goal_id=goal_id,
+            progress_data=progress_data,
+            timestamp=datetime.now(),
+            learning_applied=True
+        )
+        
+        # Store improvement data in database
+        self.db.store_knowledge_embedding(
+            content=str(progress_data),
+            embedding=self.generate_improvement_embedding(progress_data),
+            source_type="goal_improvement",
+            source_path=f"goals/{goal_id}/improvements"
+        )
+        
+        return improvement
 ```
 
-#### **Phase 2: Personality Engine (Week 3-4)**
+##### **2.2 Adaptive Personality Engine**
 ```python
-class PersonalityEngine:
-    def __init__(self):
+class AdaptivePersonalityEngine:
+    def __init__(self, database_integration):
+        self.db = database_integration
         self.personality_traits = PersonalityTraits()
         self.behavior_patterns = BehaviorPatterns()
         self.adaptation_engine = AdaptationEngine()
+        self.learning_history = LearningHistory()
     
-    def adapt_response(self, user_input, context):
-        """Adapt response based on personality and context"""
-        traits = self.personality_traits.get_current_traits(context)
-        behavior = self.behavior_patterns.select_behavior(traits, context)
-        return self.adaptation_engine.adapt_response(user_input, behavior)
+    def adapt_personality_from_learning(self, learned_patterns):
+        """Adapt personality based on learned patterns from local resources"""
+        personality_updates = {}
+        
+        # Analyze code patterns for personality traits
+        for pattern in learned_patterns['code_patterns']:
+            if pattern['type'] == 'problem_solving':
+                personality_updates['analytical_thinking'] = self.calculate_trait_increase(
+                    pattern['complexity'], 0.1
+                )
+            elif pattern['type'] == 'creative_solution':
+                personality_updates['creativity'] = self.calculate_trait_increase(
+                    pattern['innovation_score'], 0.15
+                )
+        
+        # Analyze behavioral patterns from AI prototypes
+        for pattern in learned_patterns['behavioral_patterns']:
+            if pattern['type'] == 'conversation_style':
+                personality_updates['communication_style'] = pattern['style']
+            elif pattern['type'] == 'decision_making':
+                personality_updates['decision_approach'] = pattern['approach']
+        
+        # Apply personality updates
+        self.personality_traits.update_traits(personality_updates)
+        
+        # Store personality evolution in database
+        self.db.store_knowledge_embedding(
+            content=json.dumps(personality_updates),
+            embedding=self.generate_personality_embedding(personality_updates),
+            source_type="personality_evolution",
+            source_path="personality/updates"
+        )
+    
+    def generate_adaptive_response(self, user_input, context):
+        """Generate response adapted to learned personality traits"""
+        # Get current personality traits
+        current_traits = self.personality_traits.get_current_traits()
+        
+        # Get relevant learned patterns
+        relevant_patterns = self.db.search_similar_knowledge(
+            self.generate_query_embedding(user_input)
+        )
+        
+        # Adapt response based on personality and learned patterns
+        adapted_response = self.adaptation_engine.adapt_response(
+            user_input, 
+            current_traits, 
+            relevant_patterns
+        )
+        
+        return adapted_response
 ```
 
-#### **Phase 3: Ethical Framework (Week 5-6)**
-- Safety guidelines implementation
-- Ethical constraint enforcement
-- Bias detection and mitigation
-- Transparency and explainability
+#### **Phase 3: Ethical Framework with Local Learning (Week 5-6)**
+
+##### **3.1 Self-Improving Ethical Framework**
+```python
+class SelfImprovingEthicalFramework:
+    def __init__(self, database_integration):
+        self.db = database_integration
+        self.ethical_guidelines = EthicalGuidelines()
+        self.safety_monitor = SafetyMonitor()
+        self.bias_detector = BiasDetector()
+        self.transparency_tracker = TransparencyTracker()
+    
+    def learn_ethical_patterns_from_code(self, code_files):
+        """Learn ethical patterns from local codebases"""
+        ethical_patterns = []
+        
+        for code_file in code_files:
+            # Analyze code for ethical considerations
+            ethical_analysis = self.analyze_code_ethics(code_file['path'])
+            
+            if ethical_analysis['ethical_score'] > 0.8:
+                ethical_patterns.append({
+                    'pattern': ethical_analysis['pattern'],
+                    'source': code_file['path'],
+                    'ethical_principle': ethical_analysis['principle'],
+                    'confidence': ethical_analysis['confidence']
+                })
+        
+        # Store ethical patterns in database
+        for pattern in ethical_patterns:
+            self.db.store_knowledge_embedding(
+                content=json.dumps(pattern),
+                embedding=self.generate_ethical_embedding(pattern),
+                source_type="ethical_pattern",
+                source_path=f"ethics/patterns/{pattern['pattern']}"
+            )
+        
+        return ethical_patterns
+    
+    def adapt_ethical_guidelines(self, learned_patterns):
+        """Adapt ethical guidelines based on learned patterns"""
+        updated_guidelines = self.ethical_guidelines.get_current_guidelines()
+        
+        for pattern in learned_patterns['ethical_patterns']:
+            if pattern['confidence'] > 0.9:  # High confidence patterns
+                updated_guidelines[pattern['ethical_principle']] = {
+                    'guideline': pattern['pattern'],
+                    'source': pattern['source'],
+                    'confidence': pattern['confidence'],
+                    'learned_at': datetime.now()
+                }
+        
+        # Update ethical guidelines
+        self.ethical_guidelines.update_guidelines(updated_guidelines)
+        
+        return updated_guidelines
+```
+
+### **Local Resource Integration Workflows**
+
+#### **Workflow 1: Automated Code Analysis & Learning**
+```python
+# New workflow: src/workflows/code_learning_workflow.py
+class CodeLearningWorkflow:
+    def __init__(self, resource_discovery, database_integration):
+        self.resource_discovery = resource_discovery
+        self.db = database_integration
+        self.code_analyzer = CodeAnalyzer()
+        self.pattern_extractor = PatternExtractor()
+    
+    def execute_code_learning_cycle(self):
+        """Execute a complete code learning cycle"""
+        # 1. Discover code files
+        code_files = self.resource_discovery.discover_code_files()
+        
+        # 2. Analyze each code file
+        for code_file in code_files:
+            analysis = self.code_analyzer.analyze_file(code_file['path'])
+            
+            # 3. Extract patterns
+            patterns = self.pattern_extractor.extract_patterns(analysis)
+            
+            # 4. Store in database with embeddings
+            for pattern in patterns:
+                self.db.store_knowledge_embedding(
+                    content=pattern['code'],
+                    embedding=pattern['embedding'],
+                    source_type="code_pattern",
+                    source_path=code_file['path']
+                )
+        
+        return len(code_files)
+```
+
+#### **Workflow 2: Document Knowledge Extraction**
+```python
+# New workflow: src/workflows/document_learning_workflow.py
+class DocumentLearningWorkflow:
+    def __init__(self, resource_discovery, database_integration):
+        self.resource_discovery = resource_discovery
+        self.db = database_integration
+        self.document_parser = DocumentParser()
+        self.knowledge_extractor = KnowledgeExtractor()
+    
+    def execute_document_learning_cycle(self):
+        """Execute a complete document learning cycle"""
+        # 1. Discover documents
+        documents = self.resource_discovery.discover_documents()
+        
+        # 2. Parse and extract knowledge
+        for document in documents:
+            parsed_content = self.document_parser.parse_document(document['path'])
+            knowledge_snippets = self.knowledge_extractor.extract_knowledge(parsed_content)
+            
+            # 3. Store knowledge in database
+            for snippet in knowledge_snippets:
+                self.db.store_knowledge_embedding(
+                    content=snippet['content'],
+                    embedding=snippet['embedding'],
+                    source_type="knowledge_snippet",
+                    source_path=document['path']
+                )
+        
+        return len(documents)
+```
+
+### **Implementation Priority for Local Resources**
+
+#### **Immediate Actions (This Week)**
+1. **Set up PostgreSQL with pgvector** connection
+2. **Create resource discovery engine** for local directories
+3. **Implement basic code analysis** for pattern extraction
+4. **Start continuous learning loop** from local resources
+
+#### **Short-term Goals (Next 2 Weeks)**
+1. **Complete self-improvement engine** integration
+2. **Implement adaptive personality** based on learned patterns
+3. **Create ethical learning** from local codebases
+4. **Build knowledge base** from discovered resources
+
+#### **Medium-term Goals (Next Month)**
+1. **Advanced pattern recognition** from complex codebases
+2. **Behavioral adaptation** based on learned patterns
+3. **Goal generation** from discovered resources
+4. **Performance optimization** of learning cycles
+
+### **Success Metrics for Self-Improvement**
+
+#### **Learning Metrics**
+- **Patterns Discovered**: Number of useful patterns extracted from local resources
+- **Knowledge Growth**: Increase in knowledge base size and quality
+- **Behavioral Adaptation**: Rate of personality and behavior changes
+- **Goal Achievement**: Success rate of auto-generated learning goals
+
+#### **Performance Metrics**
+- **Learning Speed**: Time to extract and learn from new resources
+- **Pattern Recognition**: Accuracy of identifying useful patterns
+- **Adaptation Rate**: Speed of behavioral and personality changes
+- **Resource Utilization**: Efficiency of using local resources
+
+This enhanced Layer 3 implementation will create a truly self-improving AI agent that continuously learns from your local environment, adapts its behavior, and becomes more intelligent over time.
 
 ---
 
